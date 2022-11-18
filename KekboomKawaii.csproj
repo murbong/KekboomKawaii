@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FDE00D80-21F9-44AE-B3D0-19C1EBBB6A42}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KekboomKawaii</RootNamespace>
+    <AssemblyName>KekboomKawaii</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialDesignColors, Version=2.0.9.0, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>packages\MaterialDesignColors.2.0.9\lib\net462\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=4.6.1.0, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>packages\MaterialDesignThemes.4.6.1\lib\net462\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Xaml.Behaviors.Wpf.1.1.39\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
+    </Reference>
+    <Reference Include="PcapDotNet.Base, Version=0.10.0.20588, Culture=neutral, PublicKeyToken=4b6f3e583145a652, processorArchitecture=MSIL">
+      <HintPath>packages\PcapDotNet.0.10.2\lib\net40\PcapDotNet.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="PcapDotNet.Core, Version=0.10.0.20632, Culture=neutral, PublicKeyToken=4b6f3e583145a652, processorArchitecture=x86">
+      <HintPath>packages\PcapDotNet.0.10.2\lib\net40\PcapDotNet.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="PcapDotNet.Core.Extensions, Version=0.10.0.20638, Culture=neutral, PublicKeyToken=4b6f3e583145a652, processorArchitecture=MSIL">
+      <HintPath>packages\PcapDotNet.0.10.2\lib\net40\PcapDotNet.Core.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="PcapDotNet.Packets, Version=0.10.0.20603, Culture=neutral, PublicKeyToken=4b6f3e583145a652, processorArchitecture=MSIL">
+      <HintPath>packages\PcapDotNet.0.10.2\lib\net40\PcapDotNet.Packets.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Windows">
+      <HintPath>C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.22000.0\Windows.winmd</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WpfAnimatedGif, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9e7cd3b544a090dc, processorArchitecture=MSIL">
+      <HintPath>packages\WpfAnimatedGif.2.0.2\lib\net40\WpfAnimatedGif.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Converter\WindowIconConverter.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Models\ITCPReadable.cs" />
+    <Compile Include="Models\PlayerData.cs" />
+    <Compile Include="Models\TOFPacket.cs" />
+    <Compile Include="Models\UserChat.cs" />
+    <Compile Include="PacketSniffer.cs" />
+    <Compile Include="ServerList.cs" />
+    <Compile Include="Tools\ScrollIntoViewForListView.cs" />
+    <Compile Include="Tools\TCPBinaryReader.cs" />
+    <Compile Include="ViewModels\ChattingViewModel.cs" />
+    <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Compile Include="ViewModels\Base\RelayCommand.cs" />
+    <Compile Include="ViewModels\SettingViewModel.cs" />
+    <Compile Include="ViewModels\UserChatViewModel.cs" />
+    <Compile Include="ViewModels\Base\ViewModelBase.cs" />
+    <Compile Include="Views\SettingView.xaml.cs">
+      <DependentUpon>SettingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserChatView.xaml.cs">
+      <DependentUpon>UserChatView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="ResourceDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ChattingView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\ChattingView.xaml.cs">
+      <DependentUpon>ChattingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Views\SettingView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserChatView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Resource Include="Resources\Fonts\ONE Mobile POP.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Avatar\aige.png" />
+    <Resource Include="Resources\Avatar\Avatar09.png" />
+    <Resource Include="Resources\Avatar\Avatar10.png" />
+    <Resource Include="Resources\Avatar\Avatar11.png" />
+    <Resource Include="Resources\Avatar\Avatar12.png" />
+    <Resource Include="Resources\Avatar\Avatar18.png" />
+    <Resource Include="Resources\Avatar\Avatar19.png" />
+    <Resource Include="Resources\Avatar\Avatar20.png" />
+    <Resource Include="Resources\Avatar\Avatar21.png" />
+    <Resource Include="Resources\Avatar\Avatar22.png" />
+    <Resource Include="Resources\Avatar\Avatar23.png" />
+    <Resource Include="Resources\Avatar\Avatar24.png" />
+    <Resource Include="Resources\Avatar\Avatar25.png" />
+    <Resource Include="Resources\Avatar\Avatar26.png" />
+    <Resource Include="Resources\Avatar\Avatar27.png" />
+    <Resource Include="Resources\Avatar\Avatar28.png" />
+    <Resource Include="Resources\Avatar\Avatar29.png" />
+    <Resource Include="Resources\Avatar\Avatar30.png" />
+    <Resource Include="Resources\Avatar\Avatar31.png" />
+    <Resource Include="Resources\Avatar\Avatar32.png" />
+    <Resource Include="Resources\Avatar\Avatar33.png" />
+    <Resource Include="Resources\Avatar\Avatar34.png" />
+    <Resource Include="Resources\Avatar\Avatar35.png" />
+    <Resource Include="Resources\Avatar\Avatar01.png" />
+    <Resource Include="Resources\Avatar\Avatar02.png" />
+    <Resource Include="Resources\Avatar\avatar_10.png" />
+    <Resource Include="Resources\Avatar\Avatar37.png" />
+    <Resource Include="Resources\Avatar\Avatarf401.png" />
+    <Resource Include="Resources\Avatar\Avatar05.png" />
+    <Resource Include="Resources\Avatar\Avatar_iw_2.png" />
+    <Resource Include="Resources\Avatar\Avatar_iw_3.png" />
+    <Resource Include="Resources\Avatar\Avatar_iw_4.png" />
+    <Resource Include="Resources\Avatar\Avatar_korea_4.png" />
+    <Resource Include="Resources\Avatar\Avatar_KO_Mia_01.png" />
+    <Resource Include="Resources\Avatar\Avatar_KO_Shali_01.png" />
+    <Resource Include="Resources\Avatar\Avatar06.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_10.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_11.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_9.png" />
+    <Resource Include="Resources\Avatar\Avatar03.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_6.png" />
+    <Resource Include="Resources\Avatar\Avatar_TX_leibei_01.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_8.png" />
+    <Resource Include="Resources\Avatar\Avatar_TX_Naimeixisi_01.png" />
+    <Resource Include="Resources\Avatar\Avatar_TX_Shali_01.png" />
+    <Resource Include="Resources\Avatar\Avatar_TX_vera_01.png" />
+    <Resource Include="Resources\Avatar\Avatar_TX_xianrenzhang_01.png" />
+    <Resource Include="Resources\Avatar\Avatar_TX_Xiazuo_01.png" />
+    <Resource Include="Resources\Avatar\avatar_xiazuo.png" />
+    <Resource Include="Resources\Avatar\avatar_xier.png" />
+    <Resource Include="Resources\Avatar\Avatar07.png" />
+    <Resource Include="Resources\Avatar\bailing.png" />
+    <Resource Include="Resources\Avatar\baiyuekui.png" />
+    <Resource Include="Resources\Avatar\bupoxiao.png" />
+    <Resource Include="Resources\Avatar\gulan.png" />
+    <Resource Include="Resources\Avatar\hida.png" />
+    <Resource Include="Resources\Avatar\kekelite.png" />
+    <Resource Include="Resources\Avatar\kelaodiya.png" />
+    <Resource Include="Resources\Avatar\king.png" />
+    <Resource Include="Resources\Avatar\leibei.png" />
+    <Resource Include="Resources\Avatar\ling.png" />
+    <Resource Include="Resources\Avatar\linye.png" />
+    <Resource Include="Resources\Avatar\main_head_bg1.png" />
+    <Resource Include="Resources\Avatar\make.png" />
+    <Resource Include="Resources\Avatar\meilier.png" />
+    <Resource Include="Resources\Avatar\saimier.png" />
+    <Resource Include="Resources\Avatar\sifengyuanyu.png" />
+    <Resource Include="Resources\Avatar\peipei.png" />
+    <Resource Include="Resources\Avatar\wuwan.png" />
+    <Resource Include="Resources\Avatar\xi.png" />
+    <Resource Include="Resources\Avatar\xiluo.png" />
+    <Resource Include="Resources\Avatar\xinghuan.png" />
+    <Resource Include="Resources\Avatar\xiuma.png" />
+    <Resource Include="Resources\Avatar\zhipu_gui.png" />
+    <Resource Include="Resources\Avatar\Avatar15.png" />
+    <Resource Include="Resources\Avatar\Avatar13.png" />
+    <Resource Include="Resources\Avatar\Avatar14.png" />
+    <Resource Include="Resources\Avatar\Avatar16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Suppressor\01_0.png" />
+    <Resource Include="Resources\Suppressor\01_1.png" />
+    <Resource Include="Resources\Suppressor\01_2.png" />
+    <Resource Include="Resources\Suppressor\01_3.png" />
+    <Resource Include="Resources\Suppressor\01_4.png" />
+    <Resource Include="Resources\Suppressor\01_5.png" />
+    <Resource Include="Resources\Suppressor\02_1.png" />
+    <Resource Include="Resources\Suppressor\02_2.png" />
+    <Resource Include="Resources\Suppressor\02_3.png" />
+    <Resource Include="Resources\Suppressor\02_4.png" />
+    <Resource Include="Resources\Suppressor\02_5.png" />
+    <Resource Include="Resources\Suppressor\03_1.png" />
+    <Resource Include="Resources\Suppressor\03_2.png" />
+    <Resource Include="Resources\Suppressor\03_3.png" />
+    <Resource Include="Resources\Suppressor\03_4.png" />
+    <Resource Include="Resources\Suppressor\03_5.png" />
+    <Resource Include="Resources\Suppressor\04_1.png" />
+    <Resource Include="Resources\Suppressor\04_2.png" />
+    <Resource Include="Resources\Suppressor\04_3.png" />
+    <Resource Include="Resources\Suppressor\04_4.png" />
+    <Resource Include="Resources\Suppressor\04_5.png" />
+    <Resource Include="Resources\Suppressor\05_1.png" />
+    <Resource Include="Resources\Suppressor\05_2.png" />
+    <Resource Include="Resources\Suppressor\05_3.png" />
+    <Resource Include="Resources\Suppressor\05_4.png" />
+    <Resource Include="Resources\Suppressor\05_5.png" />
+    <Resource Include="Resources\Suppressor\06_1.png" />
+    <Resource Include="Resources\Suppressor\06_2.png" />
+    <Resource Include="Resources\Suppressor\06_3.png" />
+    <Resource Include="Resources\Suppressor\06_4.png" />
+    <Resource Include="Resources\Suppressor\06_5.png" />
+    <Resource Include="Resources\Suppressor\07_1.png" />
+    <Resource Include="Resources\Suppressor\07_2.png" />
+    <Resource Include="Resources\Suppressor\07_3.png" />
+    <Resource Include="Resources\Suppressor\07_4.png" />
+    <Resource Include="Resources\Suppressor\07_5.png" />
+    <Resource Include="Resources\Suppressor\08_1.png" />
+    <Resource Include="Resources\Suppressor\08_2.png" />
+    <Resource Include="Resources\Suppressor\08_3.png" />
+    <Resource Include="Resources\Suppressor\08_4.png" />
+    <Resource Include="Resources\Suppressor\08_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\AvatarFrame\AvatarFrame03.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame04.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame07.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame08.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame11.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame12.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame17.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame21.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame23.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame24.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame30.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame31.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame32.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame33.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame34.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame35.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame36.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame37.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame38.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame39.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame40.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame41.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame42.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame43.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame44.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame45.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame46.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame47.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame48.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame54.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrameiw_02.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrameiw_03.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrameiw_04.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFramekr_01.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_baiyuekui.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_chuangzuodaren.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_fulijia.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_kehuanshijie.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame16.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_make.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_Overseas_3.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame25.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame26.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_rengongdao_huli.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame28.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_rengongdao_wugui.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_tajian.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_tata.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_TX_BestTower.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_TX_gift.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_TX_off.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_TX_steam.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_TX_Xuhuan.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_Valentine.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_valkiri.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_xuxubaobao.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_yixisi.png" />
+    <Resource Include="Resources\AvatarFrame\TestAvatarFrame01.png" />
+    <Resource Include="Resources\AvatarFrame\TestAvatarFrame02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Avatar\Avatar_korea_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Gender\Female.png" />
+    <Resource Include="Resources\Gender\Male.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Sticker\1.gif" />
+    <Resource Include="Resources\Sticker\10.gif" />
+    <Resource Include="Resources\Sticker\11.gif" />
+    <Resource Include="Resources\Sticker\12.gif" />
+    <Resource Include="Resources\Sticker\13.gif" />
+    <Resource Include="Resources\Sticker\14.gif" />
+    <Resource Include="Resources\Sticker\15.gif" />
+    <Resource Include="Resources\Sticker\16.gif" />
+    <Resource Include="Resources\Sticker\2.gif" />
+    <Resource Include="Resources\Sticker\3.gif" />
+    <Resource Include="Resources\Sticker\4.gif" />
+    <Resource Include="Resources\Sticker\5.gif" />
+    <Resource Include="Resources\Sticker\6.gif" />
+    <Resource Include="Resources\Sticker\7.gif" />
+    <Resource Include="Resources\Sticker\8.gif" />
+    <Resource Include="Resources\Sticker\9.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="packages\MaterialDesignThemes.4.6.1\build\MaterialDesignThemes.targets" Condition="Exists('packages\MaterialDesignThemes.4.6.1\build\MaterialDesignThemes.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>이 프로젝트는 이 컴퓨터에 없는 NuGet 패키지를 참조합니다. 해당 패키지를 다운로드하려면 NuGet 패키지 복원을 사용하십시오. 자세한 내용은 http://go.microsoft.com/fwlink/?LinkID=322105를 참조하십시오. 누락된 파일은 {0}입니다.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\MaterialDesignThemes.4.6.1\build\MaterialDesignThemes.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\MaterialDesignThemes.4.6.1\build\MaterialDesignThemes.targets'))" />
+  </Target>
+</Project>
