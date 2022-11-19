@@ -86,7 +86,7 @@ namespace KekboomKawaii.ViewModels
 
             if (filters.Any(str => userChat.Message.Contains(str)))
             {
-                Global.ShowToast("KekboomKawaii", userChat.NickName, userChat.Message, string.Empty);
+                Global.ShowToast("KekboomKawaii", userChat.NickName, Message, string.Empty);
                 SystemSounds.Beep.Play();
             }
         }
