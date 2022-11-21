@@ -22,7 +22,7 @@ namespace KekboomKawaii.Models
 
             reader.ReadBytes(ClassLength + 4);
 
-            Header2Length = reader.ReadInt32();
+              Header2Length = reader.ReadInt32();
             Class2Length = reader.ReadInt32();
 
             reader.ReadBytes(Class2Length + 4);

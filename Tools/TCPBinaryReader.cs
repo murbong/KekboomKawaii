@@ -23,6 +23,17 @@ namespace KekboomKawaii.Tools
             return Encoding.UTF8.GetString(buffer);
         }
 
+        public List<int> ReadIntList()
+        {
+            var list = new List<int>();
+            int cnt = ReadInt32();
+            for (int i = 0; i < cnt; i++)
+            {
+                list.Add(ReadInt32());
+            }
+            return list;
+        }
+
         private int ceilingToNext(int n, int a)
         {
             return a * (1 + (n / a));

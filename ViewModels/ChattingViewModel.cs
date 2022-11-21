@@ -121,13 +121,12 @@ namespace KekboomKawaii.ViewModels
 
         public ChattingViewModel()
         {
-            Global.Sniffer.PayloadEvent += Sniffer_PayloadEvent;
+            Global.Sniffer.UserChatEvent += Sniffer_PayloadEvent;
             SelectAll = true;
         }
 
         private void Sniffer_PayloadEvent(UserChat userChat)
         {
-
             Application.Current.Dispatcher.Invoke(() =>
             {
                 Add(new UserChatViewModel(userChat));

@@ -16,6 +16,22 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\1. Project\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,6 +51,21 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>390792_1651108364.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>BF275E319800C60F89CD67D15D22F402C736BF7B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>KekboomKawaii_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MaterialDesignColors, Version=2.0.9.0, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
@@ -87,10 +118,12 @@
     </ApplicationDefinition>
     <Compile Include="Converter\WindowIconConverter.cs" />
     <Compile Include="Global.cs" />
+    <Compile Include="Models\Equipment.cs" />
     <Compile Include="Models\ITCPReadable.cs" />
     <Compile Include="Models\PlayerData.cs" />
     <Compile Include="Models\TOFPacket.cs" />
     <Compile Include="Models\UserChat.cs" />
+    <Compile Include="Models\Weapon.cs" />
     <Compile Include="PacketSniffer.cs" />
     <Compile Include="ServerList.cs" />
     <Compile Include="Tools\ScrollIntoViewForListView.cs" />
@@ -98,9 +131,17 @@
     <Compile Include="ViewModels\ChattingViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\Base\RelayCommand.cs" />
+    <Compile Include="ViewModels\PlayerListViewModel.cs" />
+    <Compile Include="ViewModels\PlayerViewModel.cs" />
     <Compile Include="ViewModels\SettingViewModel.cs" />
     <Compile Include="ViewModels\UserChatViewModel.cs" />
     <Compile Include="ViewModels\Base\ViewModelBase.cs" />
+    <Compile Include="Views\PlayerListView.xaml.cs">
+      <DependentUpon>PlayerListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PlayerView.xaml.cs">
+      <DependentUpon>PlayerView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\SettingView.xaml.cs">
       <DependentUpon>SettingView.xaml</DependentUpon>
     </Compile>
@@ -130,6 +171,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\PlayerListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PlayerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\SettingView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -157,6 +206,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="KekboomKawaii_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -193,7 +243,7 @@
     <Resource Include="Resources\Avatar\Avatar35.png" />
     <Resource Include="Resources\Avatar\Avatar01.png" />
     <Resource Include="Resources\Avatar\Avatar02.png" />
-    <Resource Include="Resources\Avatar\avatar_10.png" />
+    <Resource Include="Resources\Avatar\kefu.png" />
     <Resource Include="Resources\Avatar\Avatar37.png" />
     <Resource Include="Resources\Avatar\Avatarf401.png" />
     <Resource Include="Resources\Avatar\Avatar05.png" />
@@ -201,23 +251,23 @@
     <Resource Include="Resources\Avatar\Avatar_iw_3.png" />
     <Resource Include="Resources\Avatar\Avatar_iw_4.png" />
     <Resource Include="Resources\Avatar\Avatar_korea_4.png" />
-    <Resource Include="Resources\Avatar\Avatar_KO_Mia_01.png" />
-    <Resource Include="Resources\Avatar\Avatar_KO_Shali_01.png" />
+    <Resource Include="Resources\Avatar\Avatar_korea_1.png" />
+    <Resource Include="Resources\Avatar\Avatar_korea_3.png" />
     <Resource Include="Resources\Avatar\Avatar06.png" />
     <Resource Include="Resources\Avatar\Avatar_Overseas_10.png" />
     <Resource Include="Resources\Avatar\Avatar_Overseas_11.png" />
     <Resource Include="Resources\Avatar\Avatar_Overseas_9.png" />
     <Resource Include="Resources\Avatar\Avatar03.png" />
     <Resource Include="Resources\Avatar\Avatar_Overseas_6.png" />
-    <Resource Include="Resources\Avatar\Avatar_TX_leibei_01.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_5.png" />
     <Resource Include="Resources\Avatar\Avatar_Overseas_8.png" />
-    <Resource Include="Resources\Avatar\Avatar_TX_Naimeixisi_01.png" />
-    <Resource Include="Resources\Avatar\Avatar_TX_Shali_01.png" />
-    <Resource Include="Resources\Avatar\Avatar_TX_vera_01.png" />
-    <Resource Include="Resources\Avatar\Avatar_TX_xianrenzhang_01.png" />
-    <Resource Include="Resources\Avatar\Avatar_TX_Xiazuo_01.png" />
-    <Resource Include="Resources\Avatar\avatar_xiazuo.png" />
-    <Resource Include="Resources\Avatar\avatar_xier.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_3.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_2.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_4.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_7.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_1.png" />
+    <Resource Include="Resources\Avatar\Avatar04.png" />
+    <Resource Include="Resources\Avatar\Avatar08.png" />
     <Resource Include="Resources\Avatar\Avatar07.png" />
     <Resource Include="Resources\Avatar\bailing.png" />
     <Resource Include="Resources\Avatar\baiyuekui.png" />
@@ -241,7 +291,7 @@
     <Resource Include="Resources\Avatar\xiluo.png" />
     <Resource Include="Resources\Avatar\xinghuan.png" />
     <Resource Include="Resources\Avatar\xiuma.png" />
-    <Resource Include="Resources\Avatar\zhipu_gui.png" />
+    <Resource Include="Resources\Avatar\Avatar17.png" />
     <Resource Include="Resources\Avatar\Avatar15.png" />
     <Resource Include="Resources\Avatar\Avatar13.png" />
     <Resource Include="Resources\Avatar\Avatar14.png" />
@@ -378,6 +428,21 @@
     <Resource Include="Resources\Sticker\7.gif" />
     <Resource Include="Resources\Sticker\8.gif" />
     <Resource Include="Resources\Sticker\9.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="390792_1651108364.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8%28x86 및 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\MaterialDesignThemes.4.6.1\build\MaterialDesignThemes.targets" Condition="Exists('packages\MaterialDesignThemes.4.6.1\build\MaterialDesignThemes.targets')" />

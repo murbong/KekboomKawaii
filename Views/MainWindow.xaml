@@ -114,6 +114,9 @@
             <TabItem Header="채팅창">
                 <views:ChattingView/>
             </TabItem>
+            <TabItem Header="플레이어">
+                <views:PlayerListView/>
+            </TabItem>
             <TabItem Header="설정">
                 <views:SettingView/>
             </TabItem>

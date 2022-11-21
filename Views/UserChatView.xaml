@@ -50,7 +50,7 @@
 
         <Grid Grid.Column="1" Grid.Row="1">
             <TextBlock Padding="10" TextWrapping="Wrap" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MaxHeight="88" MaxWidth="600">
-                <Run Text="{Binding Violation, Mode=OneWay}"></Run>
+                <Run Text="{Binding Violation, Mode=OneWay}" Foreground="Red" FontStyle="Oblique"></Run>
                 <Run Text="{Binding Message, Mode=OneWay}"></Run>
 
             </TextBlock>

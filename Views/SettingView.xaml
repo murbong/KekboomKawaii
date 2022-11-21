@@ -34,8 +34,6 @@
                     </ComboBox.ItemTemplate>
                 </ComboBox>
                 <ToggleButton IsChecked="{Binding IsPacketTaskRunning}"/>
-
-
             </StackPanel>
         </StackPanel>
     </Grid>

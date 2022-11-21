@@ -13,21 +13,16 @@ namespace KekboomKawaii.Models
     {
         public int ChatID { get; set; }
         public ChatClassEnum ChatClass { get; set; }
-
         public int AtUID { get; set; }
-
         public int AtServer { get; set; }
-
         public string Violation { get; set; }
         public string Message { get; set; }
         public string Checksum { get; set; }
         public string AppropLevel { get; set; }
-
         public int Level { get; set; }
         public GenderEnum Gender { get; set; }
         public int UID { get; set; }
         public int Server { get; set; }
-
         public string SuppressorLevel { get; set; }
         public string AvatarFrame { get; set; }
         public string Avatar { get; set; }
@@ -72,7 +67,7 @@ namespace KekboomKawaii.Models
 
             reader.ReadBytes(0x1a);
 
-            var len = reader.ReadInt16() - 16; // 여기 뭔지 잘 모르겠음
+            var len = reader.ReadInt16() - 16; // idk what is this
 
             reader.ReadBytes(8);
 

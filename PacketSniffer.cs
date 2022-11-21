@@ -5,12 +5,14 @@ using PcapDotNet.Packets;
 using PcapDotNet.Packets.Http;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.Remoting.Channels;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Windows.Storage.Streams;
 
 namespace KekboomKawaii
 {
@@ -30,7 +32,10 @@ namespace KekboomKawaii
 
         private PacketCommunicator communicator = null;
 
-        public event Action<UserChat> PayloadEvent;
+        public event Action<UserChat> UserChatEvent;
+
+        public event Action<PlayerData> PlayerDataEvent;
+
 
         public void Select(int index)
         {
@@ -115,7 +120,7 @@ namespace KekboomKawaii
             using (BinaryReader bin = new BinaryReader(input))
             {
                 int headerLength = bin.ReadInt32() + 4;
-                if (headerLength < sizeof(long) || headerLength > sizeof(long) * 1024)//걸르자.
+                if (headerLength < 8 || headerLength > 16384)//걸르자.
                 {
                     return -1;
 
@@ -123,6 +128,10 @@ namespace KekboomKawaii
                 if (size < headerLength)//분할되서 날라올때.
                 {
                     return 0;
+                }
+                if (size > headerLength)
+                {
+                    return -1;
                 }
                 ParsePayload(stream, headerLength);
                 return headerLength;
@@ -135,6 +144,7 @@ namespace KekboomKawaii
                 using (MemoryStream ms = new MemoryStream(stream, 0, size))
                 using (TCPBinaryReader br = new TCPBinaryReader(ms))
                 {
+                    Debug.WriteLine(size);
                     TOFPacket tofpacket = new TOFPacket();
 
                     tofpacket.Read(br);
@@ -144,21 +154,23 @@ namespace KekboomKawaii
                         br.BaseStream.Position = 0;
                         UserChat userChat = new UserChat();
                         userChat.Read(br);
-                        PayloadEvent?.Invoke(userChat);
+                        UserChatEvent?.Invoke(userChat);
                     }
-                    else if(tofpacket.Flag == 0x140)
+                    else if (tofpacket.Flag == 0x140)
                     {
                         br.BaseStream.Position = 0;
                         PlayerData playerData = new PlayerData();
                         playerData.Read(br);
+                        PlayerDataEvent?.Invoke(playerData);
 
                     }
                 }
             }
-            catch(Exception ex)
+            catch(Exception e) 
             {
-                Console.WriteLine(ex.StackTrace);
+                Console.WriteLine(e.Message);
             }
+
 
         }
     }
