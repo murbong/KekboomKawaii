@@ -15,17 +15,22 @@ namespace KekboomKawaii.ViewModels
     {
 
         private PlayerViewModel selectedPlayerViewModel;
-        public PlayerViewModel SelectedPlayerViewModel { get { return selectedPlayerViewModel; } set { selectedPlayerViewModel = value;OnPropertyChanged(); } }
+        public PlayerViewModel SelectedPlayerViewModel { get { return selectedPlayerViewModel; } set { selectedPlayerViewModel = value; OnPropertyChanged(); } }
         public PlayerListViewModel()
         {
             Global.Sniffer.PlayerDataEvent += Sniffer_PayloadEvent;
         }
 
-        private void Sniffer_PayloadEvent(PlayerData userChat)
+        private void Sniffer_PayloadEvent(PlayerData data)
         {
             Application.Current.Dispatcher.Invoke(() =>
             {
-                Add(new PlayerViewModel(userChat));
+                var items = this.Where(e => e.UID == data.UID).ToArray();
+                for (var i = 0; i < items.Length; i++)
+                {
+                    Remove(items[i]);
+                }
+                Add(new PlayerViewModel(data));
             });
         }
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null)

@@ -10,8 +10,8 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="auto"/>
         </Grid.ColumnDefinitions>
         <StackPanel Orientation="Vertical">
             <Grid>
@@ -34,32 +34,40 @@
                 <Run Text="직무 : "/>
                 <Run Text="{Binding GuildPost,Mode=OneWay}"/>
             </TextBlock>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16">
+                <Run Text="UID : "/>
+                <Run Text="{Binding UUID,Mode=OneWay}"/>
+            </TextBlock>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16">
+                <Run Text="UUID : "/>
+                <Run Text="{Binding UID,Mode=OneWay}"/>
+            </TextBlock>
         </StackPanel>
         <StackPanel Grid.Column="1">
             <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" >
                 <Run Text="HP : "/>
-                <Run Text="{Binding HP,Mode=OneWay}"/>
+                <Run Text="{Binding HP,Mode=OneWay,StringFormat={}{0:F0}}"/>
             </TextBlock>
             <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" >
                 <Run Text="치명타 : "/>
-                <Run Text="{Binding Critical,Mode=OneWay}"/>
-                <Run Text="{Binding CriticalRatio,Mode=OneWay}"/>
+                <Run Text="{Binding Critical,Mode=OneWay,StringFormat={}{0:F0}}"/>
+                <Run Text="{Binding CriticalRatio,Mode=OneWay,StringFormat={}({0:#0.00%})}"/>
             </TextBlock>
             <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" >
                 <Run Text="물리 공격 : "/>
-                <Run Text="{Binding PhysicalAttack,Mode=OneWay}"/>
+                <Run Text="{Binding PhysicalAttack,Mode=OneWay,StringFormat={}{0:F0}}"/>
             </TextBlock>
             <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" >
                 <Run Text="화염 공격 : "/>
-                <Run Text="{Binding FireAtk,Mode=OneWay}"/>
+                <Run Text="{Binding FireAtk,Mode=OneWay,StringFormat={}{0:F0}}"/>
             </TextBlock>
             <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" >
                 <Run Text="얼음 공격 : "/>
-                <Run Text="{Binding IceAtk,Mode=OneWay}"/>
+                <Run Text="{Binding IceAtk,Mode=OneWay,StringFormat={}{0:F0}}"/>
             </TextBlock>
             <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" >
                 <Run Text="번개 공격 : "/>
-                <Run Text="{Binding ThunderAtk,Mode=OneWay}"/>
+                <Run Text="{Binding ThunderAtk,Mode=OneWay,StringFormat={}{0:F0}}"/>
             </TextBlock>
             <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" >
                 <Run Text="이능 공격 : "/>
@@ -74,26 +82,42 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid>
-                            <Image Source="{Binding DisplayWeaponImage}" Width="75" Height="75"/>
+                            <Image Source="{Binding DisplayWeaponImage, Mode=OneWay}" Width="75" Height="75"/>
                             <TextBlock FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Top">
-                                <Run Text="{Binding Star}"/>
-                                <Run Text="{Binding Level}"/>
+                                <Run Text="{Binding Star, Mode=OneWay}"/>
+                                <Run Text="{Binding Level, Mode=OneWay}"/>
                             </TextBlock>
                         </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <ListView ItemsSource="{Binding EquipmentList}" MaxHeight="400">
+            <ListView ItemsSource="{Binding EquipmentList}" MaxHeight="240">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <Grid Width="400">
-                            <Image Source="{Binding DisplayEquipmentImage}" Width="150" Height="150" HorizontalAlignment="Left"/>
-                            <TextBlock >
-                                <Run Text="{Binding Star}"/>
-                                <Run Text="{Binding Enchant}"/>
+                        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="400">
+                            <Image Source="{Binding DisplayEquipmentImage}" Width="100" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                            <TextBlock HorizontalAlignment="Left">
+                                <Run Text="{Binding Star, Mode=OneWay}"/>
+                                <Run Text="{Binding Enchant, Mode=OneWay}"/>
                             </TextBlock>
                             <ListView ItemsSource="{Binding Properties}" HorizontalAlignment="Right">
-                                
+                                <ListView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <StackPanel Orientation="Horizontal"></StackPanel>
+                                    </ItemsPanelTemplate>
+                                </ListView.ItemsPanel>
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <StackPanel Orientation="Vertical" Width="60">
+                                                <Image Source="{Binding DisplayPropertyImage, Mode=OneWay}" Width="25" Height="25" VerticalAlignment="Top"/>
+                                                <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center">
+                                                  <Run Text="{Binding DisplayValue, Mode=OneWay}"/>
+                                                </TextBlock>
+                                            </StackPanel>
+                                        </Grid>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
                             </ListView>
                         </Grid>
                     </DataTemplate>

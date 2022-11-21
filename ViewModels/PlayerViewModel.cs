@@ -15,6 +15,14 @@ namespace KekboomKawaii.ViewModels
         public string CurentPosition => playerData.CurentPosition;
         public string PlayerName => playerData.PlayerName;
         public string UID => playerData.UID;
+        public string UUID
+        {
+            get
+            {
+                int[] ints = (int[])GetValue("uid");
+                return $"{ints[1]}{ints[0]}";
+            }
+        }
         public string Title => GetValue("EquippingTitle").ToString();
         public string GuildName => GetValue("GuildName").ToString();
         public GuildPostEnum GuildPost => (GuildPostEnum)GetValue("GuildPost");
@@ -26,14 +34,14 @@ namespace KekboomKawaii.ViewModels
         public float PhysicalAttack => float.TryParse(GetValue("PhysicalAttack").ToString(), out float value) ? value : 0.0f;
         public float HP => float.TryParse(GetValue("MaxHP").ToString(), out float value) ? value : 0.0f;
         public float Critical => float.TryParse(GetValue("Crit").ToString(), out float value) ? value : 0.0f;
-        public float CriticalRatio =>  float.TryParse(GetValue("GetCritMult").ToString(),out float value) ? value : 0.0f;
+        public float CriticalRatio => float.TryParse(GetValue("GetCritMult").ToString(), out float value) ? value : 0.0f;
         public int Level => (int)GetValue("level");
 
         private object GetValue(string key)
         {
-            if(playerData.KeyData.TryGetValue(key, out object value))
+            if (playerData.KeyData.TryGetValue(key, out object value))
             {
-                return value; 
+                return value;
 
             }
             return new object();
@@ -46,7 +54,7 @@ namespace KekboomKawaii.ViewModels
             {
                 var list = new List<Weapon>();
 
-                for(var i = 0; i < 3; i++)
+                for (var i = 0; i < 3; i++)
                 {
                     if (playerData.KeyData.TryGetValue($"Weapon_{i}", out object val))
                     {
