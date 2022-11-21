@@ -66,11 +66,16 @@
                 <Run Text="{Binding SuperpowerAttack,Mode=OneWay}"/>
             </TextBlock>
             <ListView ItemsSource="{Binding WeaponList}">
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal"></StackPanel>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid>
-                            <TextBlock >
-                                <Run Text="{Binding Name}"/>
+                            <Image Source="{Binding DisplayWeaponImage}" Width="75" Height="75"/>
+                            <TextBlock FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Top">
                                 <Run Text="{Binding Star}"/>
                                 <Run Text="{Binding Level}"/>
                             </TextBlock>
@@ -78,12 +83,12 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <ListView ItemsSource="{Binding EquipmentList}" MaxHeight="200">
+            <ListView ItemsSource="{Binding EquipmentList}" MaxHeight="400">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid Width="400">
+                            <Image Source="{Binding DisplayEquipmentImage}" Width="150" Height="150" HorizontalAlignment="Left"/>
                             <TextBlock >
-                                <Run Text="{Binding Name}"/>
                                 <Run Text="{Binding Star}"/>
                                 <Run Text="{Binding Enchant}"/>
                             </TextBlock>

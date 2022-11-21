@@ -16,6 +16,7 @@ namespace KekboomKawaii.Models
         public int Star { get; set; }
         public int MaxLevel { get; set; }
         public int CurrentEnchant { get; set; }
+        public string DisplayWeaponImage=> $@"pack://application:,,,/Resources/Weapon/{Name}.png";
         public Weapon()
         {
 

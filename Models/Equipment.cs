@@ -15,15 +15,24 @@ namespace KekboomKawaii.Models
         public int Enchant { get; set; }
         public int Star { get; set; }
         public Dictionary<string, float> Properties { get; set; }
+        public string DisplayEquipmentImage => $@"pack://application:,,,/Resources/Equipment/{Name}.png";
+
 
         public Equipment()
         {
             Properties = new Dictionary<string, float>();
         }
-        public Equipment(string rawEquipment) : this() //shawl_orange#29#1,CommonAtkAdded;2,679.502686;|1,IceDefAdded;2,1366.897705;|1,ThunderDefAdded;2,215.000000;|1,MaxHealthAdded;2,4125.000000;#5#
+        // core_OS_blue#0#1,ThunderAtkAdded;2,20.000000;|1,ThunderDefAdded;2,61.000000;|1,CommonAtkAdded;2,15.000000;#0#
+
+        //shawl_orange#29#1,CommonAtkAdded;2,679.502686;|1,IceDefAdded;2,1366.897705;|1,ThunderDefAdded;2,215.000000;|1,MaxHealthAdded;2,4125.000000;#5#
+
+        public Equipment(string rawEquipment) : this() 
         {
 
-            var reg = new Regex(@"(\w+)#(\d+)#(\d+),(\w+);([\d,]*\.?\d*);\|(\d+),(\w+);([\d,]*\.?\d*);\|(\d+),(\w+);([\d,]*\.?\d*);\|(\d+),(\w+);([\d,]*\.?\d*);#(\d+)#");
+            //var reg = new Regex(@"(\w+)#(\d+)#(\d+),(\w+);([\d,]*\.?\d*);\|(\d+),(\w+);([\d,]*\.?\d*);\|(\d+),(\w+);([\d,]*\.?\d*);\|(\d+),(\w+);([\d,]*\.?\d*);#(\d+)#");
+            var reg = new Regex(@"(\w+)#(\d+)#(.+)#(\d+)#");
+
+            var reg2 = new Regex(@"(\d+),(\w+);([\d,]*\.?\d*);");
 
             var resultCollection = reg.Matches(rawEquipment)[0].Groups;
 
@@ -31,12 +40,16 @@ namespace KekboomKawaii.Models
 
             Enchant = int.Parse(resultCollection[2].Value);
 
-            for (var i = 0; i < 4; i++)
+            var properties = resultCollection[3].Value.Split('|');
+
+            foreach(var property in properties)
             {
-                Properties.Add(resultCollection[4 + i * 3].Value, float.Parse(resultCollection[5 + i * 3].Value));
+                var collection = reg2.Matches(property)[0].Groups;
+
+                Properties.Add(collection[2].Value, float.Parse(collection[3].Value));
             }
 
-            Star = int.Parse(resultCollection[15].Value);
+            Star = int.Parse(resultCollection[4].Value);
         }
     }
 }

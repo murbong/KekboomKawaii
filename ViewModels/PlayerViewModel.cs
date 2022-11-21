@@ -15,21 +15,29 @@ namespace KekboomKawaii.ViewModels
         public string CurentPosition => playerData.CurentPosition;
         public string PlayerName => playerData.PlayerName;
         public string UID => playerData.UID;
-        public string Title => (string)playerData.KeyData["EquippingTitle"];
-        public string GuildName => (string)playerData.KeyData["GuildName"];
-        public GuildPostEnum GuildPost => (GuildPostEnum)playerData.KeyData["GuildPost"];
-        public GenderEnum Gender => (GenderEnum)playerData.KeyData["RoleInfoSex"];
-        public float SuperpowerAttack => (float)playerData.KeyData["SuperpowerAtk"];
-        public float ThunderAtk => (float)playerData.KeyData["ThunderAtk"];
-        public float IceAtk => (float)playerData.KeyData["IceAtk"];
-        public float FireAtk => (float)playerData.KeyData["FireAtk"];
-        public float PhysicalAttack => (float)playerData.KeyData["PhysicalAttack"];
-        public float HP => (float)playerData.KeyData["MaxHP"];
-        public float Critical => (float)playerData.KeyData["Crit"];
-        public float CriticalRatio => (float)playerData.KeyData["GetCritMult"];
-        public int Level => (int)playerData.KeyData["level"];
+        public string Title => GetValue("EquippingTitle").ToString();
+        public string GuildName => GetValue("GuildName").ToString();
+        public GuildPostEnum GuildPost => (GuildPostEnum)GetValue("GuildPost");
+        public GenderEnum Gender => (GenderEnum)GetValue("RoleInfoSex");
+        public float SuperpowerAttack => float.TryParse(GetValue("SuperpowerAtk").ToString(), out float value) ? value : 0.0f;
+        public float ThunderAtk => float.TryParse(GetValue("ThunderAtk").ToString(), out float value) ? value : 0.0f;
+        public float IceAtk => float.TryParse(GetValue("IceAtk").ToString(), out float value) ? value : 0.0f;
+        public float FireAtk => float.TryParse(GetValue("FireAtk").ToString(), out float value) ? value : 0.0f;
+        public float PhysicalAttack => float.TryParse(GetValue("PhysicalAttack").ToString(), out float value) ? value : 0.0f;
+        public float HP => float.TryParse(GetValue("MaxHP").ToString(), out float value) ? value : 0.0f;
+        public float Critical => float.TryParse(GetValue("Crit").ToString(), out float value) ? value : 0.0f;
+        public float CriticalRatio =>  float.TryParse(GetValue("GetCritMult").ToString(),out float value) ? value : 0.0f;
+        public int Level => (int)GetValue("level");
 
+        private object GetValue(string key)
+        {
+            if(playerData.KeyData.TryGetValue(key, out object value))
+            {
+                return value; 
 
+            }
+            return new object();
+        }
 
 
         public List<Weapon> WeaponList
@@ -68,12 +76,12 @@ namespace KekboomKawaii.ViewModels
             }
         }
 
-        public string DisplayedAvatar => $@"pack://application:,,,/Resources/Avatar/{playerData.KeyData["AvatarId"]}.png";
-        public string DisplayedAvatarFrame => $@"pack://application:,,,/Resources/AvatarFrame/{playerData.KeyData["AvatarFrameId"]}.png";
-        public string DisplayedSuppressor => $@"pack://application:,,,/Resources/Suppressor/{playerData.KeyData["ShenGeLevel"]}.png";
+        public string DisplayedAvatar => $@"pack://application:,,,/Resources/Avatar/{GetValue("AvatarId")}.png";
+        public string DisplayedAvatarFrame => $@"pack://application:,,,/Resources/AvatarFrame/{GetValue("AvatarFrameId")}.png";
+        public string DisplayedSuppressor => $@"pack://application:,,,/Resources/Suppressor/{GetValue("ShenGeLevel")}.png";
         public string DisplayedGender => $@"pack://application:,,,/Resources/Gender/{(Gender == GenderEnum.Female ? "Female" : "Male")}.png";
 
-        public int GS => (int)playerData.KeyData["BattleStrengthScore"];
+        public int GS => (int)GetValue("BattleStrengthScore");
 
         public PlayerViewModel() { }
 
