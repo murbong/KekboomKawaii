@@ -42,6 +42,7 @@
                 <Run Text="UUID : "/>
                 <Run Text="{Binding UID,Mode=OneWay}"/>
             </TextBlock>
+
         </StackPanel>
         <StackPanel Grid.Column="1">
             <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" >
@@ -124,6 +125,8 @@
                 </ListView.ItemTemplate>
             </ListView>
         </StackPanel>
+        <Button Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" Content="저장" Command="{Binding SaveCurrentPlayerCommand}">
+        </Button>
 
     </Grid>
 </UserControl>

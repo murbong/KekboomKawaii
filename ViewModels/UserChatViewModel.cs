@@ -27,6 +27,10 @@ namespace KekboomKawaii.ViewModels
         public string DisplayUID => $"UID:{userChat.Server}{userChat.UID}";
         public string DisplayedLevel => $"Lv{userChat.Level}";
 
+        public string DebugAvatar => userChat.Avatar;
+        public string DebugAvatarFrame => userChat.AvatarFrame;
+
+
         public string DisplayedSticker
         {
             get

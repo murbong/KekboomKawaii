@@ -22,12 +22,12 @@
     <Window.Resources>
         <cvt:WindowIconConverter x:Key="ConvertToIcon"/>
     </Window.Resources>
-    <Grid x:Name="MainGrid" Background="White" Margin="10">
+    <Grid x:Name="MainGrid" Background="White" Opacity="0.85" Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" MinHeight="60"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Margin="10" FontSize="24" Text="서버는 뱅기스 길드는 켁븜" FontFamily="{StaticResource ONEMobile}" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="ExtraBold" TextAlignment="Center" Grid.Row="0"/>
+        <TextBlock Margin="10" FontSize="24" Text="켁븜미러링" FontFamily="{StaticResource ONEMobile}" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="ExtraBold" TextAlignment="Center" Grid.Row="0"/>
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0 5 0 0">
             <Button x:Name="btnMin" BorderThickness="1" Margin="0 0 5 0" Width="20" Height="20" Tag="Minimize">

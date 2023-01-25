@@ -21,40 +21,34 @@
             <ColumnDefinition Width="Auto"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid Panel.ZIndex="1">
-            <Image Source="{Binding DisplayedGender}" Width="24" Height="24" HorizontalAlignment="Left"/>
+            <Image Source="{Binding DisplayedGender}" Width="24" Height="24" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         </Grid>
         <Grid Grid.RowSpan="2" Grid.ColumnSpan="1">
-            <Image Source="{Binding DisplayedAvatarFrame}" Width="100" Height="100"/>
             <Image Source="{Binding DisplayedAvatar}" Width="100" Height="100"/>
-            <TextBlock Text="{Binding DisplayedLevel}" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18">
-                <TextBlock.Background>
-                    <SolidColorBrush Color="{DynamicResource Primary100}" Opacity="0.4"/>
-                </TextBlock.Background>
-            </TextBlock>
-            <TextBlock Text="{Binding DisplayedChannel}" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18">
-                <TextBlock.Background>
-                    <SolidColorBrush Color="{DynamicResource Primary100}" Opacity="0.4"/>
-                </TextBlock.Background>
-            </TextBlock>
+            <Image Source="{Binding DisplayedAvatarFrame}" Width="100" Height="100"/>
+
+            <TextBlock Text="{Binding DisplayedLevel}" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18"/>
+            <TextBlock Text="{Binding DisplayedChannel}" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18"/>
 
         </Grid>
 
         <StackPanel Grid.Column="1" Orientation="Horizontal">
             <Image Source="{Binding DisplayedSuppressor}" Width="60" HorizontalAlignment="Left"/>
-            <TextBlock Text="{Binding NickName}" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="18"/>
-            <TextBlock Margin="50 0 0 0" Text="{Binding Title}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBlock Text="{Binding NickName}" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="18" MinWidth="175"/>
+            <TextBlock Margin="50 0 0 0" Text="{Binding Title,Mode=OneWay}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBlock Margin="50 0 0 0" Text="{Binding DisplayUID}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBlock Margin="50 0 0 0" Text="{Binding ChatTime, StringFormat=hh:mm:ss}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
 
         </StackPanel>
 
         <Grid Grid.Column="1" Grid.Row="1">
-            <TextBlock Padding="10" TextWrapping="Wrap" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MaxHeight="88" MaxWidth="600">
+            <TextBlock Padding="10" TextWrapping="Wrap" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" MaxHeight="88" MaxWidth="600" MinWidth="0">
+                <!--TextBox Text="{Binding DebugAvatar,Mode=OneWay}" FontSize="10"></TextBox>
+                <TextBox Text="{Binding DebugAvatarFrame,Mode=OneWay}" FontSize="10"></TextBox-->
                 <Run Text="{Binding Violation, Mode=OneWay}" Foreground="Red" FontStyle="Oblique"></Run>
                 <Run Text="{Binding Message, Mode=OneWay}"></Run>
-
             </TextBlock>
-            <Image gif:ImageBehavior.AnimatedSource="{Binding DisplayedSticker,TargetNullValue={x:Null}}" Width="100" Height="100"></Image>
+            <Image gif:ImageBehavior.AnimatedSource="{Binding DisplayedSticker,TargetNullValue={x:Null}}" Width="100" Height="100" HorizontalAlignment="Left"></Image>
         </Grid>
     </Grid>
 </UserControl>

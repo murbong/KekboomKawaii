@@ -15,7 +15,7 @@ namespace KekboomKawaii.Models
 
         public string DisplayValue { get
             {
-                if (Name.Contains("Mult"))
+                if (Name.Contains("Mult") || Name.Contains("FinalCrit"))
                 {
                     return $"{Value * 100}%";
                 }
@@ -37,7 +37,6 @@ namespace KekboomKawaii.Models
                     return $@"pack://application:,,,/Resources/Enchant/icon_atk.png";
                 else if (Name.Contains("FireAtk"))
                     return $@"pack://application:,,,/Resources/Enchant/icon_atk_huo.png";
-
                 else if (Name.Contains("PhyDef"))
                     return $@"pack://application:,,,/Resources/Enchant/icon_def.png";
                 else if (Name.Contains("ElementDef"))
@@ -52,6 +51,10 @@ namespace KekboomKawaii.Models
                     return $@"pack://application:,,,/Resources/Enchant/icon_hp.png";
                 else if (Name.Contains("Crit"))
                     return $@"pack://application:,,,/Resources/Enchant/icon_baoji.png";
+                else if (Name.Contains("SuperpowerAtk"))
+                    return $@"pack://application:,,,/Resources/Enchant/icon_yineng.png";
+                else if (Name.Contains("SuperpowerDef"))
+                    return $@"pack://application:,,,/Resources/Enchant/icon_def_yineng.png";
                 return "";
             }
         }

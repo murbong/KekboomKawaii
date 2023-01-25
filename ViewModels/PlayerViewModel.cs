@@ -5,12 +5,24 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
+using Newtonsoft.Json;
+using System.IO;
 
 namespace KekboomKawaii.ViewModels
 {
     public class PlayerViewModel : ViewModelBase
     {
         PlayerData playerData;
+
+        private RelayCommand saveCurrentPlayerCommand;
+
+        public ICommand SaveCurrentPlayerCommand => saveCurrentPlayerCommand ?? (saveCurrentPlayerCommand = new RelayCommand(SaveCurrentPlayer));
+
+        public void SaveCurrentPlayer(object sender)
+        {
+            File.WriteAllText($@"Player/{UID}_{PlayerName}_{DateTime.Now.ToString("yyyyMMdd")}.json", JsonConvert.SerializeObject(playerData,Formatting.Indented));
+        }
 
         public string CurentPosition => playerData.CurentPosition;
         public string PlayerName => playerData.PlayerName;
@@ -72,7 +84,7 @@ namespace KekboomKawaii.ViewModels
             {
                 var list = new List<Equipment>();
 
-                for (var i = 0; i < 12; i++)
+                for (var i = 0; i < 20; i++)
                 {
                     if (playerData.KeyData.TryGetValue($"Equipment_{i}", out object val))
                     {

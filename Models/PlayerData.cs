@@ -9,9 +9,11 @@ using System.Threading.Tasks;
 
 namespace KekboomKawaii.Models
 {
+    [Serializable]
     public class PlayerData : TOFPacket
     {
 
+       
         public string CurentPosition { get; set; }
         public string PlayerName { get; set; }
         public string Unknown { get; set; }
