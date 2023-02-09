@@ -96,6 +96,7 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="400">
+
                             <Image Source="{Binding DisplayEquipmentImage}" Width="100" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                             <TextBlock HorizontalAlignment="Left">
                                 <Run Text="{Binding Star, Mode=OneWay}"/>
