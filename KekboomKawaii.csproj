@@ -691,7 +691,8 @@
     <Resource Include="Resources\Weapon\Fenrir_Thunder.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Weapon\Whip_phy.png" />
+    <Resource Include="Resources\Weapon\arm_physic.png" />
+    <Content Include="Resources\Weapon\whip_physic.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Weapon\tianlang_thunder.png" />
