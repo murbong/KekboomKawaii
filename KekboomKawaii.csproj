@@ -569,7 +569,7 @@
     <Resource Include="Resources\AvatarFrame\AvatarFrame57.png" />
     <Resource Include="Resources\AvatarFrame\AvatarFrame58.png" />
     <Resource Include="Resources\AvatarFrame\AvatarFrame59.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame69.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_69.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Avatar\hilda.png" />
@@ -692,6 +692,13 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Weapon\arm_physic.png" />
+    <Resource Include="Resources\Avatar\wumi.png" />
+    <Resource Include="Resources\Avatar\Avatar_49.png" />
+    <Resource Include="Resources\Avatar\Avatar_43.png" />
+    <Resource Include="Resources\Avatar\Avatar_44.png" />
+    <Resource Include="Resources\Avatar\Avatar_45.png" />
+    <Resource Include="Resources\Avatar\Avatar_47.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_71.png" />
     <Content Include="Resources\Weapon\whip_physic.png" />
   </ItemGroup>
   <ItemGroup>

@@ -24,6 +24,7 @@
             <Image Source="{Binding DisplayedGender}" Width="24" Height="24" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         </Grid>
         <Grid Grid.RowSpan="2" Grid.ColumnSpan="1">
+
             <Image Source="{Binding DisplayedAvatar}" Width="100" Height="100"/>
             <Image Source="{Binding DisplayedAvatarFrame}" Width="100" Height="100"/>
 
