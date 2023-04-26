@@ -39,15 +39,37 @@ namespace KekboomKawaii.ViewModels
         public string GuildName => GetValue("GuildName").ToString();
         public GuildPostEnum GuildPost => (GuildPostEnum)GetValue("GuildPost");
         public GenderEnum Gender => (GenderEnum)GetValue("RoleInfoSex");
+
+        public float SuperpowerAttackBase => float.TryParse(GetValue("SuperpowerAtkDisplayBase").ToString(), out float value) ? value : 0.0f;
+        public float ThunderAtkBase => float.TryParse(GetValue("ThunderAtkDisplayBase").ToString(), out float value) ? value : 0.0f;
+        public float IceAtkBase => float.TryParse(GetValue("IceAtkDisplayBase").ToString(), out float value) ? value : 0.0f;
+        public float FireAtkBase => float.TryParse(GetValue("FireAtkDisplayBase").ToString(), out float value) ? value : 0.0f;
+        public float PhysicAttackBase => float.TryParse(GetValue("PhyAtkDisplayBase").ToString(), out float value) ? value : 0.0f;
         public float SuperpowerAttack => float.TryParse(GetValue("SuperpowerAtk").ToString(), out float value) ? value : 0.0f;
         public float ThunderAtk => float.TryParse(GetValue("ThunderAtk").ToString(), out float value) ? value : 0.0f;
         public float IceAtk => float.TryParse(GetValue("IceAtk").ToString(), out float value) ? value : 0.0f;
         public float FireAtk => float.TryParse(GetValue("FireAtk").ToString(), out float value) ? value : 0.0f;
-        public float PhysicalAttack => float.TryParse(GetValue("PhysicalAttack").ToString(), out float value) ? value : 0.0f;
+        public float PhysicAttack => float.TryParse(GetValue("PhysicalAttack").ToString(), out float value) ? value : 0.0f;
         public float HP => float.TryParse(GetValue("MaxHP").ToString(), out float value) ? value : 0.0f;
         public float Critical => float.TryParse(GetValue("Crit").ToString(), out float value) ? value : 0.0f;
         public float CriticalRatio => float.TryParse(GetValue("GetCritMult").ToString(), out float value) ? value : 0.0f;
         public int Level => (int)GetValue("level");
+
+        public EnchantElement PrimaryElement
+        {
+            get
+            {
+                var AttackArr = new float[] { ThunderAtk, IceAtk, FireAtk, PhysicAttack };
+
+                var MaxAttack = AttackArr.OrderByDescending(a=>a).First();
+
+                if (MaxAttack == ThunderAtk) return EnchantElement.Thunder;
+                else if (MaxAttack == IceAtk) return EnchantElement.Ice;
+                else if (MaxAttack == FireAtk) return EnchantElement.Fire;
+                else if (MaxAttack == PhysicAttack) return EnchantElement.Physic;
+                else return EnchantElement.None;
+            }
+        }
 
         private object GetValue(string key)
         {
@@ -91,7 +113,8 @@ namespace KekboomKawaii.ViewModels
                         list.Add(new Equipment((string)val));
                     }
                 }
-                return list;
+
+                return list.OrderBy(x => x.GetAttackValue(PrimaryElement)).OrderByDescending(x=>x.Priority).ToList();
 
             }
         }

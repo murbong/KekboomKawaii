@@ -13,11 +13,11 @@ namespace KekboomKawaii
         private static string[] serverDNSList = {
             "ht1.pwrdoverseagame.com",
             "ht2.pwrdoverseagame.com",
-            "ht3.pwrdoverseagame.com",
-            "ht4.pwrdoverseagame.com",
-            "ht5.pwrdoverseagame.com",
-            "ht6.pwrdoverseagame.com",
-            "ht7.pwrdoverseagame.com",
+            //"ht3.pwrdoverseagame.com",
+            //"ht4.pwrdoverseagame.com",
+            //"ht5.pwrdoverseagame.com",
+            //"ht6.pwrdoverseagame.com",
+            //"ht7.pwrdoverseagame.com",
 
             /*"htk1.pwrdoverseagame.com",
             "htk2.pwrdoverseagame.com",

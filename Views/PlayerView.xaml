@@ -8,18 +8,18 @@
              d:DataContext="{d:DesignInstance Type=viewmodels:PlayerViewModel}"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="250"/>
-            <ColumnDefinition Width="auto"/>
-        </Grid.ColumnDefinitions>
-        <StackPanel Orientation="Vertical">
+    <Grid ScrollViewer.VerticalScrollBarVisibility="Visible">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="270"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical" Width="230"  >
+            <!--프로필 사진 등-->
             <Grid>
                 <Image Source="{Binding DisplayedAvatarFrame}" Width="150" Height="150"/>
                 <Image Source="{Binding DisplayedAvatar}" Width="150" Height="150"/>
-                <Image Source="{Binding DisplayedSuppressor}" Width="75" Height="75" HorizontalAlignment="Right" VerticalAlignment="Top"/>
-                <Image Source="{Binding DisplayedGender}" Width="35" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-
+                <Image Source="{Binding DisplayedSuppressor}" Width="75" Height="75" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Image Source="{Binding DisplayedGender}" Width="35" Height="35" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0 5 30 0"/>
             </Grid>
             <TextBlock Text="{Binding PlayerName}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" >
@@ -44,37 +44,8 @@
             </TextBlock>
 
         </StackPanel>
-        <StackPanel Grid.Column="1">
-            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" >
-                <Run Text="HP : "/>
-                <Run Text="{Binding HP,Mode=OneWay,StringFormat={}{0:F0}}"/>
-            </TextBlock>
-            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" >
-                <Run Text="치명타 : "/>
-                <Run Text="{Binding Critical,Mode=OneWay,StringFormat={}{0:F0}}"/>
-                <Run Text="{Binding CriticalRatio,Mode=OneWay,StringFormat={}({0:#0.00%})}"/>
-            </TextBlock>
-            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" >
-                <Run Text="물리 공격 : "/>
-                <Run Text="{Binding PhysicalAttack,Mode=OneWay,StringFormat={}{0:F0}}"/>
-            </TextBlock>
-            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" >
-                <Run Text="화염 공격 : "/>
-                <Run Text="{Binding FireAtk,Mode=OneWay,StringFormat={}{0:F0}}"/>
-            </TextBlock>
-            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" >
-                <Run Text="얼음 공격 : "/>
-                <Run Text="{Binding IceAtk,Mode=OneWay,StringFormat={}{0:F0}}"/>
-            </TextBlock>
-            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" >
-                <Run Text="번개 공격 : "/>
-                <Run Text="{Binding ThunderAtk,Mode=OneWay,StringFormat={}{0:F0}}"/>
-            </TextBlock>
-            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" >
-                <Run Text="이능 공격 : "/>
-                <Run Text="{Binding SuperpowerAttack,Mode=OneWay}"/>
-            </TextBlock>
-            <ListView ItemsSource="{Binding WeaponList}">
+        <DockPanel Grid.Row="1">
+            <ListView ItemsSource="{Binding WeaponList}" HorizontalAlignment="Center" DockPanel.Dock="Top" ScrollViewer.VerticalScrollBarVisibility="Disabled">
                 <ListView.ItemsPanel>
                     <ItemsPanelTemplate>
                         <StackPanel Orientation="Horizontal"></StackPanel>
@@ -92,16 +63,57 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <ListView ItemsSource="{Binding EquipmentList}" MaxHeight="240">
+            <UniformGrid HorizontalAlignment="Center" VerticalAlignment="Center" DockPanel.Dock="Top">
+                <TextBlock HorizontalAlignment="Stretch" Margin="5">
+                <Run Text="HP : "/>
+                <Run Text="{Binding HP,Mode=OneWay,StringFormat={}{0:F0}}"/>
+                </TextBlock>
+                <TextBlock   HorizontalAlignment="Stretch" Margin="5">
+                <Run Text="치명타:"/>
+                <Run Text="{Binding Critical,Mode=OneWay,StringFormat={}{0:F0}}"/>
+                <Run Text="{Binding CriticalRatio,Mode=OneWay,StringFormat={}({0:#0.00%})}"/>
+                </TextBlock>
+                <TextBlock  HorizontalAlignment="Stretch" Margin="5">
+                <Run Text="물리 공격: "/>
+                <Run Text="{Binding PhysicAttack,Mode=OneWay,StringFormat={}{0:F0}}"/>
+                <Run Text="{Binding PhysicAttackBase,Mode=OneWay,StringFormat={}({0:F0})}"/>
+                </TextBlock>
+                <TextBlock HorizontalAlignment="Stretch" Margin="5">
+                <Run Text="화염 공격: "/>
+                <Run Text="{Binding FireAtk,Mode=OneWay,StringFormat={}{0:F0}}"/>
+                <Run Text="{Binding FireAtkBase,Mode=OneWay,StringFormat={}({0:F0})}"/>
+                </TextBlock>
+                <TextBlock  HorizontalAlignment="Stretch" Margin="5">
+                <Run Text="얼음 공격: "/>
+                <Run Text="{Binding IceAtk,Mode=OneWay,StringFormat={}{0:F0}}"/>
+                <Run Text="{Binding IceAtkBase,Mode=OneWay,StringFormat={}({0:F0})}"/>
+                </TextBlock>
+                <TextBlock HorizontalAlignment="Stretch" Margin="5">
+                <Run Text="번개 공격: "/>
+                <Run Text="{Binding ThunderAtk,Mode=OneWay,StringFormat={}{0:F0}}"/>
+                <Run Text="{Binding ThunderAtkBase,Mode=OneWay,StringFormat={}({0:F0})}"/>
+
+                </TextBlock>
+                <TextBlock HorizontalAlignment="Stretch" Margin="5">
+                <Run Text="이능 공격: "/>
+                <Run Text="{Binding SuperpowerAttack,Mode=OneWay,StringFormat={}{0:F0}}"/>
+                </TextBlock>
+                <TextBlock HorizontalAlignment="Stretch" Margin="5">
+                <Run Text="주류 덱: "/>
+                <Run Text="{Binding PrimaryElement,Mode=OneWay}"/>
+                </TextBlock>
+            </UniformGrid>
+            <ListView ItemsSource="{Binding EquipmentList}" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Disabled" HorizontalAlignment="Center" DockPanel.Dock="Bottom" Margin="50" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="400">
-
-                            <Image Source="{Binding DisplayEquipmentImage}" Width="100" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="350">
                             <TextBlock HorizontalAlignment="Left">
                                 <Run Text="{Binding Star, Mode=OneWay}"/>
                                 <Run Text="{Binding Enchant, Mode=OneWay}"/>
+                                <Run Text="{Binding GetEnchantElement, Mode=OneWay}"/>
                             </TextBlock>
+                            <Image Source="{Binding DisplayEquipmentImage}" Width="75" Height="75" HorizontalAlignment="Left" />
+                            <TextBlock Text="{Binding TotalElementDamage, StringFormat={}{0:F2}}" VerticalAlignment="Bottom" HorizontalAlignment="Left"></TextBlock>
                             <ListView ItemsSource="{Binding Properties}" HorizontalAlignment="Right">
                                 <ListView.ItemsPanel>
                                     <ItemsPanelTemplate>
@@ -112,10 +124,8 @@
                                     <DataTemplate>
                                         <Grid>
                                             <StackPanel Orientation="Vertical" Width="60">
-                                                <Image Source="{Binding DisplayPropertyImage, Mode=OneWay}" Width="25" Height="25" VerticalAlignment="Top"/>
-                                                <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center">
-                                                  <Run Text="{Binding DisplayValue, Mode=OneWay}"/>
-                                                </TextBlock>
+                                                <Image Source="{Binding DisplayPropertyImage, Mode=OneWay}" Width="30" Height="30" VerticalAlignment="Top"/>
+                                                <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" Text="{Binding DisplayValue, Mode=OneWay}"/>
                                             </StackPanel>
                                         </Grid>
                                     </DataTemplate>
@@ -124,10 +134,18 @@
                         </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Background="#fafafa"/>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
             </ListView>
+        </DockPanel>
+        <StackPanel Grid.Column="1" Margin="20" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+            <Button Content="저장" Margin="10" Command="{Binding SaveCurrentPlayerCommand}"/>
+            <Button Content="불러오기" Margin="10" Command="{Binding SaveCurrentPlayerCommand}"/>
         </StackPanel>
-        <Button Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" Content="저장" Command="{Binding SaveCurrentPlayerCommand}">
-        </Button>
+
 
     </Grid>
 </UserControl>

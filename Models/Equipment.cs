@@ -10,11 +10,26 @@ namespace KekboomKawaii.Models
 {
     public class Equipment
     {
+        // Fire #ffa286
+        // Physic #e6d6ab
+        // Thunder #d9b1f3
+        // Ice #b0e9ff
+
 
         public string Name { get; set; }
         public int Enchant { get; set; }
         public int Star { get; set; }
+
+        public int Priority { get; set; }
         public List<EnchantProperty> Properties { get; set; }
+
+        public float TotalElementDamage
+        {
+            get
+            {
+                return GetAttackValue(GetEnchantElement);
+            }
+        }
 
         public string DisplayEquipmentImage
         {
@@ -26,6 +41,22 @@ namespace KekboomKawaii.Models
             }
         }
 
+        public EnchantElement GetEnchantElement
+        {
+            get
+            {
+                var first = Properties.Where(prop => prop.Type == EnchantType.Atk && prop.Element != EnchantElement.None)
+                    .Select(a => new { a.Name, Value = a.Value * (a.isEnchantMult ? 10000 : 1) * (a.isExtraUp ? 0.72 : 1), a.Element })
+                    .OrderByDescending(a => a.Value).FirstOrDefault();
+                if (first == null) return EnchantElement.None;
+                return first.Element;
+            }
+        }
+
+        public float GetAttackValue(EnchantElement element)
+        {
+            return Properties.Where(prop => prop.Type == EnchantType.Atk && (prop.Element == EnchantElement.None || prop.Element == element)).Sum(a => a.Value);
+        }
 
         public Equipment()
         {
@@ -58,7 +89,14 @@ namespace KekboomKawaii.Models
                 Properties.Add(new EnchantProperty(collection[2].Value, float.Parse(collection[4].Value)));
             }
 
+            Properties = Properties.OrderByDescending(a => a.Value).OrderByDescending(a => a.Priority).ToList();
+
             Star = int.Parse(resultCollection[4].Value);
+
+            if (Name.Contains("core") || Name.Contains("exoskeleton") || Name.Contains("reactor") || Name.Contains("visor"))
+            {
+                Priority++;
+            }
         }
     }
 }

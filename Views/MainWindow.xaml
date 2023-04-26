@@ -10,7 +10,7 @@
         xmlns:viewmodels="clr-namespace:KekboomKawaii.ViewModels" 
         d:DataContext="{d:DesignInstance Type=viewmodels:MainWindowViewModel}"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
+        Title="MainWindow" Height="1000" Width="1300"
         WindowStyle="None" AllowsTransparency="True" Background="Transparent"
         >
     <Window.Effect>

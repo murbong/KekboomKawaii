@@ -22,7 +22,7 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <StackPanel HorizontalAlignment="Right" Margin="20">
+        <StackPanel HorizontalAlignment="Right" Margin="40">
             <CheckBox Content="전체 선택" IsChecked="{Binding SelectAll}"/>
             <CheckBox Content="세계" IsChecked="{Binding SelectWorld}"/>
             <CheckBox Content="길드" IsChecked="{Binding SelectGuild}"/>

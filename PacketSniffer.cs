@@ -88,27 +88,35 @@ namespace KekboomKawaii
         }
         private void TcpAssembly(byte[] stream, int size)
         {
-            if (size > 0)
+            try
             {
-                stream.BlockCopy(0, streamBuffer.stream, streamBuffer.size, size);
-                streamBuffer.size += size;
-                do
+                if (size > 0)
                 {
-                    var check = ParseAssembly(streamBuffer.stream, streamBuffer.size);
-                    if (check == 0)//1460
+                    stream.BlockCopy(0, streamBuffer.stream, streamBuffer.size, size);
+                    streamBuffer.size += size;
+                    do
                     {
-                        return;
+                        var check = ParseAssembly(streamBuffer.stream, streamBuffer.size);
+                        if (check == 0)//1460
+                        {
+                            return;
+                        }
+                        if (check < 0 || check > streamBuffer.size)//별난놈
+                        {
+                            streamBuffer.size = 0;
+                            return;
+                        }
+                        streamBuffer.stream.BlockCopy(check, streamBuffer.stream, 0, streamBuffer.size - check);
+                        streamBuffer.size -= check;
                     }
-                    if (check < 0 || check > streamBuffer.size)//별난놈
-                    {
-                        streamBuffer.size = 0;
-                        return;
-                    }
-                    streamBuffer.stream.BlockCopy(check, streamBuffer.stream, 0, streamBuffer.size - check);
-                    streamBuffer.size -= check;
+                    while (streamBuffer.size != 0);// 패킷헤더가 여러개가 한꺼번에 들어오는걸 처리함.
                 }
-                while (streamBuffer.size != 0);// 패킷헤더가 여러개가 한꺼번에 들어오는걸 처리함.
             }
+            catch
+            {
+
+            }
+
         }
         private int ParseAssembly(byte[] stream, int size)
         {
