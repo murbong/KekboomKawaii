@@ -107,6 +107,10 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="350">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="75"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
                             <TextBlock HorizontalAlignment="Left">
                                 <Run Text="{Binding Star, Mode=OneWay}"/>
                                 <Run Text="{Binding Enchant, Mode=OneWay}"/>
@@ -114,7 +118,9 @@
                             </TextBlock>
                             <Image Source="{Binding DisplayEquipmentImage}" Width="75" Height="75" HorizontalAlignment="Left" />
                             <TextBlock Text="{Binding TotalElementDamage, StringFormat={}{0:F2}}" VerticalAlignment="Bottom" HorizontalAlignment="Left"></TextBlock>
-                            <ListView ItemsSource="{Binding Properties}" HorizontalAlignment="Right">
+                            
+                            
+                            <ListView ItemsSource="{Binding Properties}" HorizontalAlignment="Left" Grid.Column="1">
                                 <ListView.ItemsPanel>
                                     <ItemsPanelTemplate>
                                         <StackPanel Orientation="Horizontal"></StackPanel>
@@ -123,9 +129,9 @@
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
                                         <Grid>
-                                            <StackPanel Orientation="Vertical" Width="60">
+                                            <StackPanel Orientation="Vertical" Width="40">
                                                 <Image Source="{Binding DisplayPropertyImage, Mode=OneWay}" Width="30" Height="30" VerticalAlignment="Top"/>
-                                                <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" Text="{Binding DisplayValue, Mode=OneWay}"/>
+                                                <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" Text="{Binding DisplayValue,StringFormat={}{0:F1}, Mode=OneWay}" FontSize="10"/>
                                             </StackPanel>
                                         </Grid>
                                     </DataTemplate>
