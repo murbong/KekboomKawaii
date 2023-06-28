@@ -15,9 +15,9 @@ namespace KekboomKawaii
     {
         None = 0,
         World = 1,
-        Team = 4,
-        Recruit = 64,
-        Guild = 128
+        Team = 3,
+        Recruit = 7,
+        Guild = 8
     }
 
     public enum GenderEnum : int

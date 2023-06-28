@@ -2,9 +2,11 @@
 
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 using Windows.Devices.Bluetooth.GenericAttributeProfile;
 
 namespace KekboomKawaii.Models
@@ -18,6 +20,7 @@ namespace KekboomKawaii.Models
         public string Violation { get; set; }
         public string Message { get; set; }
         public string Checksum { get; set; }
+        public string Token { get; set; }
         public string AppropLevel { get; set; }
         public int Level { get; set; }
         public GenderEnum Gender { get; set; }
@@ -85,7 +88,7 @@ namespace KekboomKawaii.Models
 
             SuppressorLevel = reader.ReadString();
 
-            reader.ReadBytes(8);
+            Token = reader.ReadString();
 
             AvatarFrame = reader.ReadString();
 
@@ -96,6 +99,8 @@ namespace KekboomKawaii.Models
             Title = reader.ReadString();
 
             NickName = reader.ReadString();
+
+            Debug.WriteLine(ChatClass.ToString());
 
         }
     }

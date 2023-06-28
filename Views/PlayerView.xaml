@@ -129,7 +129,7 @@
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
                                         <Grid>
-                                            <StackPanel Orientation="Vertical" Width="40">
+                                            <StackPanel Orientation="Vertical" Width="50">
                                                 <Image Source="{Binding DisplayPropertyImage, Mode=OneWay}" Width="30" Height="30" VerticalAlignment="Top"/>
                                                 <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" Text="{Binding DisplayValue,StringFormat={}{0:F1}, Mode=OneWay}" FontSize="10"/>
                                             </StackPanel>

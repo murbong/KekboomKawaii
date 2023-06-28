@@ -672,9 +672,6 @@
     <Resource Include="Resources\Avatar\Avatar_Overseas_17.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Models\Avatar_HalfAnniversary_os_1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\Avatar\Avatar_HalfAnniversary_os_1.png" />
   </ItemGroup>
   <ItemGroup>
@@ -771,11 +768,11 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Equipment\glove_orangetupo.png" />
-    <Resource Include="Resources\Equipment\glove_red_2.png" />
+    <Resource Include="Resources\Equipment\glove_red.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Equipment\reactor_os_orangetupo.png" />
-    <Resource Include="Resources\Equipment\reactor_red_2.png" />
+    <Resource Include="Resources\Equipment\reactor_os_red.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Equipment\armband_red_1.png" />
@@ -788,7 +785,6 @@
     <Resource Include="Resources\Equipment\core_red_2.png" />
     <Resource Include="Resources\Equipment\exoskeleton_red_1.png" />
     <Resource Include="Resources\Equipment\exoskeleton_red_2.png" />
-    <Resource Include="Resources\Equipment\glove_red_1.png" />
     <Resource Include="Resources\Equipment\Helmet_red_1.png" />
     <Resource Include="Resources\Equipment\Helmet_red_2.png" />
     <Resource Include="Resources\Equipment\pants_red_1.png" />
@@ -804,10 +800,22 @@
     <Resource Include="Resources\Weapon\chainsaw_physic.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Weapon\yizhi_SSR_Rubilia_Thu01.png" />
+    <Resource Include="Resources\Weapon\rubilia_thunder.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Weapon\queen_superpower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Weapon\brush_fire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Avatar\Avatar_Overseas_19.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_20.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_21.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Avatar\Avatar_Overseas_23.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\MaterialDesignThemes.4.6.1\build\MaterialDesignThemes.targets" Condition="Exists('packages\MaterialDesignThemes.4.6.1\build\MaterialDesignThemes.targets')" />

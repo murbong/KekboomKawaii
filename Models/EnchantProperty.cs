@@ -46,9 +46,9 @@ namespace KekboomKawaii.Models
                 {
                     if (Name.Contains("ExtraUp"))
                     {
-                        return $"{Value * 100}(E)%";
+                        return $"{Value * 100:F2}(E)%";
                     }
-                    return $"{Value * 100}%";
+                    return $"{Value * 100:F2}%";
 
                 }
                 return Value.ToString("F2");
