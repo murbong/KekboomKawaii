@@ -21,7 +21,7 @@ namespace KekboomKawaii.ViewModels
 
         public void SaveCurrentPlayer(object sender)
         {
-            File.WriteAllText($@"Player/{UID}_{PlayerName}_{DateTime.Now.ToString("yyyyMMdd")}.json", JsonConvert.SerializeObject(playerData,Formatting.Indented));
+            File.WriteAllText($@"Player/{UID}_{PlayerName}_{DateTime.Now.ToString("yyyyMMdd")}.json", JsonConvert.SerializeObject(playerData, Formatting.Indented));
         }
 
         public string CurentPosition => playerData.CurentPosition;
@@ -61,7 +61,7 @@ namespace KekboomKawaii.ViewModels
             {
                 var AttackArr = new float[] { ThunderAtk, IceAtk, FireAtk, PhysicAttack };
 
-                var MaxAttack = AttackArr.OrderByDescending(a=>a).First();
+                var MaxAttack = AttackArr.OrderByDescending(a => a).First();
 
                 if (MaxAttack == ThunderAtk) return EnchantElement.Thunder;
                 else if (MaxAttack == IceAtk) return EnchantElement.Ice;
@@ -108,17 +108,22 @@ namespace KekboomKawaii.ViewModels
         {
             get
             {
+
+                var AttackArr = new float[] { ThunderAtkBase, IceAtkBase, FireAtkBase, PhysicAttackBase };
+
+                var MaxAttackBase = AttackArr.OrderByDescending(a => a).First();
+
                 var list = new List<Equipment>();
 
                 for (var i = 0; i < 20; i++)
                 {
                     if (playerData.KeyData.TryGetValue($"Equipment_{i}", out object val))
                     {
-                        list.Add(new Equipment((string)val));
+                        list.Add(new Equipment((string)val, MaxAttackBase, PrimaryElement));
                     }
                 }
 
-                return list.OrderBy(x => x.GetAttackValue(PrimaryElement)).OrderByDescending(x=>x.Priority).ToList();
+                return list.OrderBy(x => x.GetAttackValue(PrimaryElement)).OrderByDescending(x => x.Priority).ToList();
 
             }
         }

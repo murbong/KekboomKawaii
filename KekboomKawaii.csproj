@@ -481,28 +481,6 @@
     <Resource Include="Resources\Equipment\reactor_os_red.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Equipment\armband_red_1.png" />
-    <Resource Include="Resources\Equipment\armband_red_2.png" />
-    <Resource Include="Resources\Equipment\belt_red_1.png" />
-    <Resource Include="Resources\Equipment\belt_red_2.png" />
-    <Resource Include="Resources\Equipment\cloth_red_1.png" />
-    <Resource Include="Resources\Equipment\cloth_red_2.png" />
-    <Resource Include="Resources\Equipment\core_red_1.png" />
-    <Resource Include="Resources\Equipment\core_red_2.png" />
-    <Resource Include="Resources\Equipment\exoskeleton_red_1.png" />
-    <Resource Include="Resources\Equipment\exoskeleton_red_2.png" />
-    <Resource Include="Resources\Equipment\Helmet_red_1.png" />
-    <Resource Include="Resources\Equipment\Helmet_red_2.png" />
-    <Resource Include="Resources\Equipment\pants_red_1.png" />
-    <Resource Include="Resources\Equipment\pants_red_2.png" />
-    <Resource Include="Resources\Equipment\shawl_red_1.png" />
-    <Resource Include="Resources\Equipment\shawl_red_2.png" />
-    <Resource Include="Resources\Equipment\shoes_red_1.png" />
-    <Resource Include="Resources\Equipment\shoes_red_2.png" />
-    <Resource Include="Resources\Equipment\visor_red_1.png" />
-    <Resource Include="Resources\Equipment\visor_red_2.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\Weapon\chainsaw_physic.png" />
   </ItemGroup>
   <ItemGroup>
@@ -887,6 +865,36 @@
     <Resource Include="Resources\Avatar\Avatar_TX_vera_01.png" />
     <Resource Include="Resources\Avatar\Avatar_TX_xianrenzhang_01.png" />
     <Resource Include="Resources\Avatar\Avatar_TX_Xiazuo_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Equipment\armband_orangetupo.png" />
+    <Resource Include="Resources\Equipment\armband_red.png" />
+    <Resource Include="Resources\Equipment\belt_orangetupo.png" />
+    <Resource Include="Resources\Equipment\belt_red.png" />
+    <Resource Include="Resources\Equipment\cloth_orangetupo.png" />
+    <Resource Include="Resources\Equipment\cloth_red.png" />
+    <Resource Include="Resources\Equipment\core_orangetupo.png" />
+    <Resource Include="Resources\Equipment\core_red.png" />
+    <Resource Include="Resources\Equipment\exoskeleton_orangetupo.png" />
+    <Resource Include="Resources\Equipment\exoskeleton_red.png" />
+    <Resource Include="Resources\Equipment\Helmet_orangetupo.png" />
+    <Resource Include="Resources\Equipment\Helmet_red.png" />
+    <Resource Include="Resources\Equipment\pants_orangetupo.png" />
+    <Resource Include="Resources\Equipment\pants_red.png" />
+    <Resource Include="Resources\Equipment\shawl_orangetupo.png" />
+    <Resource Include="Resources\Equipment\shawl_red.png" />
+    <Resource Include="Resources\Equipment\shoes_orangetupo.png" />
+    <Resource Include="Resources\Equipment\shoes_red.png" />
+    <Resource Include="Resources\Equipment\visor_orangetupo.png" />
+    <Resource Include="Resources\Equipment\visor_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Weapon\feise_fire.png" />
+    <Resource Include="Resources\Weapon\mimi_thunder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Weapon\yulan_ice.png" />
+    <Resource Include="Resources\Weapon\zeke_physic.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\MaterialDesignThemes.4.6.1\build\MaterialDesignThemes.targets" Condition="Exists('packages\MaterialDesignThemes.4.6.1\build\MaterialDesignThemes.targets')" />

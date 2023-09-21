@@ -19,8 +19,11 @@ namespace KekboomKawaii.Models
         public string Name { get; set; }
         public int Enchant { get; set; }
         public int Star { get; set; }
-
         public int Priority { get; set; }
+
+        private float maxAttackBase;
+
+        private EnchantElement playerElement;
         public List<EnchantProperty> Properties { get; set; }
 
         public float TotalElementDamage
@@ -28,6 +31,14 @@ namespace KekboomKawaii.Models
             get
             {
                 return GetAttackValue(GetEnchantElement);
+            }
+        }
+
+        public float GetExtraDamage
+        {
+            get
+            {
+                return GetExtraValue(GetEnchantElement);
             }
         }
 
@@ -55,7 +66,15 @@ namespace KekboomKawaii.Models
 
         public float GetAttackValue(EnchantElement element)
         {
-            return Properties.Where(prop => prop.Type == EnchantType.Atk && (prop.Element == EnchantElement.None || prop.Element == element)).Sum(a => a.Value);
+            return Properties.Where(prop => prop.Type == EnchantType.Atk && (prop.Element == EnchantElement.None || prop.Element == element) && prop.isEnchantMult == false).Sum(a => a.Value);
+        }
+
+        public float GetExtraValue(EnchantElement element)
+        {
+            var val = Properties.Any(prop => prop.Element == element && prop.isEnchantMult == true && prop.Type == EnchantType.Atk);
+            if (val == false) return 0;
+            return Properties.First(prop => prop.Element == element && prop.isEnchantMult == true && prop.Type == EnchantType.Atk).Value * maxAttackBase;
+
         }
 
         public Equipment()
@@ -66,8 +85,10 @@ namespace KekboomKawaii.Models
 
         //shawl_orange#29#1,CommonAtkAdded;2,679.502686;|1,IceDefAdded;2,1366.897705;|1,ThunderDefAdded;2,215.000000;|1,MaxHealthAdded;2,4125.000000;#5#
 
-        public Equipment(string rawEquipment) : this()
+        public Equipment(string rawEquipment, float maxAttackBase, EnchantElement playerElement) : this()
         {
+            this.maxAttackBase = maxAttackBase;
+            this.playerElement = playerElement;
 
             //var reg = new Regex(@"(\w+)#(\d+)#(\d+),(\w+);([\d,]*\.?\d*);\|(\d+),(\w+);([\d,]*\.?\d*);\|(\d+),(\w+);([\d,]*\.?\d*);\|(\d+),(\w+);([\d,]*\.?\d*);#(\d+)#");
             var reg = new Regex(@"(\w+)#(\d+)#(.+)#(\d+)#");
@@ -97,6 +118,8 @@ namespace KekboomKawaii.Models
             {
                 Priority++;
             }
+
+            this.playerElement = playerElement;
         }
     }
 }

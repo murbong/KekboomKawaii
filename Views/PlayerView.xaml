@@ -111,14 +111,17 @@
                                 <ColumnDefinition Width="75"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <TextBlock HorizontalAlignment="Left">
+                            <TextBlock HorizontalAlignment="Left" FontSize="10">
                                 <Run Text="{Binding Star, Mode=OneWay}"/>
                                 <Run Text="{Binding Enchant, Mode=OneWay}"/>
                                 <Run Text="{Binding GetEnchantElement, Mode=OneWay}"/>
                             </TextBlock>
                             <Image Source="{Binding DisplayEquipmentImage}" Width="75" Height="75" HorizontalAlignment="Left" />
-                            <TextBlock Text="{Binding TotalElementDamage, StringFormat={}{0:F2}}" VerticalAlignment="Bottom" HorizontalAlignment="Left"></TextBlock>
-                            
+                            <TextBlock  VerticalAlignment="Bottom" HorizontalAlignment="Left" FontSize="10">
+                                <Run Text="{Binding TotalElementDamage,StringFormat={}{0:F1}, Mode=OneWay}"/>
+                                <Run Text="+"/>
+                                <Run Text="{Binding GetExtraDamage,StringFormat={}{0:F1}, Mode=OneWay}"/>
+                            </TextBlock>
                             
                             <ListView ItemsSource="{Binding Properties}" HorizontalAlignment="Left" Grid.Column="1">
                                 <ListView.ItemsPanel>
