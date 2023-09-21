@@ -102,15 +102,15 @@ namespace KekboomKawaii.ViewModels
             OnPropertyChanged("VisibleCollection");
         }
 
-        public ChatClassEnum CurrentVisibleChat
+        public ChatClassFlag CurrentVisibleChat
         {
             get
             {
-                ChatClassEnum chatClass = ChatClassEnum.None;
-                if (selectGuild) chatClass |= ChatClassEnum.Guild;
-                if (selectRecruit) chatClass |= ChatClassEnum.Recruit;
-                if (selectTeam) chatClass |= ChatClassEnum.Team;
-                if (selectWorld) chatClass |= ChatClassEnum.World;
+                ChatClassFlag chatClass = ChatClassFlag.None;
+                if (selectGuild) chatClass |= ChatClassFlag.Guild;
+                if (selectRecruit) chatClass |= ChatClassFlag.Recruit;
+                if (selectTeam) chatClass |= ChatClassFlag.Team;
+                if (selectWorld) chatClass |= ChatClassFlag.World;
                 return chatClass;
             }
         }

@@ -13,14 +13,15 @@ namespace KekboomKawaii.Models
     public class PlayerData : TOFPacket
     {
 
-       
+
         public string CurentPosition { get; set; }
         public string PlayerName { get; set; }
         public string Unknown { get; set; }
         public string UID { get; set; }
-        public Dictionary<string,object> KeyData { get; set; }
+        public Dictionary<string, object> KeyData { get; set; }
 
-        public PlayerData() { 
+        public PlayerData()
+        {
             KeyData = new Dictionary<string, object>();
         }
 
@@ -50,7 +51,7 @@ namespace KekboomKawaii.Models
 
             var list = reader.ReadIntList();
 
-            for (var i = 0; i <200; i++)
+            for (var i = 0; i < 200; i++)
             {
                 reader.ReadBytes(4);
                 var type = reader.ReadInt32();
@@ -137,7 +138,7 @@ namespace KekboomKawaii.Models
             var name = reader.ReadString();
 
 
-            foreach(var kv in KeyData)
+            foreach (var kv in KeyData)
             {
                 var key = kv.Key;
                 var value = kv.Value;

@@ -217,90 +217,14 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Resource Include="Resources\Database\AvatarConfigDataTable.json" />
+    <Resource Include="Resources\Database\AvatarFrameConfigDataTable.json" />
+    <Resource Include="Resources\Database\DT_Title.json" />
+    <Resource Include="Resources\Database\Game.json" />
     <Resource Include="Resources\Fonts\ONE Mobile POP.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Avatar\aige.png" />
-    <Resource Include="Resources\Avatar\Avatar09.png" />
-    <Resource Include="Resources\Avatar\Avatar10.png" />
-    <Resource Include="Resources\Avatar\Avatar11.png" />
-    <Resource Include="Resources\Avatar\Avatar12.png" />
-    <Resource Include="Resources\Avatar\Avatar18.png" />
-    <Resource Include="Resources\Avatar\Avatar19.png" />
-    <Resource Include="Resources\Avatar\Avatar20.png" />
-    <Resource Include="Resources\Avatar\Avatar21.png" />
-    <Resource Include="Resources\Avatar\Avatar22.png" />
-    <Resource Include="Resources\Avatar\Avatar23.png" />
-    <Resource Include="Resources\Avatar\Avatar24.png" />
-    <Resource Include="Resources\Avatar\Avatar25.png" />
-    <Resource Include="Resources\Avatar\Avatar26.png" />
-    <Resource Include="Resources\Avatar\Avatar27.png" />
-    <Resource Include="Resources\Avatar\Avatar28.png" />
-    <Resource Include="Resources\Avatar\Avatar29.png" />
-    <Resource Include="Resources\Avatar\Avatar30.png" />
-    <Resource Include="Resources\Avatar\Avatar31.png" />
-    <Resource Include="Resources\Avatar\Avatar32.png" />
-    <Resource Include="Resources\Avatar\Avatar33.png" />
-    <Resource Include="Resources\Avatar\Avatar34.png" />
-    <Resource Include="Resources\Avatar\Avatar35.png" />
-    <Resource Include="Resources\Avatar\Avatar01.png" />
-    <Resource Include="Resources\Avatar\Avatar02.png" />
-    <Resource Include="Resources\Avatar\kefu.png" />
-    <Resource Include="Resources\Avatar\Avatar37.png" />
-    <Resource Include="Resources\Avatar\Avatarf401.png" />
-    <Resource Include="Resources\Avatar\Avatar05.png" />
-    <Resource Include="Resources\Avatar\Avatar_iw_2.png" />
-    <Resource Include="Resources\Avatar\Avatar_iw_3.png" />
-    <Resource Include="Resources\Avatar\Avatar_iw_4.png" />
-    <Resource Include="Resources\Avatar\Avatar_korea_4.png" />
-    <Resource Include="Resources\Avatar\Avatar_korea_1.png" />
-    <Resource Include="Resources\Avatar\Avatar_korea_3.png" />
-    <Resource Include="Resources\Avatar\Avatar06.png" />
-    <Resource Include="Resources\Avatar\Avatar_Overseas_10.png" />
-    <Resource Include="Resources\Avatar\Avatar_Overseas_11.png" />
-    <Resource Include="Resources\Avatar\Avatar_Overseas_9.png" />
-    <Resource Include="Resources\Avatar\Avatar03.png" />
-    <Resource Include="Resources\Avatar\Avatar_Overseas_6.png" />
-    <Resource Include="Resources\Avatar\Avatar_Overseas_5.png" />
-    <Resource Include="Resources\Avatar\Avatar_Overseas_8.png" />
-    <Resource Include="Resources\Avatar\Avatar_Overseas_3.png" />
-    <Resource Include="Resources\Avatar\Avatar_Overseas_2.png" />
-    <Resource Include="Resources\Avatar\Avatar_Overseas_4.png" />
-    <Resource Include="Resources\Avatar\Avatar_Overseas_7.png" />
-    <Resource Include="Resources\Avatar\Avatar_Overseas_1.png" />
-    <Resource Include="Resources\Avatar\Avatar04.png" />
-    <Resource Include="Resources\Avatar\Avatar08.png" />
-    <Resource Include="Resources\Avatar\Avatar07.png" />
-    <Resource Include="Resources\Avatar\bailing.png" />
-    <Resource Include="Resources\Avatar\baiyuekui.png" />
-    <Resource Include="Resources\Avatar\bupoxiao.png" />
-    <Resource Include="Resources\Avatar\gulan.png" />
-    <Resource Include="Resources\Avatar\hida.png" />
-    <Resource Include="Resources\Avatar\kekelite.png" />
-    <Resource Include="Resources\Avatar\kelaodiya.png" />
-    <Resource Include="Resources\Avatar\king.png" />
-    <Resource Include="Resources\Avatar\leibei.png" />
-    <Resource Include="Resources\Avatar\ling.png" />
-    <Resource Include="Resources\Avatar\linye.png" />
-    <Resource Include="Resources\Avatar\main_head_bg1.png" />
-    <Resource Include="Resources\Avatar\make.png" />
-    <Resource Include="Resources\Avatar\meilier.png" />
-    <Resource Include="Resources\Avatar\saimier.png" />
-    <Resource Include="Resources\Avatar\sifengyuanyu.png" />
-    <Resource Include="Resources\Avatar\peipei.png" />
-    <Resource Include="Resources\Avatar\wuwan.png" />
-    <Resource Include="Resources\Avatar\xi.png" />
-    <Resource Include="Resources\Avatar\xiluo.png" />
-    <Resource Include="Resources\Avatar\xinghuan.png" />
-    <Resource Include="Resources\Avatar\xiuma.png" />
-    <Resource Include="Resources\Avatar\Avatar17.png" />
-    <Resource Include="Resources\Avatar\Avatar15.png" />
-    <Resource Include="Resources\Avatar\Avatar13.png" />
-    <Resource Include="Resources\Avatar\Avatar14.png" />
-    <Resource Include="Resources\Avatar\Avatar16.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Suppressor\01_0.png" />
@@ -346,70 +270,7 @@
     <Resource Include="Resources\Suppressor\08_5.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\AvatarFrame\AvatarFrame03.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame04.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame07.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame08.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame11.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame12.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame17.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame21.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame23.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame24.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame30.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame31.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame32.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame33.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame34.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame35.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame36.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame37.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame38.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame39.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame40.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame41.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame42.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame43.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame44.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame45.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame46.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame48.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame54.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrameiw_02.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrameiw_03.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrameiw_04.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFramekr_01.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_baiyuekui.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_chuangzuodaren.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_fulijia.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_kehuanshijie.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame16.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_make.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_Overseas_3.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame25.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame26.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_rengongdao_huli.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame28.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_rengongdao_wugui.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_tajian.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_tata.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_TX_BestTower.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_TX_gift.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_TX_off.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_Overseas_4.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_TX_Xuhuan.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame22.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_valkiri.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_xuxubaobao.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_yixisi.png" />
-    <Resource Include="Resources\AvatarFrame\TestAvatarFrame01.png" />
-    <Resource Include="Resources\AvatarFrame\TestAvatarFrame02.png" />
-  </ItemGroup>
-  <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Avatar\Avatar_korea_2.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Gender\Female.png" />
@@ -544,9 +405,6 @@
     <Resource Include="Resources\Enchant\icon_hp.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Avatar\Avatar_korea_5.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\Equipment\visor_OS_orange.png" />
   </ItemGroup>
   <ItemGroup>
@@ -554,96 +412,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Equipment\reactor_os_orange.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\AvatarFrame\AvatarFrame47.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\AvatarFrame\AvatarFrame49.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame50.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame51.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame52.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame53.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame55.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame56.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame57.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame58.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame59.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_69.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Avatar\hilda.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Avatar\Avatar_Overseas_12.png" />
-    <Resource Include="Resources\Avatar\Avatar_Overseas_13.png" />
-    <Resource Include="Resources\Avatar\Avatar_Overseas_14.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Avatar\Avatar_tencentfestival_2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Avatar\avatar_shali.png" />
-    <Resource Include="Resources\Avatar\Avatar_tencentfestival_1.png" />
-    <Resource Include="Resources\Avatar\Avatar_tencent_2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_Coffee.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_haijiade.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_hotta.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_iw_1.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_kongzhongleyuan.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_koreafestival_1.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_korea_1.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_naimeixisi.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_rengongdao_feimao.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_rengongdao_heimao.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_rengongdao_nangua.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_shali.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_tencentfestival_3.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_tencentfestival_4.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_tencent_2.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_TX_steam.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_TX_twitch.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_xiazuo.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_xier.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Avatar\ailisi.png" />
-    <Resource Include="Resources\Avatar\annabeila.png" />
-    <Resource Include="Resources\Avatar\fenlier.png" />
-    <Resource Include="Resources\Avatar\fishking_007.png" />
-    <Resource Include="Resources\Avatar\fishking_008.png" />
-    <Resource Include="Resources\Avatar\fishking_009.png" />
-    <Resource Include="Resources\Avatar\fishking_010.png" />
-    <Resource Include="Resources\Avatar\fishking_011.png" />
-    <Resource Include="Resources\Avatar\fishking_012.png" />
-    <Resource Include="Resources\Avatar\fishking_013.png" />
-    <Resource Include="Resources\Avatar\fishking_014.png" />
-    <Resource Include="Resources\Avatar\fishking_015.png" />
-    <Resource Include="Resources\Avatar\fishking_016.png" />
-    <Resource Include="Resources\Avatar\fishking_017.png" />
-    <Resource Include="Resources\Avatar\fishking_018.png" />
-    <Resource Include="Resources\Avatar\fishking_019.png" />
-    <Resource Include="Resources\Avatar\fishking_020.png" />
-    <Resource Include="Resources\Avatar\fishking_021.png" />
-    <Resource Include="Resources\Avatar\fishking_022.png" />
-    <Resource Include="Resources\Avatar\fishking_023.png" />
-    <Resource Include="Resources\Avatar\fishking_024.png" />
-    <Resource Include="Resources\Avatar\fishking_025.png" />
-    <Resource Include="Resources\Avatar\fishking_026.png" />
-    <Resource Include="Resources\Avatar\fishking_027.png" />
-    <Resource Include="Resources\Avatar\fishking_028.png" />
-    <Resource Include="Resources\Avatar\fishking_029.png" />
-    <Resource Include="Resources\Avatar\fishking_030.png" />
-    <Resource Include="Resources\Avatar\fishking_031.png" />
-    <Resource Include="Resources\Avatar\fishking_032.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Avatar\Avatar_koreafestival_1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Avatar\Avatar36.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Sticker\17.gif" />
@@ -658,21 +426,6 @@
     <Resource Include="Resources\Sticker\26.gif" />
     <Resource Include="Resources\Sticker\27.gif" />
     <Resource Include="Resources\Sticker\28.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Avatar\Avatar38.png" />
-    <Resource Include="Resources\Avatar\Avatar39.png" />
-    <Resource Include="Resources\Avatar\Avatar40.png" />
-    <Resource Include="Resources\Avatar\Avatar41.png" />
-    <Resource Include="Resources\Avatar\Avatar42.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Avatar\Avatar_Overseas_15.png" />
-    <Resource Include="Resources\Avatar\Avatar_Overseas_16.png" />
-    <Resource Include="Resources\Avatar\Avatar_Overseas_17.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Avatar\Avatar_HalfAnniversary_os_1.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Equipment\exoskeleton_OS_blue.png" />
@@ -691,50 +444,6 @@
     <Resource Include="Resources\Weapon\umbrella_fire.png" />
     <Resource Include="Resources\Weapon\yoyo_ice.png" />
     <Resource Include="Resources\Weapon\arm_physic.png" />
-    <Resource Include="Resources\Avatar\wumi.png" />
-    <Resource Include="Resources\Avatar\Avatar_49.png" />
-    <Resource Include="Resources\Avatar\Avatar_47.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_71.png" />
-    <Resource Include="Resources\Avatar\Avatar43.png" />
-    <Resource Include="Resources\Avatar\Avatar44.png" />
-    <Resource Include="Resources\Avatar\Avatar45.png" />
-    <Resource Include="Resources\Avatar\Avatar_48.png" />
-    <Resource Include="Resources\Avatar\Avatar_50.png" />
-    <Resource Include="Resources\Avatar\Avatar_51.png" />
-    <Resource Include="Resources\Avatar\Avatar_52.png" />
-    <Resource Include="Resources\Avatar\Avatar_53.png" />
-    <Resource Include="Resources\Avatar\Avatar_54.png" />
-    <Resource Include="Resources\Avatar\Avatar_55.png" />
-    <Resource Include="Resources\Avatar\Avatar_56.png" />
-    <Resource Include="Resources\Avatar\Avatar_57.png" />
-    <Resource Include="Resources\Avatar\Avatar_58.png" />
-    <Resource Include="Resources\Avatar\Avatar_59.png" />
-    <Resource Include="Resources\Avatar\Avatar_60.png" />
-    <Resource Include="Resources\Avatar\feiouna.png" />
-    <Resource Include="Resources\Avatar\genuonuo.png" />
-    <Resource Include="Resources\Avatar\lan.png" />
-    <Resource Include="Resources\Avatar\leibiliya.png" />
-    <Resource Include="Resources\Avatar\yikaluosi.png" />
-    <Resource Include="Resources\Avatar\Avatar_Overseas_18.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_60.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_61.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_62.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_63.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_64.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_65.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_66.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_67.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_68.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_70.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_72.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_73.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_74.png" />
-    <Resource Include="Resources\Avatar\Avatar_korea_shequnos_01.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_korea_shequnos_01.png" />
-    <Resource Include="Resources\AvatarFrame\AvatarFrame_HalfAnniversary_os_1.png" />
-    <Resource Include="Resources\AvatarFrame\avatarframe_txtaqing_os01.png" />
-    <Resource Include="Resources\Avatar\tianlang.png" />
-    <Resource Include="Resources\Avatar\avatar_txxunhai_os01.png" />
     <Resource Include="Resources\Weapon\snipe_fire.png" />
   </ItemGroup>
   <ItemGroup>
@@ -742,9 +451,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Weapon\Whip_physic.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Avatar\avatar_txtaqing_os01.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Enchant\icon_atk_physic.png" />
@@ -809,13 +515,378 @@
     <Resource Include="Resources\Weapon\brush_fire.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\AvatarFrame\AvatarFrameiw_02.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrameiw_03.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrameiw_04.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFramekr_01.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_epic_os01.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_Galaxy_01.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_HalfAnniversary_os_1.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_iwplayfestival_1.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_iwplayoffline_01.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_iw_1.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_koreafestival_1.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_koreaMoonFestival_01.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_korea_1.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_korea_shequnos_01.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_Overseas_Anniversary01.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_PlayStation_01.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_tencentdiqu_01.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_tencentfestival_1.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_tencentfestival_2.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_tencentfestival_3.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_tencentfestival_4.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_tencentugc_os_1.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_tencentugc_os_2.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_tencent_2.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_txAnniversary01.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_txAnniversary02.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_txAnniversary03.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_txcreatos_01.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_txcreatos_02.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_txcreatos_03.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_txcreatos_04.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_txcreatos_05.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_txcreatos_06.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_txshikuang_01.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_txtaqing_os01.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_TX_BestTower.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_TX_Creatower.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_TX_CreatowerMaster.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_TX_CreatowerOfFantasy.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_TX_gift.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_TX_off.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_TX_steam.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_TX_twitch.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_TX_Xuhuan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_30.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_48.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_61.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_63.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_chuangzuodaren.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_Coffee.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_kongzhongleyuan.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_shali.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_01.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_02.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_023.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_024.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_100.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_101.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_102.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_103.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_104.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_105.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_21.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_31.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_32.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_33.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_34.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_35.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_36.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_37.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_38.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_39.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_40.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_41.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_42.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_43.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_44.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_45.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_46.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_47.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_49.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_50.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_51.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_52.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_53.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_54.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_55.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_56.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_57.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_58.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_59.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_60.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_62.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_64.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_65.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_66.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_67.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_68.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_69.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_70.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_71.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_72.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_73.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_74.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_75.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_76.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_77.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_78.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_79.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_80.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_81.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_82.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_83.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_85.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_86.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_87.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_88.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_89.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_90.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_91.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_92.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_93.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_94.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_95.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_96.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_97.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_98.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_99.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_baiyuekui.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_fulijia.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_haijiade.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_hotta.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_kehuanshijie.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_make.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_naimeixisi.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_rengongdao_feimao.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_rengongdao_heimao.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_rengongdao_huli.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_rengongdao_nangua.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_rengongdao_wugui.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_suoni.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_tajian.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_tata.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_Valentine.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_valkiri.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_xiazuo.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_xier.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_xuxubaobao.png" />
+    <Resource Include="Resources\AvatarFrame\AvatarFrame_yixisi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Avatar\Avatar09.png" />
+    <Resource Include="Resources\Avatar\Avatar10.png" />
+    <Resource Include="Resources\Avatar\Avatar11.png" />
+    <Resource Include="Resources\Avatar\Avatar12.png" />
+    <Resource Include="Resources\Avatar\Avatar18.png" />
+    <Resource Include="Resources\Avatar\Avatar19.png" />
+    <Resource Include="Resources\Avatar\Avatar20.png" />
+    <Resource Include="Resources\Avatar\Avatar21.png" />
+    <Resource Include="Resources\Avatar\Avatar22.png" />
+    <Resource Include="Resources\Avatar\Avatar23.png" />
+    <Resource Include="Resources\Avatar\Avatar24.png" />
+    <Resource Include="Resources\Avatar\Avatar25.png" />
+    <Resource Include="Resources\Avatar\Avatar26.png" />
+    <Resource Include="Resources\Avatar\Avatar27.png" />
+    <Resource Include="Resources\Avatar\Avatar28.png" />
+    <Resource Include="Resources\Avatar\Avatar29.png" />
+    <Resource Include="Resources\Avatar\Avatar30.png" />
+    <Resource Include="Resources\Avatar\Avatar31.png" />
+    <Resource Include="Resources\Avatar\Avatar32.png" />
+    <Resource Include="Resources\Avatar\Avatar33.png" />
+    <Resource Include="Resources\Avatar\Avatar34.png" />
+    <Resource Include="Resources\Avatar\Avatar35.png" />
+    <Resource Include="Resources\Avatar\avatar_01.png" />
+    <Resource Include="Resources\Avatar\avatar_02.png" />
+    <Resource Include="Resources\Avatar\avatar_10.png" />
+    <Resource Include="Resources\Avatar\Avatar_100.png" />
+    <Resource Include="Resources\Avatar\Avatar_101.png" />
+    <Resource Include="Resources\Avatar\Avatar_102.png" />
+    <Resource Include="Resources\Avatar\Avatar_103.png" />
+    <Resource Include="Resources\Avatar\Avatar_104.png" />
+    <Resource Include="Resources\Avatar\Avatar_105.png" />
+    <Resource Include="Resources\Avatar\Avatar_36.png" />
+    <Resource Include="Resources\Avatar\Avatar_37.png" />
+    <Resource Include="Resources\Avatar\Avatar_37_2.png" />
+    <Resource Include="Resources\Avatar\Avatar_39.png" />
+    <Resource Include="Resources\Avatar\Avatar_40.png" />
+    <Resource Include="Resources\Avatar\Avatar_41.png" />
+    <Resource Include="Resources\Avatar\Avatar_42.png" />
+    <Resource Include="Resources\Avatar\Avatar_43.png" />
+    <Resource Include="Resources\Avatar\Avatar_44.png" />
+    <Resource Include="Resources\Avatar\Avatar_45.png" />
+    <Resource Include="Resources\Avatar\Avatar_46.png" />
+    <Resource Include="Resources\Avatar\Avatar_47.png" />
+    <Resource Include="Resources\Avatar\Avatar_48.png" />
+    <Resource Include="Resources\Avatar\Avatar_49.png" />
+    <Resource Include="Resources\Avatar\Avatar_50.png" />
+    <Resource Include="Resources\Avatar\Avatar_52.png" />
+    <Resource Include="Resources\Avatar\Avatar_53.png" />
+    <Resource Include="Resources\Avatar\Avatar_54.png" />
+    <Resource Include="Resources\Avatar\Avatar_55.png" />
+    <Resource Include="Resources\Avatar\Avatar_56.png" />
+    <Resource Include="Resources\Avatar\Avatar_57.png" />
+    <Resource Include="Resources\Avatar\Avatar_58.png" />
+    <Resource Include="Resources\Avatar\Avatar_59.png" />
+    <Resource Include="Resources\Avatar\Avatar_60.png" />
+    <Resource Include="Resources\Avatar\Avatar_85.png" />
+    <Resource Include="Resources\Avatar\Avatar_86.png" />
+    <Resource Include="Resources\Avatar\Avatar_87.png" />
+    <Resource Include="Resources\Avatar\Avatar_88.png" />
+    <Resource Include="Resources\Avatar\Avatar_89.png" />
+    <Resource Include="Resources\Avatar\Avatar_90.png" />
+    <Resource Include="Resources\Avatar\Avatar_91.png" />
+    <Resource Include="Resources\Avatar\Avatar_92.png" />
+    <Resource Include="Resources\Avatar\Avatar_93.png" />
+    <Resource Include="Resources\Avatar\Avatar_94.png" />
+    <Resource Include="Resources\Avatar\Avatar_95.png" />
+    <Resource Include="Resources\Avatar\Avatar_96_feise.png" />
+    <Resource Include="Resources\Avatar\Avatar_97.png" />
+    <Resource Include="Resources\Avatar\Avatar_98.png" />
+    <Resource Include="Resources\Avatar\Avatar_99.png" />
+    <Resource Include="Resources\Avatar\avatar_f401.png" />
+    <Resource Include="Resources\Avatar\avatar_fulijia.png" />
+    <Resource Include="Resources\Avatar\avatar_naimeixisi.png" />
+    <Resource Include="Resources\Avatar\avatar_shali.png" />
+    <Resource Include="Resources\Avatar\Avatar_suoni.png" />
+    <Resource Include="Resources\Avatar\avatar_xiazuo.png" />
+    <Resource Include="Resources\Avatar\avatar_xier.png" />
+    <Resource Include="Resources\Avatar\avatar_yixisi.png" />
+    <Resource Include="Resources\Avatar\touxiang_aige.png" />
+    <Resource Include="Resources\Avatar\touxiang_ailisi.png" />
+    <Resource Include="Resources\Avatar\touxiang_annabeila.png" />
+    <Resource Include="Resources\Avatar\touxiang_bailing.png" />
+    <Resource Include="Resources\Avatar\touxiang_baiyuekui.png" />
+    <Resource Include="Resources\Avatar\touxiang_bupoxiao.png" />
+    <Resource Include="Resources\Avatar\touxiang_feiouna.png" />
+    <Resource Include="Resources\Avatar\touxiang_fenlier.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_007.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_008.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_009.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_010.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_011.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_012.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_013.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_014.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_015.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_016.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_017.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_018.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_019.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_020.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_021.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_022.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_023.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_024.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_025.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_026.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_027.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_028.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_029.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_030.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_031.png" />
+    <Resource Include="Resources\Avatar\touxiang_fishking_032.png" />
+    <Resource Include="Resources\Avatar\touxiang_fish_033.png" />
+    <Resource Include="Resources\Avatar\touxiang_fish_034.png" />
+    <Resource Include="Resources\Avatar\touxiang_fish_035.png" />
+    <Resource Include="Resources\Avatar\touxiang_fish_036.png" />
+    <Resource Include="Resources\Avatar\touxiang_fish_037.png" />
+    <Resource Include="Resources\Avatar\touxiang_fish_038.png" />
+    <Resource Include="Resources\Avatar\touxiang_fish_039.png" />
+    <Resource Include="Resources\Avatar\touxiang_fish_040.png" />
+    <Resource Include="Resources\Avatar\touxiang_genuonuo.png" />
+    <Resource Include="Resources\Avatar\touxiang_gulan.png" />
+    <Resource Include="Resources\Avatar\touxiang_hilda.png" />
+    <Resource Include="Resources\Avatar\touxiang_jiuyu_fishking_001.png" />
+    <Resource Include="Resources\Avatar\touxiang_jiuyu_fishking_003.png" />
+    <Resource Include="Resources\Avatar\touxiang_jiuyu_fishking_004.png" />
+    <Resource Include="Resources\Avatar\touxiang_jiuyu_fishking_008.png" />
+    <Resource Include="Resources\Avatar\touxiang_jiuyu_fishking_012.png" />
+    <Resource Include="Resources\Avatar\touxiang_jiuyu_fishking_014.png" />
+    <Resource Include="Resources\Avatar\touxiang_jiuyu_fishking_015.png" />
+    <Resource Include="Resources\Avatar\touxiang_jiuyu_fishking_016.png" />
+    <Resource Include="Resources\Avatar\touxiang_jiuyu_fishking_020.png" />
+    <Resource Include="Resources\Avatar\touxiang_jiuyu_fishking_026.png" />
+    <Resource Include="Resources\Avatar\touxiang_jiuyu_fishking_027.png" />
+    <Resource Include="Resources\Avatar\touxiang_jiuyu_fishking_028.png" />
+    <Resource Include="Resources\Avatar\touxiang_jiuyu_fishking_030.png" />
+    <Resource Include="Resources\Avatar\touxiang_jiuyu_fishking_031.png" />
+    <Resource Include="Resources\Avatar\touxiang_jiuyu_fishking_035.png" />
+    <Resource Include="Resources\Avatar\touxiang_kekelite.png" />
+    <Resource Include="Resources\Avatar\touxiang_kelaodiya.png" />
+    <Resource Include="Resources\Avatar\touxiang_king.png" />
+    <Resource Include="Resources\Avatar\touxiang_lan.png" />
+    <Resource Include="Resources\Avatar\touxiang_leibei.png" />
+    <Resource Include="Resources\Avatar\touxiang_leibiliya.png" />
+    <Resource Include="Resources\Avatar\touxiang_ling.png" />
+    <Resource Include="Resources\Avatar\touxiang_linye.png" />
+    <Resource Include="Resources\Avatar\touxiang_liuhuo.png" />
+    <Resource Include="Resources\Avatar\touxiang_make.png" />
+    <Resource Include="Resources\Avatar\touxiang_meilier.png" />
+    <Resource Include="Resources\Avatar\touxiang_mimi.png" />
+    <Resource Include="Resources\Avatar\touxiang_mingjing.png" />
+    <Resource Include="Resources\Avatar\touxiang_saimier.png" />
+    <Resource Include="Resources\Avatar\touxiang_sifengyuanyu.png" />
+    <Resource Include="Resources\Avatar\touxiang_susan.png" />
+    <Resource Include="Resources\Avatar\touxiang_tianlang.png" />
+    <Resource Include="Resources\Avatar\touxiang_wumi.png" />
+    <Resource Include="Resources\Avatar\touxiang_wuwan.png" />
+    <Resource Include="Resources\Avatar\touxiang_xi.png" />
+    <Resource Include="Resources\Avatar\touxiang_xiluo.png" />
+    <Resource Include="Resources\Avatar\touxiang_xinghuan.png" />
+    <Resource Include="Resources\Avatar\touxiang_xiuma.png" />
+    <Resource Include="Resources\Avatar\touxiang_yikaluosi.png" />
+    <Resource Include="Resources\Avatar\touxiang_yulan.png" />
+    <Resource Include="Resources\Avatar\touxiang_zhipu_gui.png" />
+    <Resource Include="Resources\Avatar\touxiang_zhipu_huli.png" />
+    <Resource Include="Resources\Avatar\touxiang_zhipu_jixiemao.png" />
+    <Resource Include="Resources\Avatar\touxiang_zhipu_mao.png" />
+    <Resource Include="Resources\Avatar\touxiang_zhipu_nangua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Avatar\Avatar_HalfAnniversary_os_1.png" />
+    <Resource Include="Resources\Avatar\Avatar_iwplayoffline_01.png" />
+    <Resource Include="Resources\Avatar\Avatar_iw_2.png" />
+    <Resource Include="Resources\Avatar\Avatar_iw_3.png" />
+    <Resource Include="Resources\Avatar\Avatar_iw_4.png" />
+    <Resource Include="Resources\Avatar\Avatar_iw_5.png" />
+    <Resource Include="Resources\Avatar\Avatar_koreafestival_1.png" />
+    <Resource Include="Resources\Avatar\Avatar_koreaMoonFestival_01.png" />
+    <Resource Include="Resources\Avatar\Avatar_korea_4.png" />
+    <Resource Include="Resources\Avatar\Avatar_korea_5.png" />
+    <Resource Include="Resources\Avatar\Avatar_korea_shequnos_01.png" />
+    <Resource Include="Resources\Avatar\Avatar_KO_Mia_01.png" />
+    <Resource Include="Resources\Avatar\Avatar_KO_Naimeixisi_01.png" />
+    <Resource Include="Resources\Avatar\Avatar_KO_Shali_01.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_10.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_11.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_12.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_13.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_14.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_15.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_16.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_17.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_18.png" />
     <Resource Include="Resources\Avatar\Avatar_Overseas_19.png" />
     <Resource Include="Resources\Avatar\Avatar_Overseas_20.png" />
     <Resource Include="Resources\Avatar\Avatar_Overseas_21.png" />
     <Resource Include="Resources\Avatar\Avatar_Overseas_22.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\Avatar\Avatar_Overseas_23.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_24.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_25.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_26.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_27.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_9.png" />
+    <Resource Include="Resources\Avatar\Avatar_Overseas_Anniversary01.png" />
+    <Resource Include="Resources\Avatar\Avatar_tencentfestival_1.png" />
+    <Resource Include="Resources\Avatar\Avatar_tencentfestival_2.png" />
+    <Resource Include="Resources\Avatar\Avatar_tencent_2.png" />
+    <Resource Include="Resources\Avatar\Avatar_txtaqing_os01.png" />
+    <Resource Include="Resources\Avatar\Avatar_txxunhai_os01.png" />
+    <Resource Include="Resources\Avatar\Avatar_TX_GFQ_01.png" />
+    <Resource Include="Resources\Avatar\Avatar_TX_leibei_01.png" />
+    <Resource Include="Resources\Avatar\Avatar_TX_luqiya_01.png" />
+    <Resource Include="Resources\Avatar\Avatar_TX_Naimeixisi_01.png" />
+    <Resource Include="Resources\Avatar\Avatar_TX_Shali_01.png" />
+    <Resource Include="Resources\Avatar\Avatar_TX_vera_01.png" />
+    <Resource Include="Resources\Avatar\Avatar_TX_xianrenzhang_01.png" />
+    <Resource Include="Resources\Avatar\Avatar_TX_Xiazuo_01.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\MaterialDesignThemes.4.6.1\build\MaterialDesignThemes.targets" Condition="Exists('packages\MaterialDesignThemes.4.6.1\build\MaterialDesignThemes.targets')" />

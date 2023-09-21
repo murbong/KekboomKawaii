@@ -14,6 +14,18 @@ namespace KekboomKawaii.ViewModels
     public class PlayerListViewModel : ObservableCollection<PlayerViewModel>
     {
 
+        public void Sort()
+        {
+            var sortedItems = new List<PlayerViewModel>(this);
+
+            sortedItems.Sort((a,b)=>a.Compare(b));
+
+            foreach (var item in sortedItems)
+            {
+                Move(IndexOf(item), sortedItems.IndexOf(item));
+            }
+        }
+
         private PlayerViewModel selectedPlayerViewModel;
         public PlayerViewModel SelectedPlayerViewModel { get { return selectedPlayerViewModel; } set { selectedPlayerViewModel = value; OnPropertyChanged(); } }
         public PlayerListViewModel()
@@ -31,7 +43,11 @@ namespace KekboomKawaii.ViewModels
                     Remove(items[i]);
                 }
                 Add(new PlayerViewModel(data));
+
+                Sort();
             });
+
+
         }
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {

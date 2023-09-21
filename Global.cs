@@ -6,18 +6,32 @@ using System.Collections.Generic;
 
 using Windows.Data.Xml.Dom;
 using Windows.UI.Notifications;
+using System.Text.RegularExpressions;
+using Newtonsoft.Json;
+using System.IO;
+using System.Diagnostics;
 
 namespace KekboomKawaii
 {
 
     [Flags]
+    public enum ChatClassFlag : int
+    {
+        None = 0,
+        World = 1,
+        Team = 2,
+        Recruit = 4,
+        Guild = 8,
+        Dojo = 16
+    }
     public enum ChatClassEnum : int
     {
         None = 0,
         World = 1,
         Team = 3,
         Recruit = 7,
-        Guild = 8
+        Guild = 8,
+        Dojo = 9
     }
 
     public enum GenderEnum : int
@@ -65,16 +79,16 @@ namespace KekboomKawaii
         }
 
 
-        public static Dictionary<ChatClassEnum, string> ChatClassDictionary = new Dictionary<ChatClassEnum, string>
+        public static Dictionary<ChatClassFlag, string> ChatClassDictionary = new Dictionary<ChatClassFlag, string>
         {
-            { ChatClassEnum.World,"세계" },
-            { ChatClassEnum.Team,"팀" },
-            { ChatClassEnum.Recruit,"모집" },
-            { ChatClassEnum.Guild,"길드" },
+            { ChatClassFlag.World,"세계" },
+            { ChatClassFlag.Team,"팀" },
+            { ChatClassFlag.Recruit,"모집" },
+            { ChatClassFlag.Guild,"길드" },
 
         };
 
-        public static Dictionary<string, string> TitleDictionary = new Dictionary<string, string>
+        /*public static Dictionary<string, string> TitleDic = new Dictionary<string, string>
         {
             {"None","칭호 없음" },
                 {"1_1_10_2", "나이트워커"},
@@ -202,7 +216,20 @@ namespace KekboomKawaii
                 {"Title_HalfAnniversary_os_1", "꺾이지 않는 마음"},
 
 
-        };
+        };*/
+        public static Dictionary<string, string> TitleDic = new Dictionary<string, string>();
+
+        public static Dictionary<string, string> AvatarFrameDic = new Dictionary<string, string>();
+
+        public static Dictionary<string, string> AvatarDic = new Dictionary<string, string>();
+
+
+        public static string AvatarJsonPath = @"../../Resources/Database/AvatarConfigDataTable.json";
+        public static string AvatarFrameJsonPath = @"../../Resources/Database/AvatarFrameConfigDataTable.json";
+        public static string TitleJsonPath = @"../../Resources/Database/DT_Title.json";
+        public static string LocalJsonPath = @"../../Resources/Database/Game.json";
+
+        public static Regex regex = new Regex("^\\/(.+\\/)*(.+)\\.(.+)$");
 
         public const string UserSettingsFileName = @"\Settings.ini";
 
@@ -246,12 +273,54 @@ namespace KekboomKawaii
 
         static Global()
         {
+
             filterString = GetiniValue("Setting", "FilterString");
             if (int.TryParse(GetiniValue("Setting", "EthernetIndex"), out int index))
             {
                 ethernetIndex = index;
             }
             Sniffer = new PacketSniffer();
+
+        }
+
+        public static void Initlaize()
+        {
+            dynamic avatar = JsonConvert.DeserializeObject(File.ReadAllText(AvatarJsonPath, Encoding.UTF8));
+            foreach (dynamic item in avatar[0].Rows)
+            {
+                AvatarDic.Add(item.Name, regex.Match(item.Value.BigImage.AssetPathName.ToString()).Groups[3].Value);
+            }
+            dynamic avatarFrame = JsonConvert.DeserializeObject(File.ReadAllText(AvatarFrameJsonPath, Encoding.UTF8));
+
+            foreach (dynamic item in avatarFrame[0].Rows)
+            {
+                AvatarFrameDic.Add(item.Name, regex.Match(item.Value.BigImage.AssetPathName.ToString()).Groups[3].Value);
+            }
+
+            dynamic title = JsonConvert.DeserializeObject(File.ReadAllText(TitleJsonPath, Encoding.UTF8));
+
+            dynamic titleLoc = JsonConvert.DeserializeObject(File.ReadAllText(LocalJsonPath, Encoding.UTF8));
+
+
+            foreach (dynamic item in title[0].Rows)
+            {
+                if (item.Value.Name.TableId != null)
+                {
+
+                    if (item.Value.Name.LocalizedString != null)
+                    {
+                        TitleDic.Add(item.Name, item.Value.Name.LocalizedString);
+                        continue;
+                    }
+
+                    dynamic tableId = regex.Match(item.Value.Name.TableId.ToString()).Groups[3].Value;
+                    dynamic table = titleLoc[tableId.ToString()];
+                    string na = table[item.Value.Name.Key.ToString()];
+
+                    TitleDic.Add(item.Name, na);
+
+                }
+            }
         }
     }
 }

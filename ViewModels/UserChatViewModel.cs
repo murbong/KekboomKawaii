@@ -16,14 +16,43 @@ namespace KekboomKawaii.ViewModels
     {
         UserChat userChat;
 
-        // public string DisplayedAvatar => @"\Resources\Avatar\aige.png";
-        public string DisplayedAvatar => $@"pack://application:,,,/Resources/Avatar/{userChat.Avatar}.png";
-        public string DisplayedAvatarFrame => $@"pack://application:,,,/Resources/AvatarFrame/{userChat.AvatarFrame}.png";
+        public string DisplayedAvatar
+        {
+            get
+            {
+                if (Global.AvatarDic.TryGetValue(userChat.Avatar, out var avatar))
+                {
+                    return $@"pack://application:,,,/Resources/Avatar/{avatar}.png";
+                }
+                return $@"pack://application:,,,/Resources/Avatar/{userChat.Avatar}.png";
+            }
+        }
+        public string DisplayedAvatarFrame
+        {
+            get
+            {
+                if (Global.AvatarFrameDic.TryGetValue(userChat.AvatarFrame, out var frame))
+                {
+                    return $@"pack://application:,,,/Resources/AvatarFrame/{frame}.png";
+                }
+                return $@"pack://application:,,,/Resources/AvatarFrame/{userChat.AvatarFrame}.png";
+            }
+        }
         public string DisplayedSuppressor => $@"pack://application:,,,/Resources/Suppressor/{userChat.SuppressorLevel}.png";
         public string DisplayedGender => $@"pack://application:,,,/Resources/Gender/{(userChat.Gender == GenderEnum.Female ? "Female" : "Male")}.png";
         public string NickName => userChat.NickName;
-        public ChatClassEnum ChatClassState => userChat.ChatClass;
-        public string DisplayedChannel => Global.ChatClassDictionary[userChat.ChatClass];
+        public ChatClassFlag ChatClassState => userChat.ChatClass;
+        public string DisplayedChannel
+        {
+            get
+            {
+                if (Global.ChatClassDictionary.TryGetValue(userChat.ChatClass, out var result))
+                {
+                    return result;
+                }
+                return userChat.ChatClass.ToString();
+            }
+        }
         public string DisplayUID => $"UID:{userChat.Server}{userChat.UID}";
         public string DisplayedLevel => $"Lv{userChat.Level}";
 
@@ -35,7 +64,7 @@ namespace KekboomKawaii.ViewModels
         {
             get
             {
-                var stickerName = Regex.Match(userChat.Message, @"(?<=#1#big)(\d+)(?=#)").Value;
+                var stickerName = Regex.Match(userChat.Message, @"(?<=<hotta>3\$big)(\d+)(?=<\/>)").Value;
                 if (stickerName != string.Empty)
                 {
                     return $@"pack://application:,,,/Resources/Sticker/{stickerName}.gif";
@@ -47,7 +76,7 @@ namespace KekboomKawaii.ViewModels
         {
             get
             {
-                if (Global.TitleDictionary.TryGetValue(userChat.Title, out string title))
+                if (Global.TitleDic.TryGetValue(userChat.Title, out string title))
                 {
                     return title;
                 }
@@ -59,7 +88,7 @@ namespace KekboomKawaii.ViewModels
         {
             get
             {
-                var stickerName = Regex.Match(userChat.Message, @"(?<=#1#big)(\d+)(?=#)").Value;
+                var stickerName = Regex.Match(userChat.Message, @"(?<=<hotta>3\$big)(\d+)(?=<\/>)").Value;
                 if (stickerName == string.Empty)
                 {
                     return Regex.Replace(userChat.Message, "<[^>]*>", "");

@@ -36,6 +36,8 @@ namespace KekboomKawaii
 
         public event Action<PlayerData> PlayerDataEvent;
 
+        private List<string> LastTenChatChecksum = new List<string>();
+
 
         public void Select(int index)
         {
@@ -162,7 +164,17 @@ namespace KekboomKawaii
                         br.BaseStream.Position = 0;
                         UserChat userChat = new UserChat();
                         userChat.Read(br);
-                        UserChatEvent?.Invoke(userChat);
+
+                        if (!LastTenChatChecksum.Contains(userChat.Checksum))
+                        {
+                            LastTenChatChecksum.Add(userChat.Checksum);
+                            UserChatEvent?.Invoke(userChat);
+
+                            if (LastTenChatChecksum.Count > 10)
+                            {
+                                LastTenChatChecksum.Clear();
+                            }
+                        }
                     }
                     else if (tofpacket.Flag == 0x140)
                     {

@@ -81,6 +81,10 @@ namespace KekboomKawaii.ViewModels
             return new object();
         }
 
+        public int Compare(PlayerViewModel y)
+        {
+            return this.PlayerName.CompareTo(y.PlayerName);
+        }
 
         public List<Weapon> WeaponList
         {
@@ -118,9 +122,28 @@ namespace KekboomKawaii.ViewModels
 
             }
         }
-
-        public string DisplayedAvatar => $@"pack://application:,,,/Resources/Avatar/{GetValue("AvatarId")}.png";
-        public string DisplayedAvatarFrame => $@"pack://application:,,,/Resources/AvatarFrame/{GetValue("AvatarFrameId")}.png";
+        public string DisplayedAvatar
+        {
+            get
+            {
+                if (Global.AvatarDic.TryGetValue(GetValue("AvatarId").ToString(), out var avatar))
+                {
+                    return $@"pack://application:,,,/Resources/Avatar/{avatar}.png";
+                }
+                return $@"pack://application:,,,/Resources/Avatar/{GetValue("AvatarId").ToString()}.png";
+            }
+        }
+        public string DisplayedAvatarFrame
+        {
+            get
+            {
+                if (Global.AvatarFrameDic.TryGetValue(GetValue("AvatarFrameId").ToString(), out var frame))
+                {
+                    return $@"pack://application:,,,/Resources/AvatarFrame/{frame}.png";
+                }
+                return $@"pack://application:,,,/Resources/AvatarFrame/{GetValue("AvatarFrameId").ToString()}.png";
+            }
+        }
         public string DisplayedSuppressor => $@"pack://application:,,,/Resources/Suppressor/{GetValue("ShenGeLevel")}.png";
         public string DisplayedGender => $@"pack://application:,,,/Resources/Gender/{(Gender == GenderEnum.Female ? "Female" : "Male")}.png";
 

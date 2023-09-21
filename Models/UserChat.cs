@@ -14,7 +14,7 @@ namespace KekboomKawaii.Models
     public class UserChat : TOFPacket
     {
         public int ChatID { get; set; }
-        public ChatClassEnum ChatClass { get; set; }
+        public ChatClassFlag ChatClass { get; set; }
         public int AtUID { get; set; }
         public int AtServer { get; set; }
         public string Violation { get; set; }
@@ -43,7 +43,9 @@ namespace KekboomKawaii.Models
 
             reader.ReadBytes(0x10);
 
-            ChatClass = (ChatClassEnum)reader.ReadInt32();
+            var chatClass = (ChatClassEnum)reader.ReadInt32();
+            ChatClass = (ChatClassFlag)Enum.Parse(typeof(ChatClassFlag), chatClass.ToString());
+
 
             var param = reader.ReadInt32();
 
