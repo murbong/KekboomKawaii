@@ -28,6 +28,8 @@
             <CheckBox Content="길드" IsChecked="{Binding SelectGuild}"/>
             <CheckBox Content="팀" IsChecked="{Binding SelectTeam}"/>
             <CheckBox Content="모집" IsChecked="{Binding SelectRecruit}"/>
+            <CheckBox Content="협력" IsChecked="{Binding SelectDojo}"/>
+
         </StackPanel>
     </Grid>
 </UserControl>

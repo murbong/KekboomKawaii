@@ -20,7 +20,7 @@ namespace KekboomKawaii.ViewModels
         {
             get
             {
-                if (Global.AvatarDic.TryGetValue(userChat.Avatar, out var avatar))
+                if (Global.AvatarDic.TryGetValue(userChat.Avatar, out var avatar) && !string.IsNullOrEmpty(avatar))
                 {
                     return $@"pack://application:,,,/Resources/Avatar/{avatar}.png";
                 }

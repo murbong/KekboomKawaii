@@ -1,4 +1,5 @@
 ﻿using KekboomKawaii.Tools;
+using PcapDotNet.Base;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -91,18 +92,19 @@ namespace KekboomKawaii.Models
                     KeyData.Add(key, boolean);
 
                 }
-                else if (type == 0x3000000) // int int string
+                else if (type == 0x3000000) // uint64 string
                 {
-                    int int1 = 0, int2 = 0;
+                    ulong int64 = 0;
+
                     if (bodyLength != 0xc)
                     {
-                        int1 = reader.ReadInt32();
-                        int2 = reader.ReadInt32();
+                        int64 = reader.ReadUInt64();
                     }
                     if (bodyLength - trailLength > 0x10) reader.BaseStream.Position += 4;
 
                     var key = reader.ReadString();
-                    KeyData.Add(key, new int[] { int1, int2 });
+
+                    KeyData.Add(key, int64);
                 }
                 else if (type == 0x6000000) // string string
                 {

@@ -30,6 +30,8 @@ namespace KekboomKawaii.Models
     {
         public string Name { get; set; }
         public float Value { get; set; }
+
+        public string Titan { get; set; }
         public EnchantElement Element { get; set; } = EnchantElement.None;
         public EnchantType Type { get; set; } = EnchantType.None;
 
@@ -87,18 +89,77 @@ namespace KekboomKawaii.Models
                     return $@"pack://application:,,,/Resources/Enchant/icon_yineng.png";
                 else if (Name.Contains("SuperpowerDef"))
                     return $@"pack://application:,,,/Resources/Enchant/icon_def_yineng.png";
+                else if (Name.Contains("uncommon"))
+                {
+                    if (Titan.Contains("CommonAtkAggravatingInjury"))
+                    {
+                        return $@"pack://application:,,,/Resources/Enchant/Red/icon_pugongzengshang.png";
+                    }
+                    else if (Titan.Contains("EvadeAtkAggravatingInjury"))
+                    {
+                        return $@"pack://application:,,,/Resources/Enchant/Red/icon_shanAzs.png";
+                    }
+                    else if (Titan.Contains("SkillAtkAggravatingInjury"))
+                    {
+                        return $@"pack://application:,,,/Resources/Enchant/Red/icon_skillzengshang.png";
+                    }
+                    else if (Titan.Contains("ChangeSkillAtkAggravatingInjury"))
+                    {
+                        return $@"pack://application:,,,/Resources/Enchant/Red/icon_lianxiezs.png";
+                    }
+                    else if (Titan.Contains("CommonAggravatingInjury"))
+                    {
+                        return $@"pack://application:,,,/Resources/Enchant/Red/icon_create_increases_damage.png";
+                    }
+                    else if (Titan.Contains("CommonReduceInjuries"))
+                    {
+                        return $@"pack://application:,,,/Resources/Enchant/Red/icon_reduce_receivedamage.png";
+                    }
+                    else if (Titan.Contains("FinalRigidity"))
+                    {
+                        return $@"pack://application:,,,/Resources/Enchant/Red/icon_heal.png";
+                    }
+                    else if (Titan.Contains("SlowMult"))
+                    {
+                        return $@"pack://application:,,,/Resources/Enchant/Red/icon_chihuan.png";
+                    }
+                    else if (Titan.Contains("CommonWeaknessIncreaseInjury"))
+                    {
+                        return $@"pack://application:,,,/Resources/Enchant/Red/icon_ruodianzengshang.png";
+                    }
+                    else if (Titan.Contains("CommonDamageRecoverHPMult"))
+                    {
+                        return $@"pack://application:,,,/Resources/Enchant/Red/icon_xixue.png";
+                    }
+                    else if (Titan.Contains("AutoRestoreHPMult"))
+                    {
+                        return $@"pack://application:,,,/Resources/Enchant/Red/icon_huifu.png";
+                    }
+                    else if (Titan.Contains("CommonBlockMult"))
+                    {
+                        return $@"pack://application:,,,/Resources/Enchant/Red/icon_block.png";
+                    }
+                }
                 return "";
             }
         }
+
+        public string DisplayBackgroundColor => Titan.Equals("EquipmentTupo") ? "Yellow" : "White";
 
         public EnchantProperty()
         {
 
         }
-        public EnchantProperty(string name, float value)
+        public EnchantProperty(string name, float value,string titan)
         {
             Name = name;
             Value = value;
+            Titan = titan;
+
+            if (Name.Contains("uncommon"))
+            {
+                Priority += 10;
+            }
 
             if (Name.Contains("Mult") || Name.Contains("FinalCrit"))
             {

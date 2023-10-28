@@ -10,7 +10,7 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid ScrollViewer.VerticalScrollBarVisibility="Visible">
         <Grid.RowDefinitions>
-            <RowDefinition Height="270"/>
+            <RowDefinition Height="280"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <StackPanel Orientation="Vertical" Width="230"  >
@@ -29,10 +29,9 @@
             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" >
                 <Run Text="길드 : "/>
                 <Run Text="{Binding GuildName,Mode=OneWay}"/>
-            </TextBlock>
-            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" >
-                <Run Text="직무 : "/>
+                <Run Text="("/>
                 <Run Text="{Binding GuildPost,Mode=OneWay}"/>
+                <Run Text=")"/>
             </TextBlock>
             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16">
                 <Run Text="UID : "/>
@@ -42,9 +41,12 @@
                 <Run Text="UUID : "/>
                 <Run Text="{Binding UID,Mode=OneWay}"/>
             </TextBlock>
-
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16">
+                <Run Text="마지막 접속일 : "/>
+                <Run Text="{Binding LastConnectTime,Mode=OneWay}"/>
+            </TextBlock>
         </StackPanel>
-        <DockPanel Grid.Row="1">
+        <DockPanel  Grid.Row="1">
             <ListView ItemsSource="{Binding WeaponList}" HorizontalAlignment="Center" DockPanel.Dock="Top" ScrollViewer.VerticalScrollBarVisibility="Disabled">
                 <ListView.ItemsPanel>
                     <ItemsPanelTemplate>
@@ -54,7 +56,7 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid>
-                            <Image Source="{Binding DisplayWeaponImage, Mode=OneWay}" Width="75" Height="75"/>
+                            <Image Source="{Binding DisplayWeaponImage, Mode=OneWay}" Width="128" Height="128"/>
                             <TextBlock FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Top">
                                 <Run Text="{Binding Star, Mode=OneWay}"/>
                                 <Run Text="{Binding Level, Mode=OneWay}"/>
@@ -64,49 +66,49 @@
                 </ListView.ItemTemplate>
             </ListView>
             <UniformGrid HorizontalAlignment="Center" VerticalAlignment="Center" DockPanel.Dock="Top">
-                <TextBlock HorizontalAlignment="Stretch" Margin="5">
+                <TextBlock HorizontalAlignment="Stretch" Margin="2" FontSize="15">
                 <Run Text="HP : "/>
                 <Run Text="{Binding HP,Mode=OneWay,StringFormat={}{0:F0}}"/>
                 </TextBlock>
-                <TextBlock   HorizontalAlignment="Stretch" Margin="5">
+                <TextBlock   HorizontalAlignment="Stretch" Margin="2" FontSize="15">
                 <Run Text="치명타:"/>
                 <Run Text="{Binding Critical,Mode=OneWay,StringFormat={}{0:F0}}"/>
-                <Run Text="{Binding CriticalRatio,Mode=OneWay,StringFormat={}({0:#0.00%})}"/>
+                <Run Text="{Binding CriticalRatio,Mode=OneWay,StringFormat={}({0:#0.0%}}"/>
+                <Run Text="{Binding FinalCrit,Mode=OneWay,StringFormat={}+{0:#0.0%})}"/>
                 </TextBlock>
-                <TextBlock  HorizontalAlignment="Stretch" Margin="5">
+                <TextBlock  HorizontalAlignment="Stretch" Margin="2" FontSize="15">
                 <Run Text="물리 공격: "/>
                 <Run Text="{Binding PhysicAttack,Mode=OneWay,StringFormat={}{0:F0}}"/>
                 <Run Text="{Binding PhysicAttackBase,Mode=OneWay,StringFormat={}({0:F0})}"/>
                 </TextBlock>
-                <TextBlock HorizontalAlignment="Stretch" Margin="5">
+                <TextBlock HorizontalAlignment="Stretch" Margin="2" FontSize="15">
                 <Run Text="화염 공격: "/>
                 <Run Text="{Binding FireAtk,Mode=OneWay,StringFormat={}{0:F0}}"/>
                 <Run Text="{Binding FireAtkBase,Mode=OneWay,StringFormat={}({0:F0})}"/>
                 </TextBlock>
-                <TextBlock  HorizontalAlignment="Stretch" Margin="5">
+                <TextBlock  HorizontalAlignment="Stretch" Margin="2" FontSize="15">
                 <Run Text="얼음 공격: "/>
                 <Run Text="{Binding IceAtk,Mode=OneWay,StringFormat={}{0:F0}}"/>
                 <Run Text="{Binding IceAtkBase,Mode=OneWay,StringFormat={}({0:F0})}"/>
                 </TextBlock>
-                <TextBlock HorizontalAlignment="Stretch" Margin="5">
+                <TextBlock HorizontalAlignment="Stretch" Margin="2" FontSize="15">
                 <Run Text="번개 공격: "/>
                 <Run Text="{Binding ThunderAtk,Mode=OneWay,StringFormat={}{0:F0}}"/>
                 <Run Text="{Binding ThunderAtkBase,Mode=OneWay,StringFormat={}({0:F0})}"/>
-
                 </TextBlock>
-                <TextBlock HorizontalAlignment="Stretch" Margin="5">
+                <TextBlock HorizontalAlignment="Stretch" Margin="2" FontSize="15">
                 <Run Text="이능 공격: "/>
                 <Run Text="{Binding SuperpowerAttack,Mode=OneWay,StringFormat={}{0:F0}}"/>
                 </TextBlock>
-                <TextBlock HorizontalAlignment="Stretch" Margin="5">
+                <TextBlock HorizontalAlignment="Stretch" Margin="2" FontSize="15">
                 <Run Text="주류 덱: "/>
                 <Run Text="{Binding PrimaryElement,Mode=OneWay}"/>
                 </TextBlock>
             </UniformGrid>
-            <ListView ItemsSource="{Binding EquipmentList}" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Disabled" HorizontalAlignment="Center" DockPanel.Dock="Bottom" Margin="50" >
+            <ListView ItemsSource="{Binding EquipmentList}" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Disabled" HorizontalAlignment="Center" DockPanel.Dock="Bottom" Margin="10" Width="auto">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="350">
+                        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="600">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="75"/>
                                 <ColumnDefinition Width="*"/>
@@ -122,21 +124,20 @@
                                 <Run Text="+"/>
                                 <Run Text="{Binding GetExtraDamage,StringFormat={}{0:F1}, Mode=OneWay}"/>
                             </TextBlock>
-                            
-                            <ListView ItemsSource="{Binding Properties}" HorizontalAlignment="Left" Grid.Column="1">
+                            <ListView ItemsSource="{Binding Properties}" HorizontalAlignment="Left" Grid.Column="1" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
                                 <ListView.ItemsPanel>
                                     <ItemsPanelTemplate>
-                                        <StackPanel Orientation="Horizontal"></StackPanel>
+                                        <StackPanel Orientation="Horizontal"/>
                                     </ItemsPanelTemplate>
                                 </ListView.ItemsPanel>
-                                <ListView.ItemTemplate>
+                                <ListView.ItemTemplate >
                                     <DataTemplate>
-                                        <Grid>
-                                            <StackPanel Orientation="Vertical" Width="50">
+                                        <Border BorderBrush="{Binding DisplayBackgroundColor}" BorderThickness="2">
+                                            <StackPanel Orientation="Vertical" Width="46" Background="Transparent">
                                                 <Image Source="{Binding DisplayPropertyImage, Mode=OneWay}" Width="30" Height="30" VerticalAlignment="Top"/>
                                                 <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" Text="{Binding DisplayValue,StringFormat={}{0:F1}, Mode=OneWay}" FontSize="10"/>
                                             </StackPanel>
-                                        </Grid>
+                                        </Border>
                                     </DataTemplate>
                                 </ListView.ItemTemplate>
                             </ListView>

@@ -9,6 +9,7 @@ namespace KekboomKawaii.Models
 {
     public class Weapon
     {
+        public static Regex reg = new Regex(@"(.+)#(\d+)##(\d+)#&&(\d+):(\d+):(\d+)");
 
         public string Name { get; set; }
         public int Enchant { get; set; }
@@ -24,7 +25,6 @@ namespace KekboomKawaii.Models
 
         public Weapon(string rawWeapon) // Dkatana_ice#0##150#&&2:150:14
         {
-            var reg = new Regex(@"(.+)#(\d+)##(\d+)#&&(\d+):(\d+):(\d+)");
 
             var resultCollection = reg.Matches(rawWeapon)[0].Groups;
 

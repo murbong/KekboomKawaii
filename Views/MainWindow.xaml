@@ -11,7 +11,7 @@
         d:DataContext="{d:DesignInstance Type=viewmodels:MainWindowViewModel}"
         mc:Ignorable="d"
         Title="MainWindow" Height="1000" Width="1300"
-        WindowStyle="None" AllowsTransparency="True" Background="Transparent"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent" WindowStartupLocation="CenterScreen"
         >
     <Window.Effect>
         <DropShadowEffect x:Name="DropShadow" Color="{DynamicResource Primary100}" BlurRadius="10" ShadowDepth="1" Direction="270"/>

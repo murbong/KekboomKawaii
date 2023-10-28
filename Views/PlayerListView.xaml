@@ -19,9 +19,9 @@
                     <Grid>
                         <TextBlock>
                             <Run Text="{Binding PlayerName,Mode=OneWay}"/>
-                            <LineBreak/>
-                            <Run Text="LV : "/>
+                            <Run Text="("/>
                             <Run Text="{Binding Level,Mode=OneWay}"/>
+                            <Run Text=")"/>
                             <LineBreak/>
                             <Run Text="GS : "/>
                             <Run Text="{Binding GS,Mode=OneWay}"/>

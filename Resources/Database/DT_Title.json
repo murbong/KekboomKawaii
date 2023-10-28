@@ -3472,6 +3472,36 @@
         "IsHiddenNotGet": false,
         "OverSeaHiddenNotGet": []
       },
+      "1_9_0_1": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Title_1_9_0_1_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_1_9_0_1 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Title_1_9_0_1_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": false,
+        "OverSeaHiddenNotGet": []
+      },
       "1_9_0_2": {
         "Name": {
           "TableId": "/Game/Resources/Text/UI.UI",
@@ -3592,18 +3622,17 @@
         "IsHiddenNotGet": false,
         "OverSeaHiddenNotGet": []
       },
-      "1_9_0_6": {
+      "-----BLCH-----": {
         "Name": {
-          "TableId": "/Game/Resources/Text/UI.UI",
-          "Key": "Title_1_9_0_6_name"
+          "CultureInvariantString": null
         },
         "Color": {
           "SpecifiedColor": {
-            "R": 0.47932,
-            "G": 0.318547,
+            "R": 1.0,
+            "G": 0.0,
             "B": 1.0,
             "A": 1.0,
-            "Hex": "FFB899FF"
+            "Hex": "FFFF00FF"
           },
           "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
         },
@@ -3612,71 +3641,10 @@
           "SubPathString": ""
         },
         "ModifyID": "None",
-        "Condition": "ETitleCondition::UseItem",
-        "ConditionValue": "Title_1_9_0_6 1",
+        "Condition": "ETitleCondition::SubmitQuest",
+        "ConditionValue": "",
         "ConditionText": {
-          "TableId": "/Game/Resources/Text/UI.UI",
-          "Key": "Title_1_9_0_6_des"
-        },
-        "TimeLimitInHour": 0,
-        "IsHiddenNotGet": false,
-        "OverSeaHiddenNotGet": []
-      },
-      "1_9_0_7": {
-        "Name": {
-          "TableId": "/Game/Resources/Text/UI.UI",
-          "Key": "Title_1_9_0_7_name"
-        },
-        "Color": {
-          "SpecifiedColor": {
-            "R": 0.47932,
-            "G": 0.318547,
-            "B": 1.0,
-            "A": 1.0,
-            "Hex": "FFB899FF"
-          },
-          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
-        },
-        "Image": {
-          "AssetPathName": "None",
-          "SubPathString": ""
-        },
-        "ModifyID": "None",
-        "Condition": "ETitleCondition::UseItem",
-        "ConditionValue": "Title_1_9_0_7 1",
-        "ConditionText": {
-          "TableId": "/Game/Resources/Text/UI.UI",
-          "Key": "Title_1_9_0_7_des"
-        },
-        "TimeLimitInHour": 0,
-        "IsHiddenNotGet": false,
-        "OverSeaHiddenNotGet": []
-      },
-      "1_9_0_8": {
-        "Name": {
-          "TableId": "/Game/Resources/Text/UI.UI",
-          "Key": "Title_1_9_0_8_name"
-        },
-        "Color": {
-          "SpecifiedColor": {
-            "R": 0.47932,
-            "G": 0.318547,
-            "B": 1.0,
-            "A": 1.0,
-            "Hex": "FFB899FF"
-          },
-          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
-        },
-        "Image": {
-          "AssetPathName": "None",
-          "SubPathString": ""
-        },
-        "ModifyID": "None",
-        "Condition": "ETitleCondition::UseItem",
-        "ConditionValue": "Title_1_9_0_8 1",
-        "ConditionText": {
-          "TableId": "/Game/Resources/Text/UI.UI",
-          "Key": "Title_1_9_0_8_des"
+          "CultureInvariantString": null
         },
         "TimeLimitInHour": 0,
         "IsHiddenNotGet": false,
@@ -4422,6 +4390,34 @@
         },
         "TimeLimitInHour": 0,
         "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "-----Mist-----": {
+        "Name": {
+          "CultureInvariantString": null
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 0.0,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFFF00FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::SubmitQuest",
+        "ConditionValue": "",
+        "ConditionText": {
+          "CultureInvariantString": null
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": false,
         "OverSeaHiddenNotGet": []
       },
       "iw_1": {
@@ -10151,96 +10147,6 @@
         "IsHiddenNotGet": false,
         "OverSeaHiddenNotGet": []
       },
-      "1_4_8_1": {
-        "Name": {
-          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
-          "Key": "Title_1_4_8_1_name"
-        },
-        "Color": {
-          "SpecifiedColor": {
-            "R": 0.47932,
-            "G": 0.318547,
-            "B": 1.0,
-            "A": 1.0,
-            "Hex": "FFB899FF"
-          },
-          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
-        },
-        "Image": {
-          "AssetPathName": "None",
-          "SubPathString": ""
-        },
-        "ModifyID": "None",
-        "Condition": "ETitleCondition::UseItem",
-        "ConditionValue": "Title_1_4_8_1 1",
-        "ConditionText": {
-          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
-          "Key": "Title_1_4_8_1_des"
-        },
-        "TimeLimitInHour": 720,
-        "IsHiddenNotGet": false,
-        "OverSeaHiddenNotGet": []
-      },
-      "1_4_8_2": {
-        "Name": {
-          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
-          "Key": "Title_1_4_8_2_name"
-        },
-        "Color": {
-          "SpecifiedColor": {
-            "R": 0.47932,
-            "G": 0.318547,
-            "B": 1.0,
-            "A": 1.0,
-            "Hex": "FFB899FF"
-          },
-          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
-        },
-        "Image": {
-          "AssetPathName": "None",
-          "SubPathString": ""
-        },
-        "ModifyID": "None",
-        "Condition": "ETitleCondition::UseItem",
-        "ConditionValue": "Title_1_4_8_2 1",
-        "ConditionText": {
-          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
-          "Key": "Title_1_4_8_2_des"
-        },
-        "TimeLimitInHour": 720,
-        "IsHiddenNotGet": false,
-        "OverSeaHiddenNotGet": []
-      },
-      "1_4_8_3": {
-        "Name": {
-          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
-          "Key": "Title_1_4_8_3_name"
-        },
-        "Color": {
-          "SpecifiedColor": {
-            "R": 0.47932,
-            "G": 0.318547,
-            "B": 1.0,
-            "A": 1.0,
-            "Hex": "FFB899FF"
-          },
-          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
-        },
-        "Image": {
-          "AssetPathName": "None",
-          "SubPathString": ""
-        },
-        "ModifyID": "None",
-        "Condition": "ETitleCondition::UseItem",
-        "ConditionValue": "Title_1_4_8_3 1",
-        "ConditionText": {
-          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
-          "Key": "Title_1_4_8_3_des"
-        },
-        "TimeLimitInHour": 720,
-        "IsHiddenNotGet": false,
-        "OverSeaHiddenNotGet": []
-      },
       "1_4_8_4": {
         "Name": {
           "TableId": "/Game/Resources/Text/ST_item.ST_Item",
@@ -10266,6 +10172,126 @@
         "ConditionText": {
           "TableId": "/Game/Resources/Text/ST_item.ST_Item",
           "Key": "Title_1_4_8_4_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": false,
+        "OverSeaHiddenNotGet": []
+      },
+      "1_4_8_5": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "title_1_4_8_5_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_1_4_8_5 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "title_1_4_8_5_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": false,
+        "OverSeaHiddenNotGet": []
+      },
+      "1_4_8_6": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Title_1_4_8_1_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_1_4_8_6 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Title_1_4_8_1_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": false,
+        "OverSeaHiddenNotGet": []
+      },
+      "1_4_8_7": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Title_1_4_8_2_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_1_4_8_7 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Title_1_4_8_2_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": false,
+        "OverSeaHiddenNotGet": []
+      },
+      "1_4_8_8": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Title_1_4_8_3_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_1_4_8_8 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Title_1_4_8_3_des"
         },
         "TimeLimitInHour": 0,
         "IsHiddenNotGet": false,
@@ -11884,6 +11910,816 @@
         "ConditionText": {
           "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
           "Key": "Title_koreaMoonFestival_01_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_iwplay33_os01": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os01_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_iwplay33_os01 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os01_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_iwplay33_os02": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os02_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_iwplay33_os02 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os02_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_iwplay33_os03": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os03_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_iwplay33_os03 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os03_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_iwplay33_os04": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os04_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_iwplay33_os04 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os04_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_iwplay33_os05": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os05_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_iwplay33_os05 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os05_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_iwplay33_os06": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os06_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_iwplay33_os06 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os06_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_iwplay33_os07": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os07_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_iwplay33_os07 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os07_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_iwplay33_os08": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os08_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_iwplay33_os08 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os08_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_iwplay33_os09": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os09_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_iwplay33_os09 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os09_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_iwplay33_os10": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os10_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_iwplay33_os10 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os10_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_iwplay33_os11": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os11_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_iwplay33_os11 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os11_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_iwplay33_os12": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os12_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_iwplay33_os12 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os12_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_iwplay33_os13": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os13_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_iwplay33_os13 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os13_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_iwplay33_os14": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os14_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_iwplay33_os14 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os14_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_iwplay33_os15": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os15_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_iwplay33_os15 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_iwplay33_os15_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_Korea33_os01": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_Korea33_os01_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_Korea33_os01 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_Korea33_os01_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_Korea33_os02": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_Korea33_os02_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_Korea33_os02 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_Korea33_os02_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_Korea33_os03": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_Korea33_os03_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_Korea33_os03 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_Koreah5_os01_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_Korea33_os04": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_Korea33_os04_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_Korea33_os04 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_Koreah5_os01_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_Korea33_os05": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_Korea33_os05_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_Korea33_os05 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_Koreah5_os01_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_Korea33_os06": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_Korea33_os06_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_Korea33_os06 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_Koreah5_os01_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_Korea33_os07": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_Korea33_os07_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_Korea33_os07 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_Koreah5_os01_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_Korea33_os08": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_Korea33_os08_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_Korea33_os08 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_Koreah5_os01_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_Korea33_os09": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_Korea33_os09_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_Korea33_os09 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_Koreah5_os01_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_Korea33_os10": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_Korea33_os10_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_Korea33_os10 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "Title_Koreah5_os01_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_PlayStation33_os01": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "PlayStation_Title_PlayStation33_os01_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_PlayStation33_os01 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "PlayStation_Title_PlayStation33_os01_des"
+        },
+        "TimeLimitInHour": 0,
+        "IsHiddenNotGet": true,
+        "OverSeaHiddenNotGet": []
+      },
+      "Title_PlayStation33_os02": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "PlayStation_Title_PlayStation33_os02_name"
+        },
+        "Color": {
+          "SpecifiedColor": {
+            "R": 0.47932,
+            "G": 0.318547,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFB899FF"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "Image": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Condition": "ETitleCondition::UseItem",
+        "ConditionValue": "Title_PlayStation33_os02 1",
+        "ConditionText": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Equipment_Oversea.ST_Equipment_Oversea",
+          "Key": "PlayStation_Title_PlayStation33_os02_des"
         },
         "TimeLimitInHour": 0,
         "IsHiddenNotGet": true,

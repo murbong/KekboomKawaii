@@ -8,9 +8,14 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Newtonsoft.Json;
 using System.IO;
+using Windows.Devices.Bluetooth.Advertisement;
+using System.Text.RegularExpressions;
+using System.Windows.Media;
 
 namespace KekboomKawaii.ViewModels
 {
+
+
     public class PlayerViewModel : ViewModelBase
     {
         PlayerData playerData;
@@ -31,15 +36,18 @@ namespace KekboomKawaii.ViewModels
         {
             get
             {
-                int[] ints = (int[])GetValue("uid");
-                return $"{ints[1]}{ints[0]}";
+                ulong uint64 = (ulong)GetValue("uid");
+                return $"{uint64>>32}{(uint)uint64}";
             }
         }
+
+        public string LastConnectTime => new DateTime((long)(ulong)GetValue("OfflineMoment")).ToShortDateString();
         public string Title => GetValue("EquippingTitle").ToString();
         public string GuildName => GetValue("GuildName").ToString();
-        public GuildPostEnum GuildPost => (GuildPostEnum)GetValue("GuildPost");
+        public string GuildPost => Global.GuildPostDictionary[(GuildPostEnum)GetValue("GuildPost")];
         public GenderEnum Gender => (GenderEnum)GetValue("RoleInfoSex");
 
+        #region Equipment Property
         public float SuperpowerAttackBase => float.TryParse(GetValue("SuperpowerAtkDisplayBase").ToString(), out float value) ? value : 0.0f;
         public float ThunderAtkBase => float.TryParse(GetValue("ThunderAtkDisplayBase").ToString(), out float value) ? value : 0.0f;
         public float IceAtkBase => float.TryParse(GetValue("IceAtkDisplayBase").ToString(), out float value) ? value : 0.0f;
@@ -53,6 +61,7 @@ namespace KekboomKawaii.ViewModels
         public float HP => float.TryParse(GetValue("MaxHP").ToString(), out float value) ? value : 0.0f;
         public float Critical => float.TryParse(GetValue("Crit").ToString(), out float value) ? value : 0.0f;
         public float CriticalRatio => float.TryParse(GetValue("GetCritMult").ToString(), out float value) ? value : 0.0f;
+        public float FinalCrit => float.TryParse(GetValue("FinalCrit").ToString(), out float value) ? value : 0.0f;
         public int Level => (int)GetValue("level");
 
         public EnchantElement PrimaryElement
@@ -131,7 +140,7 @@ namespace KekboomKawaii.ViewModels
         {
             get
             {
-                if (Global.AvatarDic.TryGetValue(GetValue("AvatarId").ToString(), out var avatar))
+                if (Global.AvatarDic.TryGetValue(GetValue("AvatarId").ToString(), out var avatar) && !string.IsNullOrEmpty(avatar))
                 {
                     return $@"pack://application:,,,/Resources/Avatar/{avatar}.png";
                 }
@@ -153,6 +162,9 @@ namespace KekboomKawaii.ViewModels
         public string DisplayedGender => $@"pack://application:,,,/Resources/Gender/{(Gender == GenderEnum.Female ? "Female" : "Male")}.png";
 
         public int GS => (int)GetValue("BattleStrengthScore");
+
+        #endregion
+
 
         public PlayerViewModel() { }
 

@@ -30,7 +30,7 @@ namespace KekboomKawaii.ViewModels
             {
                 selectAll = value; OnPropertyChanged();
                 OnPropertyChanged("VisibleCollection");
-                SelectWorld = SelectGuild = SelectTeam = SelectRecruit = selectAll;
+                SelectDojo = SelectWorld = SelectGuild = SelectTeam = SelectRecruit = selectAll;
             }
         }
 
@@ -95,9 +95,24 @@ namespace KekboomKawaii.ViewModels
             }
         }
 
+        private bool selectDojo;
+        public bool SelectDojo
+        {
+            get
+            {
+                return selectDojo;
+            }
+            set
+            {
+                selectDojo = value; OnPropertyChanged();
+                SetSelectAllState();
+
+            }
+        }
+
         public void SetSelectAllState()
         {
-            selectAll = selectWorld && selectRecruit && selectGuild && selectTeam;
+            selectAll = selectWorld && selectRecruit && selectGuild && selectTeam && selectDojo;
             OnPropertyChanged("SelectAll");
             OnPropertyChanged("VisibleCollection");
         }
@@ -111,6 +126,7 @@ namespace KekboomKawaii.ViewModels
                 if (selectRecruit) chatClass |= ChatClassFlag.Recruit;
                 if (selectTeam) chatClass |= ChatClassFlag.Team;
                 if (selectWorld) chatClass |= ChatClassFlag.World;
+                if (selectDojo) chatClass |= ChatClassFlag.Dojo;
                 return chatClass;
             }
         }

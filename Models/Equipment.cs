@@ -15,6 +15,9 @@ namespace KekboomKawaii.Models
         // Thunder #d9b1f3
         // Ice #b0e9ff
 
+        public static Regex reg = new Regex(@"(\w+)#(\d+)#(.+)#(\d+)#");
+
+        public static Regex reg2 = new Regex(@"(\d+),(\w+);(\d+),(\d+\.*\d*);(\d+),(\w+);");
 
         public string Name { get; set; }
         public int Enchant { get; set; }
@@ -71,9 +74,11 @@ namespace KekboomKawaii.Models
 
         public float GetExtraValue(EnchantElement element)
         {
-            var val = Properties.Any(prop => prop.Element == element && prop.isEnchantMult == true && prop.Type == EnchantType.Atk);
+            bool condition(EnchantProperty prop) => prop.Element == element && prop.isEnchantMult == true && prop.Type == EnchantType.Atk;
+
+            var val = Properties.Any(condition);
             if (val == false) return 0;
-            return Properties.First(prop => prop.Element == element && prop.isEnchantMult == true && prop.Type == EnchantType.Atk).Value * maxAttackBase;
+            return Properties.First(condition).Value * maxAttackBase;
 
         }
 
@@ -91,9 +96,6 @@ namespace KekboomKawaii.Models
             this.playerElement = playerElement;
 
             //var reg = new Regex(@"(\w+)#(\d+)#(\d+),(\w+);([\d,]*\.?\d*);\|(\d+),(\w+);([\d,]*\.?\d*);\|(\d+),(\w+);([\d,]*\.?\d*);\|(\d+),(\w+);([\d,]*\.?\d*);#(\d+)#");
-            var reg = new Regex(@"(\w+)#(\d+)#(.+)#(\d+)#");
-
-            var reg2 = new Regex(@"(\d+),(\w+);(\d+),(\d+\.*\d*);");
 
             var resultCollection = reg.Matches(rawEquipment)[0].Groups;
 
@@ -107,7 +109,7 @@ namespace KekboomKawaii.Models
             {
                 var collection = reg2.Matches(property)[0].Groups;
 
-                Properties.Add(new EnchantProperty(collection[2].Value, float.Parse(collection[4].Value)));
+                Properties.Add(new EnchantProperty(collection[2].Value, float.Parse(collection[4].Value), collection[6].Value));
             }
 
             Properties = Properties.OrderByDescending(a => a.Value).OrderByDescending(a => a.Priority).ToList();
@@ -118,6 +120,16 @@ namespace KekboomKawaii.Models
             {
                 Priority++;
             }
+
+            if (Name.Contains("_red"))
+            {
+                Priority += 10;
+            }
+            else if (Name.Contains("_orangeTupo"))
+            {
+                Priority += 5;
+            }
+
 
             this.playerElement = playerElement;
         }

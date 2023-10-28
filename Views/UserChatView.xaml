@@ -25,7 +25,11 @@
         </Grid>
         <Grid Grid.RowSpan="2" Grid.ColumnSpan="1">
 
-            <Image Source="{Binding DisplayedAvatar}" Width="100" Height="100"/>
+            <Image Source="{Binding DisplayedAvatar}" Width="100" Height="100">
+                <Image.Clip>
+                    <EllipseGeometry RadiusX="45" RadiusY="45" Center="50,50"></EllipseGeometry>
+                </Image.Clip>
+            </Image>
             <Image Source="{Binding DisplayedAvatarFrame}" Width="100" Height="100"/>
 
             <TextBlock Text="{Binding DisplayedLevel}" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18"/>
