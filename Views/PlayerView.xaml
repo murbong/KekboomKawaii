@@ -19,7 +19,7 @@
                 <Image Source="{Binding DisplayedAvatarFrame}" Width="150" Height="150"/>
                 <Image Source="{Binding DisplayedAvatar}" Width="150" Height="150">
                     <Image.Clip>
-                        <EllipseGeometry RadiusX="50" RadiusY="50" Center="75,75"></EllipseGeometry>
+                        <EllipseGeometry RadiusX="55" RadiusY="55" Center="75,75"></EllipseGeometry>
                     </Image.Clip>
                 </Image>
                 <Image Source="{Binding DisplayedSuppressor}" Width="75" Height="75" HorizontalAlignment="Left" VerticalAlignment="Top"/>

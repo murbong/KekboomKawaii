@@ -27,7 +27,7 @@
 
             <Image Source="{Binding DisplayedAvatar}" Width="100" Height="100">
                 <Image.Clip>
-                    <EllipseGeometry RadiusX="45" RadiusY="45" Center="50,50"></EllipseGeometry>
+                    <EllipseGeometry RadiusX="40" RadiusY="40" Center="50,50"></EllipseGeometry>
                 </Image.Clip>
             </Image>
             <Image Source="{Binding DisplayedAvatarFrame}" Width="100" Height="100"/>
