@@ -140,7 +140,7 @@ namespace KekboomKawaii.ViewModels
         {
             get
             {
-                if (Global.AvatarDic.TryGetValue(GetValue("AvatarId").ToString(), out var avatar) && !string.IsNullOrEmpty(avatar))
+                if (Global.AvatarDic.TryGetValue(GetValue("AvatarId").ToString().ToLower(), out var avatar) && !string.IsNullOrEmpty(avatar))
                 {
                     return $@"pack://application:,,,/Resources/Avatar/{avatar}.png";
                 }
@@ -151,7 +151,7 @@ namespace KekboomKawaii.ViewModels
         {
             get
             {
-                if (Global.AvatarFrameDic.TryGetValue(GetValue("AvatarFrameId").ToString(), out var frame))
+                if (Global.AvatarFrameDic.TryGetValue(GetValue("AvatarFrameId").ToString().ToLower(), out var frame))
                 {
                     return $@"pack://application:,,,/Resources/AvatarFrame/{frame}.png";
                 }

@@ -20,7 +20,7 @@ namespace KekboomKawaii.ViewModels
         {
             get
             {
-                if (Global.AvatarDic.TryGetValue(userChat.Avatar, out var avatar) && !string.IsNullOrEmpty(avatar))
+                if (Global.AvatarDic.TryGetValue(userChat.Avatar.ToLower(), out var avatar) && !string.IsNullOrEmpty(avatar))
                 {
                     return $@"pack://application:,,,/Resources/Avatar/{avatar}.png";
                 }
@@ -31,7 +31,7 @@ namespace KekboomKawaii.ViewModels
         {
             get
             {
-                if (Global.AvatarFrameDic.TryGetValue(userChat.AvatarFrame, out var frame))
+                if (Global.AvatarFrameDic.TryGetValue(userChat.AvatarFrame.ToLower(), out var frame))
                 {
                     return $@"pack://application:,,,/Resources/AvatarFrame/{frame}.png";
                 }

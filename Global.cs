@@ -103,9 +103,12 @@ namespace KekboomKawaii
 
         public static Dictionary<string, string> AvatarDic = new Dictionary<string, string>();
 
+        public static Dictionary<string, string> WeaponImageDic = new Dictionary<string, string>();
+
 
         public static string AvatarJsonPath = @"../../Resources/Database/AvatarConfigDataTable.json";
         public static string AvatarFrameJsonPath = @"../../Resources/Database/AvatarFrameConfigDataTable.json";
+        public static string StaticWeaponJsonPath = @"../../Resources/Database/StaticWeaponDataTable.json";
         public static string TitleJsonPath = @"../../Resources/Database/DT_Title.json";
         public static string LocalJsonPath = @"../../Resources/Database/Game.json";
 
@@ -168,13 +171,21 @@ namespace KekboomKawaii
             dynamic avatar = JsonConvert.DeserializeObject(File.ReadAllText(AvatarJsonPath, Encoding.UTF8));
             foreach (dynamic item in avatar[0].Rows)
             {
-                AvatarDic.Add(item.Name, regex.Match(item.Value.BigImage.AssetPathName.ToString()).Groups[3].Value);
+                AvatarDic.Add(item.Name.ToLower(), regex.Match(item.Value.BigImage.AssetPathName.ToString()).Groups[3].Value);
             }
             dynamic avatarFrame = JsonConvert.DeserializeObject(File.ReadAllText(AvatarFrameJsonPath, Encoding.UTF8));
 
             foreach (dynamic item in avatarFrame[0].Rows)
             {
-                AvatarFrameDic.Add(item.Name, regex.Match(item.Value.BigImage.AssetPathName.ToString()).Groups[3].Value);
+                AvatarFrameDic.Add(item.Name.ToLower(), regex.Match(item.Value.BigImage.AssetPathName.ToString()).Groups[3].Value);
+            }
+
+            dynamic staticWeapon = JsonConvert.DeserializeObject(File.ReadAllText(StaticWeaponJsonPath, Encoding.UTF8));
+
+            foreach (dynamic item in staticWeapon[0].Rows)
+            {
+                
+                WeaponImageDic.Add(item.Name.ToLower(), regex.Match(item.Value.WeaponIconForMatrix.AssetPathName.ToString()).Groups[3].Value);
             }
 
             dynamic title = JsonConvert.DeserializeObject(File.ReadAllText(TitleJsonPath, Encoding.UTF8));

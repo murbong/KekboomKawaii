@@ -17,7 +17,11 @@
             <!--프로필 사진 등-->
             <Grid>
                 <Image Source="{Binding DisplayedAvatarFrame}" Width="150" Height="150"/>
-                <Image Source="{Binding DisplayedAvatar}" Width="150" Height="150"/>
+                <Image Source="{Binding DisplayedAvatar}" Width="150" Height="150">
+                    <Image.Clip>
+                        <EllipseGeometry RadiusX="50" RadiusY="50" Center="75,75"></EllipseGeometry>
+                    </Image.Clip>
+                </Image>
                 <Image Source="{Binding DisplayedSuppressor}" Width="75" Height="75" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                 <Image Source="{Binding DisplayedGender}" Width="35" Height="35" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0 5 30 0"/>
             </Grid>

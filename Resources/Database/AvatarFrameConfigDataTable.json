@@ -49,7 +49,7 @@
           "Namespace": "",
           "Key": "E78EAAB241170D0656C3BD96A2FD286F",
           "SourceString": "基础头像框",
-          "LocalizedString": "기본 프레임"
+          "LocalizedString": "基础头像框"
         },
         "UnlockDescription_os": []
       },
@@ -92,7 +92,7 @@
           "Namespace": "",
           "Key": "CA3CD5B0484E5F97B36530B75B779422",
           "SourceString": "基础头像框",
-          "LocalizedString": "기본 프레임"
+          "LocalizedString": "基础头像框"
         },
         "UnlockDescription_os": []
       },
@@ -135,7 +135,7 @@
           "Namespace": "",
           "Key": "0B5C44894F36FFF89D3580A2018671FE",
           "SourceString": "购买第一期高级通行证获得",
-          "LocalizedString": "프리미엄 패스 1탄 구매 후 획득"
+          "LocalizedString": "购买第一期高级通行证获得"
         },
         "UnlockDescription_os": [
           {
@@ -225,7 +225,7 @@
           "Namespace": "",
           "Key": "904E37A442AA7FDA65B45BADF0973870",
           "SourceString": "旭旭宝宝专属",
-          "LocalizedString": "한정판 전용"
+          "LocalizedString": "旭旭宝宝专属"
         },
         "UnlockDescription_os": []
       },
@@ -234,7 +234,7 @@
           "Namespace": "",
           "Key": "336375314FF07017348E6A99A21D9B8C",
           "SourceString": "客服",
-          "LocalizedString": "고객센터"
+          "LocalizedString": "客服"
         },
         "bAutoUnlock": false,
         "bDisplayWhenLocked": false,
@@ -349,7 +349,7 @@
           "Namespace": "",
           "Key": "B46B31F245A3A34025970EB95B1921D4",
           "SourceString": "购买第三期高级通行证获得",
-          "LocalizedString": "프리미엄 패스 3탄 구매 후 획득"
+          "LocalizedString": "购买第三期高级通行证获得"
         },
         "UnlockDescription_os": [
           {
@@ -406,7 +406,7 @@
           "Namespace": "",
           "Key": "016F612F46833C7C1DABB69DE18B0822",
           "SourceString": "购买第二期高级通行证获得",
-          "LocalizedString": "프리미엄 패스 2탄 구매 후 획득"
+          "LocalizedString": "购买第二期高级通行证获得"
         },
         "UnlockDescription_os": [
           {
@@ -696,7 +696,7 @@
           "Namespace": "",
           "Key": "D2DCED6843232BD111CECB837655624F",
           "SourceString": "科幻世界限定",
-          "LocalizedString": "SF 세계 한정"
+          "LocalizedString": "科幻世界限定"
         },
         "UnlockDescription_os": []
       },
@@ -899,7 +899,7 @@
           "Namespace": "",
           "Key": "4259111A49CC74027AE62C91CF5932C2",
           "SourceString": "“异世界访客”任务奖励",
-          "LocalizedString": "'이세계 손님'·임무 보상"
+          "LocalizedString": "“异世界访客”任务奖励"
         },
         "UnlockDescription_os": []
       },
@@ -942,7 +942,7 @@
           "Namespace": "",
           "Key": "9DB677CC4C6A3B9D91BB10B49842F70E",
           "SourceString": "“危险入侵”活动限时兑换",
-          "LocalizedString": "'침입 위험' 이벤트 한정 교환"
+          "LocalizedString": "“危险入侵”活动限时兑换"
         },
         "UnlockDescription_os": []
       },
@@ -1107,7 +1107,7 @@
           "Namespace": "",
           "Key": "84380B714349C1E99F14ED88298329FE",
           "SourceString": "“最终兵器”活动奖励",
-          "LocalizedString": "'최종 병기' 이벤트 보상"
+          "LocalizedString": "“最终兵器”活动奖励"
         },
         "UnlockDescription_os": []
       },
@@ -1150,7 +1150,7 @@
           "Namespace": "",
           "Key": "199FBDC64B49E6BE720DC0B994D087D9",
           "SourceString": "人工岛-建造商店中兑换",
-          "LocalizedString": "인공섬-건설 상점에서 교환"
+          "LocalizedString": "人工岛-建造商店中兑换"
         },
         "UnlockDescription_os": []
       },
@@ -1193,7 +1193,7 @@
           "Namespace": "",
           "Key": "345CC7344FE15BF3ACF6F396F2C5A6DF",
           "SourceString": "人工岛-建造商店中兑换",
-          "LocalizedString": "인공섬-건설 상점에서 교환"
+          "LocalizedString": "人工岛-建造商店中兑换"
         },
         "UnlockDescription_os": []
       },
@@ -1236,7 +1236,7 @@
           "Namespace": "",
           "Key": "076B597F44DBF2830435B88041DFAC97",
           "SourceString": "人工岛-建造商店中兑换",
-          "LocalizedString": "인공섬-건설 상점에서 교환"
+          "LocalizedString": "人工岛-建造商店中兑换"
         },
         "UnlockDescription_os": []
       },
@@ -1279,7 +1279,7 @@
           "Namespace": "",
           "Key": "D669C0FE4F03616FFFAC2EAD0E26A041",
           "SourceString": "人工岛-建造商店中兑换",
-          "LocalizedString": "인공섬-건설 상점에서 교환"
+          "LocalizedString": "人工岛-建造商店中兑换"
         },
         "UnlockDescription_os": []
       },
@@ -1322,7 +1322,7 @@
           "Namespace": "",
           "Key": "56E753FB4B0ABEE023A8D2B04DCAD33F",
           "SourceString": "人工岛-建造商店中兑换",
-          "LocalizedString": "인공섬-건설 상점에서 교환"
+          "LocalizedString": "人工岛-建造商店中兑换"
         },
         "UnlockDescription_os": []
       },
@@ -1369,7 +1369,7 @@
           "Namespace": "",
           "Key": "CE43B9E243275A0C2A05B1BE88E98FFF",
           "SourceString": "“定向维拉”活动限时兑换",
-          "LocalizedString": "'벨라 대모험' 이벤트 한정 교환"
+          "LocalizedString": "“定向维拉”活动限时兑换"
         },
         "UnlockDescription_os": []
       },
@@ -1416,7 +1416,7 @@
           "Namespace": "",
           "Key": "D8FBD8014DC69580C0A09D9502CA6A34",
           "SourceString": "活动中获取",
-          "LocalizedString": "이벤트에서 획득"
+          "LocalizedString": "活动中获取"
         },
         "UnlockDescription_os": []
       },
@@ -1459,7 +1459,7 @@
           "Namespace": "",
           "Key": "302CD1D54C9BAA4E0ADE45B887023BD2",
           "SourceString": "通过鸣沙之轮获取",
-          "LocalizedString": "사막의 수레바퀴를 통해 획득"
+          "LocalizedString": "通过鸣沙之轮获取"
         },
         "UnlockDescription_os": []
       },
@@ -1502,9 +1502,16 @@
           "Namespace": "",
           "Key": "B2F0B9DA410EDE6BFB90F9BC75E5557A",
           "SourceString": "购买第四期高级通行证获得",
-          "LocalizedString": "프리미엄 패스 4탄 구매 후 획득"
+          "LocalizedString": "购买第四期高级通行证获得"
         },
-        "UnlockDescription_os": []
+        "UnlockDescription_os": [
+          {
+            "EHottaOverSeaRegionType::OVERSEA_PS": {
+              "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+              "Key": "PlayStation_AvatarFrame_PlayStation_01_unlock"
+            }
+          }
+        ]
       },
       "AvatarFrame34": {
         "Name": {
@@ -1586,7 +1593,7 @@
           "Namespace": "",
           "Key": "900501E64C352CF524AD999A3C67F293",
           "SourceString": "幻梦之轮",
-          "LocalizedString": "꿈의 파티"
+          "LocalizedString": "幻梦之轮"
         },
         "UnlockDescription_os": []
       },
@@ -1629,7 +1636,7 @@
           "Namespace": "",
           "Key": "D8FBD8014DC69580C0A09D9502CA6A34",
           "SourceString": "活动中获取",
-          "LocalizedString": "이벤트에서 획득"
+          "LocalizedString": "活动中获取"
         },
         "UnlockDescription_os": []
       },
@@ -1672,7 +1679,7 @@
           "Namespace": "",
           "Key": "D8FBD8014DC69580C0A09D9502CA6A34",
           "SourceString": "活动中获取",
-          "LocalizedString": "이벤트에서 획득"
+          "LocalizedString": "活动中获取"
         },
         "UnlockDescription_os": []
       },
@@ -1715,7 +1722,7 @@
           "Namespace": "",
           "Key": "BC8C28734280FF7FDD19289E13B2C7C8",
           "SourceString": "纯白之轮扭蛋投放",
-          "LocalizedString": "순백의 여신 이벤트 획득"
+          "LocalizedString": "纯白之轮扭蛋投放"
         },
         "UnlockDescription_os": []
       },
@@ -1726,7 +1733,20 @@
         },
         "bAutoUnlock": false,
         "bDisplayWhenLocked": false,
-        "OverSeaDisplayWhenLocked": [],
+        "OverSeaDisplayWhenLocked": [
+          {
+            "EHottaOverSeaRegionType::OVERSEA_TX": false
+          },
+          {
+            "EHottaOverSeaRegionType::OVERSEA_TW": false
+          },
+          {
+            "EHottaOverSeaRegionType::OVERSEA_KR": false
+          },
+          {
+            "EHottaOverSeaRegionType::OVERSEA_PS": false
+          }
+        ],
         "bService": false,
         "bRobot": false,
         "BigImage": {
@@ -1758,7 +1778,7 @@
           "Namespace": "",
           "Key": "4B6AC9794E8ADA847173DBA4AAE23C71",
           "SourceString": "购买第五期高级通行证获得",
-          "LocalizedString": "프리미엄 패스 5탄 구매 후 획득"
+          "LocalizedString": "购买第五期高级通行证获得"
         },
         "UnlockDescription_os": []
       },
@@ -1801,7 +1821,7 @@
           "Namespace": "",
           "Key": "7F6DD01F437F7FC526B8B0B0F293CF4A",
           "SourceString": "海风之轮",
-          "LocalizedString": "썸머 다이어리"
+          "LocalizedString": "海风之轮"
         },
         "UnlockDescription_os": []
       },
@@ -1844,7 +1864,7 @@
           "Namespace": "",
           "Key": "D8FBD8014DC69580C0A09D9502CA6A34",
           "SourceString": "活动中获取",
-          "LocalizedString": "이벤트에서 획득"
+          "LocalizedString": "活动中获取"
         },
         "UnlockDescription_os": []
       },
@@ -1887,7 +1907,7 @@
           "Namespace": "",
           "Key": "D8FBD8014DC69580C0A09D9502CA6A34",
           "SourceString": "活动中获取",
-          "LocalizedString": "이벤트에서 획득"
+          "LocalizedString": "活动中获取"
         },
         "UnlockDescription_os": []
       },
@@ -1930,7 +1950,7 @@
           "Namespace": "",
           "Key": "D8FBD8014DC69580C0A09D9502CA6A34",
           "SourceString": "活动中获取",
-          "LocalizedString": "이벤트에서 획득"
+          "LocalizedString": "活动中获取"
         },
         "UnlockDescription_os": []
       },
@@ -1973,7 +1993,7 @@
           "Namespace": "",
           "Key": "D8FBD8014DC69580C0A09D9502CA6A34",
           "SourceString": "活动中获取",
-          "LocalizedString": "이벤트에서 획득"
+          "LocalizedString": "活动中获取"
         },
         "UnlockDescription_os": []
       },
@@ -2016,7 +2036,7 @@
           "Namespace": "",
           "Key": "D8FBD8014DC69580C0A09D9502CA6A34",
           "SourceString": "活动中获取",
-          "LocalizedString": "이벤트에서 획득"
+          "LocalizedString": "活动中获取"
         },
         "UnlockDescription_os": []
       },
@@ -2059,7 +2079,7 @@
           "Namespace": "",
           "Key": "5F39DE2344CF48860F192A832D10EB7B",
           "SourceString": "购买第六期高级通行证获得",
-          "LocalizedString": "프리미엄 패스 6탄 구매 후 획득"
+          "LocalizedString": "购买第六期高级通行证获得"
         },
         "UnlockDescription_os": []
       },
@@ -2102,7 +2122,7 @@
           "Namespace": "",
           "Key": "D8FBD8014DC69580C0A09D9502CA6A34",
           "SourceString": "活动中获取",
-          "LocalizedString": "이벤트에서 획득"
+          "LocalizedString": "活动中获取"
         },
         "UnlockDescription_os": []
       },
@@ -2145,7 +2165,7 @@
           "Namespace": "",
           "Key": "D8FBD8014DC69580C0A09D9502CA6A34",
           "SourceString": "活动中获取",
-          "LocalizedString": "이벤트에서 획득"
+          "LocalizedString": "活动中获取"
         },
         "UnlockDescription_os": []
       },
@@ -2188,7 +2208,14 @@
           "TableId": "/Game/Resources/Text/UI.UI",
           "Key": "tongxingzheng_unlock5"
         },
-        "UnlockDescription_os": []
+        "UnlockDescription_os": [
+          {
+            "EHottaOverSeaRegionType::OVERSEA_PS": {
+              "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+              "Key": "PlayStation_AvatarFrame_PlayStation_01_unlock"
+            }
+          }
+        ]
       },
       "AvatarFrame50": {
         "Name": {
@@ -2229,7 +2256,7 @@
           "Namespace": "",
           "Key": "D8FBD8014DC69580C0A09D9502CA6A34",
           "SourceString": "活动中获取",
-          "LocalizedString": "이벤트에서 획득"
+          "LocalizedString": "活动中获取"
         },
         "UnlockDescription_os": []
       },
@@ -2313,7 +2340,7 @@
           "Namespace": "",
           "Key": "D8FBD8014DC69580C0A09D9502CA6A34",
           "SourceString": "活动中获取",
-          "LocalizedString": "이벤트에서 획득"
+          "LocalizedString": "活动中获取"
         },
         "UnlockDescription_os": []
       },
@@ -2356,7 +2383,7 @@
           "Namespace": "",
           "Key": "D8FBD8014DC69580C0A09D9502CA6A34",
           "SourceString": "活动中获取",
-          "LocalizedString": "이벤트에서 획득"
+          "LocalizedString": "活动中获取"
         },
         "UnlockDescription_os": []
       },
@@ -2440,7 +2467,7 @@
           "Namespace": "",
           "Key": "F73DF8D24313BA4C6F20C694492F1874",
           "SourceString": "商店获取",
-          "LocalizedString": "상점 획득"
+          "LocalizedString": "商店获取"
         },
         "UnlockDescription_os": []
       },
@@ -2483,7 +2510,14 @@
           "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
           "Key": "tongxingzheng_unlock"
         },
-        "UnlockDescription_os": []
+        "UnlockDescription_os": [
+          {
+            "EHottaOverSeaRegionType::OVERSEA_PS": {
+              "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+              "Key": "PlayStation_AvatarFrame_PlayStation_01_unlock"
+            }
+          }
+        ]
       },
       "AvatarFrame57": {
         "Name": {
@@ -2565,7 +2599,7 @@
           "Namespace": "",
           "Key": "D8FBD8014DC69580C0A09D9502CA6A34",
           "SourceString": "活动中获取",
-          "LocalizedString": "이벤트에서 획득"
+          "LocalizedString": "活动中获取"
         },
         "UnlockDescription_os": []
       },
@@ -2608,7 +2642,7 @@
           "Namespace": "",
           "Key": "D8FBD8014DC69580C0A09D9502CA6A34",
           "SourceString": "活动中获取",
-          "LocalizedString": "이벤트에서 획득"
+          "LocalizedString": "活动中获取"
         },
         "UnlockDescription_os": []
       },
@@ -2651,7 +2685,14 @@
           "TableId": "/Game/Resources/Text/UI.UI",
           "Key": "tongxingzheng_seven_os"
         },
-        "UnlockDescription_os": []
+        "UnlockDescription_os": [
+          {
+            "EHottaOverSeaRegionType::OVERSEA_PS": {
+              "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+              "Key": "PlayStation_AvatarFrame_PlayStation_01_unlock"
+            }
+          }
+        ]
       },
       "AvatarFrame_61": {
         "Name": {
@@ -2774,7 +2815,7 @@
           "Namespace": "",
           "Key": "D8FBD8014DC69580C0A09D9502CA6A34",
           "SourceString": "活动中获取",
-          "LocalizedString": "이벤트에서 획득"
+          "LocalizedString": "活动中获取"
         },
         "UnlockDescription_os": []
       },
@@ -2817,7 +2858,7 @@
           "Namespace": "",
           "Key": "4F735F7147895A4851A2BAB7BA0165DF",
           "SourceString": "世界探索获得",
-          "LocalizedString": "세계 탐색에서 획득"
+          "LocalizedString": "世界探索获得"
         },
         "UnlockDescription_os": []
       },
@@ -2860,7 +2901,7 @@
           "Namespace": "",
           "Key": "0199117944D16C3EE215B0A21E8E814F",
           "SourceString": "世界探索获得",
-          "LocalizedString": "세계 탐색에서 획득"
+          "LocalizedString": "世界探索获得"
         },
         "UnlockDescription_os": []
       },
@@ -2903,7 +2944,7 @@
           "Namespace": "",
           "Key": "4ADADC1746E4882C08FF58AE7B6306FA",
           "SourceString": "成就奖励",
-          "LocalizedString": "업적 보상"
+          "LocalizedString": "成就奖励"
         },
         "UnlockDescription_os": []
       },
@@ -2946,7 +2987,7 @@
           "Namespace": "",
           "Key": "D8FBD8014DC69580C0A09D9502CA6A34",
           "SourceString": "活动中获取",
-          "LocalizedString": "이벤트에서 획득"
+          "LocalizedString": "活动中获取"
         },
         "UnlockDescription_os": []
       },
@@ -2989,7 +3030,7 @@
           "Namespace": "",
           "Key": "D8FBD8014DC69580C0A09D9502CA6A34",
           "SourceString": "活动中获取",
-          "LocalizedString": "이벤트에서 획득"
+          "LocalizedString": "活动中获取"
         },
         "UnlockDescription_os": []
       },
@@ -3114,7 +3155,7 @@
           "Namespace": "",
           "Key": "D67B87004742897346BDB98FE82DCF14",
           "SourceString": "CBT期间投稿活动入选解锁",
-          "LocalizedString": "CBT 기간 투고 이벤트 합격 시 잠금 해제"
+          "LocalizedString": "CBT期间投稿活动入选解锁"
         },
         "UnlockDescription_os": []
       },
@@ -3157,7 +3198,7 @@
           "Namespace": "",
           "Key": "157429E344A9DA0B322C5BB041C06C51",
           "SourceString": "参与直播活动解锁",
-          "LocalizedString": "라이브 이벤트 참여 시 잠금 해제"
+          "LocalizedString": "参与直播活动解锁"
         },
         "UnlockDescription_os": []
       },
@@ -3364,7 +3405,7 @@
           "Namespace": "",
           "Key": "70A52E4D43F7E6682BBF0E856F449313",
           "SourceString": "活動獲得",
-          "LocalizedString": "이벤트 획득"
+          "LocalizedString": "活動獲得"
         },
         "UnlockDescription_os": []
       },
@@ -3413,6 +3454,211 @@
         },
         "UnlockDescription_os": []
       },
+      "CN_AvatarFrame_1": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrame_tencent_05_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_tencent_05.AvatarFrame_tencent_05",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_tencent_05s.AvatarFrame_tencent_05s",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrame_tencent_05_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
+      "CN_AvatarFrame_2": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrame_Overseas_Anniversary01_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_Overseas_Anniversary01.AvatarFrame_Overseas_Anniversary01",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_Overseas_Anniversary01s.AvatarFrame_Overseas_Anniversary01s",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrame_Overseas_Anniversary01_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
+      "CN_AvatarFrame_3": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "CN_AvatarFrame_3_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": true,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/CN_AvatarFrame_3.CN_AvatarFrame_3",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/CN_AvatarFrame_3_s.CN_AvatarFrame_3_s",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "CN_AvatarFrame_3_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
+      "CN_AvatarFrame_4": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "CN_AvatarFrame_4_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/CN_AvatarFrame_4.CN_AvatarFrame_4",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/CN_AvatarFrame_4_s.CN_AvatarFrame_4_s",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "CN_AvatarFrame_4_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
+      "CN_AvatarFrame_5": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "CN_AvatarFrame_5_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/CN_AvatarFrame_5.CN_AvatarFrame_5",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/CN_AvatarFrame_5_s.CN_AvatarFrame_5_s",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "CN_AvatarFrame_5_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
       "AvatarFrame_tencent_1": {
         "Name": {
           "TableId": "/Game/Resources/Text/ST_item.ST_Item",
@@ -3452,7 +3698,7 @@
           "Namespace": "",
           "Key": "A2D3E1F5478F7F1E9E194DA207E69B4A",
           "SourceString": "UGC项目第一年度上榜3次获得。",
-          "LocalizedString": "UGC 프로젝트 제1회 순위에 3회 등극하면 획득합니다."
+          "LocalizedString": "UGC项目第一年度上榜3次获得。"
         },
         "UnlockDescription_os": []
       },
@@ -3495,7 +3741,7 @@
           "Namespace": "",
           "Key": "EB0D90B84B7B26DA973516A51B6065BE",
           "SourceString": "UGC项目第一年度上榜5次获得。",
-          "LocalizedString": "UGC 프로젝트 제1회 순위에 5회 등극하면 획득합니다."
+          "LocalizedString": "UGC项目第一年度上榜5次获得。"
         },
         "UnlockDescription_os": []
       },
@@ -3538,7 +3784,7 @@
           "Namespace": "",
           "Key": "0ACA9C724E087A060663158A942BE370",
           "SourceString": "UGC项目第一年度上榜10次获得。这是可能的吗！？",
-          "LocalizedString": "UGC 프로젝트 제1회 순위에 10회 등극하면 획득합니다. 과연 가능할까요!?"
+          "LocalizedString": "UGC项目第一年度上榜10次获得。这是可能的吗！？"
         },
         "UnlockDescription_os": []
       },
@@ -4126,7 +4372,7 @@
           "Namespace": "",
           "Key": "D8FBD8014DC69580C0A09D9502CA6A34",
           "SourceString": "活动中获取",
-          "LocalizedString": "이벤트에서 획득"
+          "LocalizedString": "活动中获取"
         },
         "UnlockDescription_os": []
       },
@@ -4292,7 +4538,7 @@
           "Namespace": "",
           "Key": "D8FBD8014DC69580C0A09D9502CA6A34",
           "SourceString": "活动中获取",
-          "LocalizedString": "이벤트에서 획득"
+          "LocalizedString": "活动中获取"
         },
         "UnlockDescription_os": []
       },
@@ -4376,7 +4622,14 @@
           "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
           "Key": "tongxingzheng_os_08"
         },
-        "UnlockDescription_os": []
+        "UnlockDescription_os": [
+          {
+            "EHottaOverSeaRegionType::OVERSEA_PS": {
+              "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+              "Key": "PlayStation_AvatarFrame_PlayStation_01_unlock"
+            }
+          }
+        ]
       },
       "AvatarFrame_79": {
         "Name": {
@@ -4499,7 +4752,7 @@
           "Namespace": "",
           "Key": "D8FBD8014DC69580C0A09D9502CA6A34",
           "SourceString": "活动中获取",
-          "LocalizedString": "이벤트에서 획득"
+          "LocalizedString": "活动中获取"
         },
         "UnlockDescription_os": []
       },
@@ -4542,7 +4795,7 @@
           "Namespace": "",
           "Key": "D8FBD8014DC69580C0A09D9502CA6A34",
           "SourceString": "活动中获取",
-          "LocalizedString": "이벤트에서 획득"
+          "LocalizedString": "活动中获取"
         },
         "UnlockDescription_os": []
       },
@@ -6182,7 +6435,7 @@
           "Key": "AvatarFrame_102_name"
         },
         "bAutoUnlock": false,
-        "bDisplayWhenLocked": false,
+        "bDisplayWhenLocked": true,
         "OverSeaDisplayWhenLocked": [],
         "bService": false,
         "bRobot": false,
@@ -6212,8 +6465,8 @@
           "Key": "AvatarFrame_102_des"
         },
         "UnlockDescription": {
-          "TableId": "/Game/Resources/Text/UI.UI",
-          "Key": "Avatar_unlock_2"
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "tongxingzheng_012_os"
         },
         "UnlockDescription_os": []
       },
@@ -6340,6 +6593,47 @@
         },
         "UnlockDescription_os": []
       },
+      "AvatarFrame_106": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_106_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": true,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_106.AvatarFrame_106",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_106.AvatarFrame_s_106",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_106_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Unlock_Avatar_106"
+        },
+        "UnlockDescription_os": []
+      },
       "AvatarFrame_107": {
         "Name": {
           "TableId": "/Game/Resources/Text/ST_item.ST_Item",
@@ -6378,6 +6672,1031 @@
         "UnlockDescription": {
           "TableId": "/Game/Resources/Text/ST_item.ST_Item",
           "Key": "OutputSource_Text555"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_108": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_108_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": true,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_108.AvatarFrame_108",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_108.AvatarFrame_s_108",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_108_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Unlock_Avatar_107"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_109": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_109_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_109.AvatarFrame_109",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_109.AvatarFrame_s_109",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_109_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_110": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_110_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_110.AvatarFrame_110",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_110.AvatarFrame_s_110",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_110_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_114": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_114_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_114.AvatarFrame_114",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_114.AvatarFrame_s_114",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_114_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_115": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_115_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_115.AvatarFrame_115",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_115.AvatarFrame_s_115",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_115_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_116": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_116_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_116.AvatarFrame_116",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_116.AvatarFrame_s_116",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_116_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_117": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_117_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_117.AvatarFrame_117",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_117.AvatarFrame_s_117",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_117_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_118": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_118_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": true,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_118.AvatarFrame_118",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_118.AvatarFrame_s_118",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_118_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_119": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_119_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_119.AvatarFrame_119",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_119.AvatarFrame_s_119",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_119_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_120": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_120_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_120.AvatarFrame_120",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_120.AvatarFrame_s_120",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_120_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_121": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_121_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": true,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_121.AvatarFrame_121",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_121.AvatarFrame_s_121",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_121_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_122": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_122_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_122.AvatarFrame_122",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_122.AvatarFrame_s_122",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_122_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_123": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_123_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_123.AvatarFrame_123",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_123.AvatarFrame_s_123",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_123_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_124": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_124_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_124.AvatarFrame_124",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_124.AvatarFrame_s_124",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_124_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_125": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_125_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_125.AvatarFrame_125",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_125.AvatarFrame_s_125",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_125_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_126": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_126_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": true,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_126.AvatarFrame_126",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_126.AvatarFrame_s_126",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_126_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Output_Gacha_NewYear_2024"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_127": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_127_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": true,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_127.AvatarFrame_127",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_127.AvatarFrame_s_127",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_127_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_128": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_128_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": true,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_128.AvatarFrame_128",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_128.AvatarFrame_s_128",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_128_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_4"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_129": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_129_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": true,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_129.AvatarFrame_129",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_129.AvatarFrame_s_129",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_129_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_131": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_131_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": true,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_131.AvatarFrame_131",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_131.AvatarFrame_s_131",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_131_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_133": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_133_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": true,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_133.AvatarFrame_133",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_133.AvatarFrame_s_133",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_133_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_134": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_134_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": true,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_134.AvatarFrame_134",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_134.AvatarFrame_s_134",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_134_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_135": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_135_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": true,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_135.AvatarFrame_135",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_135.AvatarFrame_s_135",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_135_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_136": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_136_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": true,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_136.AvatarFrame_136",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_136.AvatarFrame_s_136",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_136_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_137": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_137_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": true,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_137.AvatarFrame_137",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_s_137.AvatarFrame_s_137",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/ST_item.ST_Item",
+          "Key": "Avatarframe_137_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/UI.UI",
+          "Key": "Avatar_unlock_2"
         },
         "UnlockDescription_os": []
       },
@@ -6650,7 +7969,7 @@
       "AvatarFrame_Koreatongyong33_01": {
         "Name": {
           "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
-          "Key": "AvatarFrame_Koreatongyong33_01_name"
+          "Key": "PlayStation_AvatarFrame_Koreatongyong33_01_name"
         },
         "bAutoUnlock": false,
         "bDisplayWhenLocked": false,
@@ -6680,11 +7999,529 @@
         "ModifyID": "None",
         "Description": {
           "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
-          "Key": "AvatarFrame_Koreatongyong33_01_des"
+          "Key": "PlayStation_AvatarFrame_Koreatongyong33_01_des"
         },
         "UnlockDescription": {
           "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
-          "Key": "Avatar_Overseas_common_des"
+          "Key": "PlayStation_AvatarFrame_PlayStation_01_unlock"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_tencent_03": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrame_tencentdiqu_03_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/ResourcesOverSea/Icon/AvatarFrame/AvatarFrame_tencent_03.AvatarFrame_tencent_03",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/ResourcesOverSea/Icon/AvatarFrame/AvatarFrame_tencent_03s.AvatarFrame_tencent_03s",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrame_tencentdiqu_03_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrame_txcreatos_03_unlock"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_tencent_04": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrame_tencent_04_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/ResourcesOverSea/Icon/AvatarFrame/AvatarFrame_tencent_04.AvatarFrame_tencent_04",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/ResourcesOverSea/Icon/AvatarFrame/AvatarFrame_tencent_04s.AvatarFrame_tencent_04s",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrame_tencent_04_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrame_txcreatos_03_unlock"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_tencent_05": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrame_tencent_05_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/ResourcesOverSea/Icon/AvatarFrame/AvatarFrame_tencent_05.AvatarFrame_tencent_05",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/ResourcesOverSea/Icon/AvatarFrame/AvatarFrame_tencent_05s.AvatarFrame_tencent_05s",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrame_tencent_05_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "chat_qipao_tencent_03_unlock"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_PlayStation_02": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "PlayStation_AvatarFrame_PlayStation_02_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/ResourcesOverSea/Icon/AvatarFrame/AvatarFrame_koreaMoonFestival_01.AvatarFrame_koreaMoonFestival_01",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/ResourcesOverSea/Icon/AvatarFrame/AvatarFrame_koreaMoonFestival_01s.AvatarFrame_koreaMoonFestival_01s",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "PlayStation_AvatarFrame_PlayStation_02_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "PlayStation_AvatarFrame_PlayStation_01_unlock"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_Overseas_10": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrame_Overseas_10_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_Overseas_10.AvatarFrame_Overseas_10",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_Overseas_s_10.AvatarFrame_Overseas_s_10",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrame_Overseas_10_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "Avatar_Unlock_CreatorSpace"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_Overseas_11": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrame_Overseas_11_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_Overseas_11.AvatarFrame_Overseas_11",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_Overseas_s_11.AvatarFrame_Overseas_s_11",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrame_Overseas_11_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "Avatar_Unlock_ShiKuang"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_Overseas_12": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrame_Overseas_12_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_Overseas_12.AvatarFrame_Overseas_12",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_Overseas_s_12.AvatarFrame_Overseas_s_12",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrame_Overseas_12_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "Avatar_Unlock_XianShiHuoDong"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_Overseas_13": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrame_Overseas_13_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [
+          {
+            "EHottaOverSeaRegionType::OVERSEA_TX": true
+          },
+          {
+            "EHottaOverSeaRegionType::OVERSEA_TW": false
+          },
+          {
+            "EHottaOverSeaRegionType::OVERSEA_KR": false
+          },
+          {
+            "EHottaOverSeaRegionType::OVERSEA_PS": false
+          }
+        ],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_Overseas_13.AvatarFrame_Overseas_13",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_Overseas_s_13.AvatarFrame_Overseas_s_13",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrame_Overseas_13_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "Avatar_Unlock_CreatorSpace"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_Overseas_14": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrame_Overseas_14_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [
+          {
+            "EHottaOverSeaRegionType::OVERSEA_TX": true
+          },
+          {
+            "EHottaOverSeaRegionType::OVERSEA_TW": false
+          },
+          {
+            "EHottaOverSeaRegionType::OVERSEA_KR": false
+          },
+          {
+            "EHottaOverSeaRegionType::OVERSEA_PS": false
+          }
+        ],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_Overseas_14.AvatarFrame_Overseas_14",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/Resources/Icon/AvatarFrame/AvatarFrame_Overseas_s_14.AvatarFrame_Overseas_s_14",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrame_Overseas_14_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "Avatar_Unlock_CreatorSpace"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrameiw_06": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrameiw_06_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/ResourcesOverSea/Icon/AvatarFrame/AvatarFrameiw_07.AvatarFrameiw_07",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/ResourcesOverSea/Icon/AvatarFrame/AvatarFrameiw_07_s.AvatarFrameiw_07_s",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrameiw_06_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "Avatar_iw_unlock"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrameiw_07": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrameiw_07_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/ResourcesOverSea/Icon/AvatarFrame/AvatarFrameiw_07.AvatarFrameiw_07",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/ResourcesOverSea/Icon/AvatarFrame/AvatarFrameiw_07_s.AvatarFrameiw_07_s",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrameiw_07_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "Avatar_iw_unlock"
+        },
+        "UnlockDescription_os": []
+      },
+      "AvatarFrame_tencent_06": {
+        "Name": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrame_tencent_06_name"
+        },
+        "bAutoUnlock": false,
+        "bDisplayWhenLocked": false,
+        "OverSeaDisplayWhenLocked": [],
+        "bService": false,
+        "bRobot": false,
+        "BigImage": {
+          "AssetPathName": "/Game/ResourcesOverSea/Icon/AvatarFrame/AvatarFrame_tencent_06.AvatarFrame_tencent_06",
+          "SubPathString": ""
+        },
+        "Icon": {
+          "AssetPathName": "/Game/ResourcesOverSea/Icon/AvatarFrame/AvatarFrame_tencent_06s.AvatarFrame_tencent_06s",
+          "SubPathString": ""
+        },
+        "Material": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "Material2": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ParticleAsset": {
+          "AssetPathName": "None",
+          "SubPathString": ""
+        },
+        "ModifyID": "None",
+        "Description": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrame_tencent_06_des"
+        },
+        "UnlockDescription": {
+          "TableId": "/Game/Resources/Text/Oversea/ST_Item_Oversea.ST_Item_Oversea",
+          "Key": "AvatarFrame_tencent_06_unlock"
         },
         "UnlockDescription_os": []
       }
