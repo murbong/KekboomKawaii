@@ -224,11 +224,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Resources\Database\StaticWeaponDataTable.json" />
-    <Resource Include="Resources\Database\AvatarConfigDataTable.json" />
-    <Resource Include="Resources\Database\AvatarFrameConfigDataTable.json" />
-    <Resource Include="Resources\Database\DT_Title.json" />
-    <Resource Include="Resources\Database\Game.json" />
+    <EmbeddedResource Include="Resources\Database\StaticWeaponDataTable.json" />
+    <EmbeddedResource Include="Resources\Database\AvatarConfigDataTable.json" />
+    <EmbeddedResource Include="Resources\Database\AvatarFrameConfigDataTable.json" />
+    <EmbeddedResource Include="Resources\Database\DT_Title.json" />
+    <EmbeddedResource Include="Resources\Database\Game.json" />
     <Resource Include="Resources\Fonts\ONE Mobile POP.ttf" />
   </ItemGroup>
   <ItemGroup>

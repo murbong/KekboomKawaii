@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -103,11 +104,11 @@ namespace KekboomKawaii
         public static Dictionary<string, string> WeaponImageDic = new Dictionary<string, string>();
 
 
-        public static string AvatarJsonPath = @"../../Resources/Database/AvatarConfigDataTable.json";
-        public static string AvatarFrameJsonPath = @"../../Resources/Database/AvatarFrameConfigDataTable.json";
-        public static string StaticWeaponJsonPath = @"../../Resources/Database/StaticWeaponDataTable.json";
-        public static string TitleJsonPath = @"../../Resources/Database/DT_Title.json";
-        public static string LocalJsonPath = @"../../Resources/Database/Game.json";
+        public static string AvatarJsonPath = @"Resources.Database.AvatarConfigDataTable.json";
+        public static string AvatarFrameJsonPath = @"Resources.Database.AvatarFrameConfigDataTable.json";
+        public static string StaticWeaponJsonPath = @"Resources.Database.StaticWeaponDataTable.json";
+        public static string TitleJsonPath = @"Resources.Database.DT_Title.json";
+        public static string LocalJsonPath = @"Resources.Database.Game.json";
 
         public static Regex regex = new Regex("^\\/(.+\\/)*(.+)\\.(.+)$");
 
@@ -150,6 +151,21 @@ namespace KekboomKawaii
             WritePrivateProfileString(section, key, value, AppDomain.CurrentDomain.BaseDirectory + UserSettingsFileName);
         }
 
+        private static string GetEmbeddedResource(string fileName)
+        {
+            var assembly = Assembly.GetExecutingAssembly();
+            var resourceName = "KekboomKawaii." + fileName;
+
+            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+            {
+                using (StreamReader reader = new StreamReader(stream, encoding: Encoding.UTF8))
+                {
+                    string result = reader.ReadToEnd();
+                    return result;
+                }
+            }
+        }
+
 
         static Global()
         {
@@ -165,19 +181,19 @@ namespace KekboomKawaii
 
         public static void Initlaize()
         {
-            dynamic avatar = JsonConvert.DeserializeObject(File.ReadAllText(AvatarJsonPath, Encoding.UTF8));
+            dynamic avatar = JsonConvert.DeserializeObject(GetEmbeddedResource(AvatarJsonPath));
             foreach (dynamic item in avatar[0].Rows)
             {
                 AvatarDic.Add(item.Name.ToLower(), regex.Match(item.Value.BigImage.AssetPathName.ToString()).Groups[3].Value);
             }
-            dynamic avatarFrame = JsonConvert.DeserializeObject(File.ReadAllText(AvatarFrameJsonPath, Encoding.UTF8));
+            dynamic avatarFrame = JsonConvert.DeserializeObject(GetEmbeddedResource(AvatarFrameJsonPath));
 
             foreach (dynamic item in avatarFrame[0].Rows)
             {
                 AvatarFrameDic.Add(item.Name.ToLower(), regex.Match(item.Value.BigImage.AssetPathName.ToString()).Groups[3].Value);
             }
 
-            dynamic staticWeapon = JsonConvert.DeserializeObject(File.ReadAllText(StaticWeaponJsonPath, Encoding.UTF8));
+            dynamic staticWeapon = JsonConvert.DeserializeObject(GetEmbeddedResource(StaticWeaponJsonPath));
 
             foreach (dynamic item in staticWeapon[0].Rows)
             {
@@ -185,9 +201,9 @@ namespace KekboomKawaii
                 WeaponImageDic.Add(item.Name.ToLower(), regex.Match(item.Value.WeaponIconForMatrix.AssetPathName.ToString()).Groups[3].Value);
             }
 
-            dynamic title = JsonConvert.DeserializeObject(File.ReadAllText(TitleJsonPath, Encoding.UTF8));
+            dynamic title = JsonConvert.DeserializeObject(GetEmbeddedResource(TitleJsonPath));
 
-            dynamic titleLoc = JsonConvert.DeserializeObject(File.ReadAllText(LocalJsonPath, Encoding.UTF8));
+            dynamic titleLoc = JsonConvert.DeserializeObject(GetEmbeddedResource(LocalJsonPath));
 
 
             foreach (dynamic item in title[0].Rows)
