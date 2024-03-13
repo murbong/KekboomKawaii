@@ -1,8 +1,7 @@
-﻿using System;
+﻿using MaterialDesignThemes.Wpf;
+using System;
 using System.Globalization;
 using System.Windows.Data;
-
-using MaterialDesignThemes.Wpf;
 
 namespace KekboomKawaii.Converter
 {

@@ -1,7 +1,6 @@
 ﻿
-using System.Windows.Controls;
-
 using KekboomKawaii.ViewModels;
+using System.Windows.Controls;
 namespace KekboomKawaii.Views
 {
     /// <summary>

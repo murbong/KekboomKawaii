@@ -1,13 +1,7 @@
 ﻿using KekboomKawaii.Tools;
 
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
-using Windows.Devices.Bluetooth.GenericAttributeProfile;
 
 namespace KekboomKawaii.Models
 {
@@ -56,7 +50,7 @@ namespace KekboomKawaii.Models
 
                 reader.ReadBytes(4);
             }
-            else if(param == 0x08)
+            else if (param == 0x08)
             {
                 reader.ReadBytes(4);
                 Violation = reader.ReadString();

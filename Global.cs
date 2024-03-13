@@ -1,15 +1,12 @@
-﻿using System.Text;
-using System.Windows;
-using System.Runtime.InteropServices;
+﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-
+using System.IO;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Text.RegularExpressions;
 using Windows.Data.Xml.Dom;
 using Windows.UI.Notifications;
-using System.Text.RegularExpressions;
-using Newtonsoft.Json;
-using System.IO;
-using System.Diagnostics;
 
 namespace KekboomKawaii
 {
@@ -184,7 +181,7 @@ namespace KekboomKawaii
 
             foreach (dynamic item in staticWeapon[0].Rows)
             {
-                
+
                 WeaponImageDic.Add(item.Name.ToLower(), regex.Match(item.Value.WeaponIconForMatrix.AssetPathName.ToString()).Groups[3].Value);
             }
 

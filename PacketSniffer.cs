@@ -2,17 +2,12 @@
 using KekboomKawaii.Tools;
 using PcapDotNet.Core;
 using PcapDotNet.Packets;
-using PcapDotNet.Packets.Http;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Runtime.Remoting.Channels;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
-using Windows.Storage.Streams;
 
 namespace KekboomKawaii
 {
@@ -186,7 +181,7 @@ namespace KekboomKawaii
                     }
                 }
             }
-            catch(Exception e) 
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }

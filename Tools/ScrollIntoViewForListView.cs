@@ -1,10 +1,6 @@
-﻿using KekboomKawaii.ViewModels;
-using Microsoft.Xaml.Behaviors;
+﻿using Microsoft.Xaml.Behaviors;
 using System;
-using System.Security.RightsManagement;
-using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Documents;
 
 namespace KekboomKawaii.Tools
 {

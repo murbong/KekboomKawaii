@@ -1,17 +1,10 @@
-﻿using System;
+﻿using KekboomKawaii.Models;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using KekboomKawaii.Models;
-using System.Windows.Threading;
-using System.Windows;
 using System.Runtime.CompilerServices;
-using System.Media;
-using Windows.System;
+using System.Windows;
 
 namespace KekboomKawaii.ViewModels
 {

@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace KekboomKawaii.Models
+﻿namespace KekboomKawaii.Models
 {
     public enum EnchantElement
     {
@@ -150,7 +143,7 @@ namespace KekboomKawaii.Models
         {
 
         }
-        public EnchantProperty(string name, float value,string titan)
+        public EnchantProperty(string name, float value, string titan)
         {
             Name = name;
             Value = value;

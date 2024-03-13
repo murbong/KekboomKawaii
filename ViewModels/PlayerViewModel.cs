@@ -1,16 +1,10 @@
 ﻿using KekboomKawaii.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
-using Newtonsoft.Json;
 using System.IO;
-using Windows.Devices.Bluetooth.Advertisement;
-using System.Text.RegularExpressions;
-using System.Windows.Media;
+using System.Linq;
+using System.Windows.Input;
 
 namespace KekboomKawaii.ViewModels
 {
@@ -37,7 +31,7 @@ namespace KekboomKawaii.ViewModels
             get
             {
                 ulong uint64 = (ulong)GetValue("uid");
-                return $"{uint64>>32}{(uint)uint64}";
+                return $"{uint64 >> 32}{(uint)uint64}";
             }
         }
 

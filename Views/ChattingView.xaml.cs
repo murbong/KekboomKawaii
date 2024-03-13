@@ -1,8 +1,5 @@
-﻿
-using System.Windows;
+﻿using KekboomKawaii.ViewModels;
 using System.Windows.Controls;
-
-using KekboomKawaii.ViewModels;
 
 namespace KekboomKawaii.Views
 {

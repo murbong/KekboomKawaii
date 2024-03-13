@@ -1,12 +1,9 @@
 ﻿using KekboomKawaii.Models;
-using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace KekboomKawaii.ViewModels
@@ -18,7 +15,7 @@ namespace KekboomKawaii.ViewModels
         {
             var sortedItems = new List<PlayerViewModel>(this);
 
-            sortedItems.Sort((a,b)=>a.Compare(b));
+            sortedItems.Sort((a, b) => a.Compare(b));
 
             foreach (var item in sortedItems)
             {

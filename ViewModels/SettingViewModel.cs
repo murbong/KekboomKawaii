@@ -1,5 +1,4 @@
 ﻿using PcapDotNet.Core;
-using System;
 using System.Collections.Generic;
 using System.Media;
 using System.Windows.Controls;
