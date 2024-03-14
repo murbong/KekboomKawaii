@@ -113,7 +113,7 @@ namespace KekboomKawaii.ViewModels
 
             var filters = Global.FilterString.Split(';');
 
-            if (filters.Any(str => userChat.Message.Contains(str)))
+            if (filters.Any(str => userChat.Message.Contains(str)) && Global.ChatClassFilter.HasFlag(userChat.ChatClass))
             {
                 Global.ShowToast("KekboomKawaii", userChat.NickName, Message, string.Empty);
                 SystemSounds.Beep.Play();

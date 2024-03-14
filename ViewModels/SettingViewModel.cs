@@ -1,6 +1,8 @@
 ﻿using PcapDotNet.Core;
+using System;
 using System.Collections.Generic;
 using System.Media;
+using System.Reflection.Emit;
 using System.Windows.Controls;
 using System.Windows.Input;
 
@@ -52,7 +54,31 @@ namespace KekboomKawaii.ViewModels
                 OnPropertyChanged();
             }
         }
+        public bool SelectWorld
+        {
+            get
+            {
+                return Global.ChatClassFilter.HasFlag(ChatClassFlag.World);
+            }
+            set
+            {
+                Global.ChatClassFilter = value ? Global.ChatClassFilter | ChatClassFlag.World : Global.ChatClassFilter & ~ChatClassFlag.World;
+                OnPropertyChanged();
+            }
+        }
 
+        public bool SelectGuild
+        {
+            get
+            {
+                return Global.ChatClassFilter.HasFlag(ChatClassFlag.Guild);
+            }
+            set
+            {
+                Global.ChatClassFilter = value ? Global.ChatClassFilter | ChatClassFlag.Guild : Global.ChatClassFilter & ~ChatClassFlag.Guild;
+                OnPropertyChanged();
+            }
+        }
 
         public IList<LivePacketDevice> AllLocalMachine { get { return Global.Sniffer.AllDevices; } }
 

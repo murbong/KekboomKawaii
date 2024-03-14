@@ -136,6 +136,18 @@ namespace KekboomKawaii
             }
         }
 
+        private static ChatClassFlag chatClassFilter;
+
+        public static ChatClassFlag ChatClassFilter
+        {
+            get { return chatClassFilter; }
+            set
+            {
+                chatClassFilter = value;
+                SetiniValue("Setting", "ChatClassFilter", value.ToString());
+            }
+        }
+
 
         public static PacketSniffer Sniffer { get; set; }
 
@@ -175,6 +187,10 @@ namespace KekboomKawaii
             {
                 ethernetIndex = index;
             }
+            if (Enum.TryParse<ChatClassFlag>(GetiniValue("Setting", "ChatClassFilter"),out var filter)){
+                chatClassFilter = filter;
+            }
+
             Sniffer = new PacketSniffer();
 
         }
@@ -223,6 +239,13 @@ namespace KekboomKawaii
 
                     TitleDic.Add(item.Name, na);
 
+                }
+                else if(item.Value.Name.Key != null)
+                {
+                    dynamic table = titleLoc[""];
+                    string na = table[item.Value.Name.Key.ToString()];
+
+                    TitleDic.Add(item.Name, na);
                 }
             }
         }
