@@ -6,6 +6,7 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Windows.Media.Imaging;
 using Windows.Data.Xml.Dom;
 using Windows.UI.Notifications;
 
@@ -45,15 +46,24 @@ namespace KekboomKawaii
         Admin = 5,
         Owner = 6
     }
+
+    public enum ImageEnum : int
+    {
+        None = 0,
+        Avatar = 1,
+        AvatarFrame = 2,
+        Weapon = 3
+    }
     public static class Global
     {
 
+        #region INI DllImport
         [DllImport("kernel32")]
         private static extern int GetPrivateProfileString(string section, string key, string def, StringBuilder retVal, int size, string filePath);
 
         [DllImport("kernel32")]
         private static extern int WritePrivateProfileString(string section, string key, string val, string filePath);
-
+        #endregion
 
         public static void ShowToast(string appId, string title, string message, string image)
         {
@@ -76,6 +86,7 @@ namespace KekboomKawaii
             ToastNotificationManager.CreateToastNotifier(appId).Show(toast);
         }
 
+        #region Dictionary
 
         public static Dictionary<ChatClassFlag, string> ChatClassDictionary = new Dictionary<ChatClassFlag, string>
         {
@@ -101,14 +112,37 @@ namespace KekboomKawaii
 
         public static Dictionary<string, string> AvatarDic = new Dictionary<string, string>();
 
-        public static Dictionary<string, string> WeaponImageDic = new Dictionary<string, string>();
+        public static Dictionary<string, string> WeaponDic = new Dictionary<string, string>();
+
+        public static Dictionary<string, BitmapImage> AvatarImageDic = new Dictionary<string, BitmapImage>();
+
+        public static Dictionary<string, BitmapImage> AvatarFrameImageDic = new Dictionary<string, BitmapImage>();
+
+        public static Dictionary<string, BitmapImage> WeaponImageDic = new Dictionary<string, BitmapImage>();
 
 
-        public static string AvatarJsonPath = @"Resources.Database.AvatarConfigDataTable.json";
-        public static string AvatarFrameJsonPath = @"Resources.Database.AvatarFrameConfigDataTable.json";
-        public static string StaticWeaponJsonPath = @"Resources.Database.StaticWeaponDataTable.json";
-        public static string TitleJsonPath = @"Resources.Database.DT_Title.json";
-        public static string LocalJsonPath = @"Resources.Database.Game.json";
+
+        #endregion
+
+        #region File Path
+        public static string AvatarJsonPath = @"/Resources/Database/AvatarConfigDataTable.json";
+        public static string AvatarFrameJsonPath = @"/Resources/Database/AvatarFrameConfigDataTable.json";
+        public static string StaticWeaponJsonPath = @"/Resources/Database/StaticWeaponDataTable.json";
+        public static string TitleJsonPath = @"/Resources/Database/DT_Title.json";
+        public static string LocalJsonPath = @"/Resources/Database/Game.json";
+
+
+        public static string AvatarImagePath = "/Resources/Avatar";
+        public static string AvatarFrameImagePath = "/Resources/AvatarFrame";
+        public static string WeaponImagePath = "/Resources/Weapon";
+
+
+
+
+
+        #endregion
+
+        #region Property
 
         public static Regex regex = new Regex("^\\/(.+\\/)*(.+)\\.(.+)$");
 
@@ -148,8 +182,11 @@ namespace KekboomKawaii
             }
         }
 
+        #endregion
 
         public static PacketSniffer Sniffer { get; set; }
+
+        #region Method
 
         private static string GetiniValue(string section, string key)
         {
@@ -178,6 +215,27 @@ namespace KekboomKawaii
             }
         }
 
+        private static string GetFileResource(string fileName)
+        {
+            var filePath = AppDomain.CurrentDomain.BaseDirectory + fileName;
+
+            using (StreamReader reader = new StreamReader(filePath, encoding: Encoding.UTF8))
+            {
+                string result = reader.ReadToEnd();
+                return result;
+            }
+        }
+
+        // get external resources in directory
+
+        // get fileList from directory
+        private static string[] GetFileList(string directory)
+        {
+            // get current application path
+
+            string path = AppDomain.CurrentDomain.BaseDirectory;
+            return Directory.GetFiles(path + directory);
+        }
 
         static Global()
         {
@@ -187,7 +245,8 @@ namespace KekboomKawaii
             {
                 ethernetIndex = index;
             }
-            if (Enum.TryParse<ChatClassFlag>(GetiniValue("Setting", "ChatClassFilter"),out var filter)){
+            if (Enum.TryParse<ChatClassFlag>(GetiniValue("Setting", "ChatClassFilter"), out var filter))
+            {
                 chatClassFilter = filter;
             }
 
@@ -195,31 +254,93 @@ namespace KekboomKawaii
 
         }
 
+        public static void ImageInit()
+        {
+            foreach (var path in GetFileList(AvatarImagePath))
+            {
+                var image = new BitmapImage(new Uri(path));
+                image.Freeze();
+                AvatarImageDic.Add(Path.GetFileNameWithoutExtension(path).ToLower(), image);
+            }
+
+            foreach (var path in GetFileList(AvatarFrameImagePath))
+            {
+                var image = new BitmapImage(new Uri(path));
+                image.Freeze();
+                AvatarFrameImageDic.Add(Path.GetFileNameWithoutExtension(path).ToLower(), image);
+            }
+
+            foreach (var path in GetFileList(WeaponImagePath))
+            {
+                var image = new BitmapImage(new Uri(path));
+                image.Freeze();
+                WeaponImageDic.Add(Path.GetFileNameWithoutExtension(path).ToLower(), image);
+            }
+        }
+
+
+        public static BitmapImage GetImage(string name, ImageEnum ImageType)
+        {
+            Dictionary<string, string> nameDic = null;
+            Dictionary<string, BitmapImage> imageDic = null;
+
+            switch (ImageType)
+            {
+                case ImageEnum.Avatar:
+                    nameDic = AvatarDic;
+                    imageDic = AvatarImageDic;
+                    break;
+                case ImageEnum.AvatarFrame:
+                    nameDic = AvatarFrameDic;
+                    imageDic = AvatarFrameImageDic;
+                    break;
+                case ImageEnum.Weapon:
+                    nameDic = WeaponDic;
+                    imageDic = WeaponImageDic;
+                    break;
+                default:
+                    return null;
+            }
+
+            if (nameDic.TryGetValue(name.ToLower(), out var dicName))
+            {
+                if (imageDic.TryGetValue(dicName.ToLower(), out var img))
+                {
+                    return img;
+                }
+            }
+            if (imageDic.TryGetValue(name.ToLower(), out var image))
+            {
+                return image;
+            }
+            return null;
+        }
+
         public static void Initlaize()
         {
-            dynamic avatar = JsonConvert.DeserializeObject(GetEmbeddedResource(AvatarJsonPath));
+            dynamic avatar = JsonConvert.DeserializeObject(GetFileResource(AvatarJsonPath));
             foreach (dynamic item in avatar[0].Rows)
             {
                 AvatarDic.Add(item.Name.ToLower(), regex.Match(item.Value.BigImage.AssetPathName.ToString()).Groups[3].Value);
             }
-            dynamic avatarFrame = JsonConvert.DeserializeObject(GetEmbeddedResource(AvatarFrameJsonPath));
+            dynamic avatarFrame = JsonConvert.DeserializeObject(GetFileResource(AvatarFrameJsonPath));
 
             foreach (dynamic item in avatarFrame[0].Rows)
             {
                 AvatarFrameDic.Add(item.Name.ToLower(), regex.Match(item.Value.BigImage.AssetPathName.ToString()).Groups[3].Value);
             }
 
-            dynamic staticWeapon = JsonConvert.DeserializeObject(GetEmbeddedResource(StaticWeaponJsonPath));
+            dynamic staticWeapon = JsonConvert.DeserializeObject(GetFileResource(StaticWeaponJsonPath));
 
             foreach (dynamic item in staticWeapon[0].Rows)
             {
 
-                WeaponImageDic.Add(item.Name.ToLower(), regex.Match(item.Value.WeaponIconForMatrix.AssetPathName.ToString()).Groups[3].Value);
+                WeaponDic.Add(item.Name.ToLower(), regex.Match(item.Value.WeaponIconForMatrix.AssetPathName.ToString()).Groups[3].Value);
             }
 
-            dynamic title = JsonConvert.DeserializeObject(GetEmbeddedResource(TitleJsonPath));
+            dynamic title = JsonConvert.DeserializeObject(GetFileResource(TitleJsonPath));
 
-            dynamic titleLoc = JsonConvert.DeserializeObject(GetEmbeddedResource(LocalJsonPath));
+            dynamic titleLoc = JsonConvert.DeserializeObject(GetFileResource(LocalJsonPath));
 
 
             foreach (dynamic item in title[0].Rows)
@@ -240,7 +361,7 @@ namespace KekboomKawaii
                     TitleDic.Add(item.Name, na);
 
                 }
-                else if(item.Value.Name.Key != null)
+                else if (item.Value.Name.Key != null)
                 {
                     dynamic table = titleLoc[""];
                     string na = table[item.Value.Name.Key.ToString()];
@@ -249,5 +370,10 @@ namespace KekboomKawaii
                 }
             }
         }
+
+        #endregion
+
     }
+
+
 }

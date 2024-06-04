@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Windows.Input;
+using System.Windows.Media.Imaging;
 
 namespace KekboomKawaii.ViewModels
 {
@@ -20,7 +21,8 @@ namespace KekboomKawaii.ViewModels
 
         public void SaveCurrentPlayer(object sender)
         {
-            File.WriteAllText($@"Player/{UID}_{PlayerName}_{DateTime.Now.ToString("yyyyMMdd")}.json", JsonConvert.SerializeObject(playerData, Formatting.Indented));
+            File.WriteAllText($@"Player/{UID}_{PlayerName}.json", JsonConvert.SerializeObject(playerData, Formatting.Indented));
+            //File.WriteAllText($@"Player/{UID}_{PlayerName}_{DateTime.Now.ToString("yyyyMMdd")}.json", JsonConvert.SerializeObject(playerData, Formatting.Indented));
         }
 
         public string CurentPosition => playerData.CurentPosition;
@@ -130,26 +132,19 @@ namespace KekboomKawaii.ViewModels
 
             }
         }
-        public string DisplayedAvatar
+
+        public BitmapImage DisplayedAvatar
         {
             get
             {
-                if (Global.AvatarDic.TryGetValue(GetValue("AvatarId").ToString().ToLower(), out var avatar) && !string.IsNullOrEmpty(avatar))
-                {
-                    return $@"pack://application:,,,/Resources/Avatar/{avatar}.png";
-                }
-                return $@"pack://application:,,,/Resources/Avatar/{GetValue("AvatarId").ToString()}.png";
+                return Global.GetImage(GetValue("AvatarId").ToString(), ImageEnum.Avatar);
             }
         }
-        public string DisplayedAvatarFrame
+        public BitmapImage DisplayedAvatarFrame
         {
             get
             {
-                if (Global.AvatarFrameDic.TryGetValue(GetValue("AvatarFrameId").ToString().ToLower(), out var frame))
-                {
-                    return $@"pack://application:,,,/Resources/AvatarFrame/{frame}.png";
-                }
-                return $@"pack://application:,,,/Resources/AvatarFrame/{GetValue("AvatarFrameId").ToString()}.png";
+                return Global.GetImage(GetValue("AvatarFrameId").ToString(), ImageEnum.AvatarFrame);
             }
         }
         public string DisplayedSuppressor => $@"pack://application:,,,/Resources/Suppressor/{GetValue("ShenGeLevel")}.png";
@@ -165,6 +160,8 @@ namespace KekboomKawaii.ViewModels
         public PlayerViewModel(PlayerData playerData)
         {
             this.playerData = playerData;
+
+            SaveCurrentPlayer(this);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.Text.RegularExpressions;
+using System.Windows.Media.Imaging;
 
 namespace KekboomKawaii.Models
 {
@@ -12,15 +13,11 @@ namespace KekboomKawaii.Models
         public int Star { get; set; }
         public int MaxLevel { get; set; }
         public int CurrentEnchant { get; set; }
-        public string DisplayWeaponImage
+        public BitmapImage DisplayWeaponImage
         {
             get
             {
-                if (Global.WeaponImageDic.TryGetValue(Name.ToLower(), out var weapon))
-                {
-                    return $@"pack://application:,,,/Resources/Weapon/{weapon}.png";
-                }
-                return $@"pack://application:,,,/Resources/Weapon/{Name}.png";
+                return Global.GetImage(Name, ImageEnum.Weapon);
             }
         }
 

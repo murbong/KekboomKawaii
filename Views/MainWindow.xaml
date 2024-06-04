@@ -27,7 +27,7 @@
             <RowDefinition Height="Auto" MinHeight="60"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Margin="10" FontSize="24" Text="켁븜미러링" FontFamily="{StaticResource ONEMobile}" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="ExtraBold" TextAlignment="Center" Grid.Row="0"/>
+        <TextBlock Margin="10" FontSize="24" Text="켁븜미러링" FontFamily="{StaticResource BAFont}" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="ExtraBold" TextAlignment="Center" Grid.Row="0"/>
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0 5 0 0">
             <Button x:Name="btnMin" BorderThickness="1" Margin="0 0 5 0" Width="20" Height="20" Tag="Minimize">
@@ -110,7 +110,7 @@
             </Button>
         </StackPanel>
 
-        <TabControl TabStripPlacement="Bottom" Grid.Row="1" FontSize="18" FontFamily="{StaticResource ONEMobile}">
+        <TabControl TabStripPlacement="Bottom" Grid.Row="1" FontSize="18" FontFamily="{StaticResource BAFont}">
             <TabItem Header="채팅창">
                 <views:ChattingView/>
             </TabItem>
@@ -121,6 +121,10 @@
                 <views:SettingView/>
             </TabItem>
         </TabControl>
+
+        <!--<Grid Width="600" Height="400" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="2">
+            <ProgressBar Value="{Binding ProgressValue}" Height="10"></ProgressBar>
+        </Grid>-->
     </Grid>
 
 </Window>

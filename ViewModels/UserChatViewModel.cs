@@ -3,6 +3,8 @@ using System;
 using System.Linq;
 using System.Media;
 using System.Text.RegularExpressions;
+using System.Windows.Media.Imaging;
+using System.Xml.Linq;
 
 namespace KekboomKawaii.ViewModels
 {
@@ -12,26 +14,18 @@ namespace KekboomKawaii.ViewModels
     {
         UserChat userChat;
 
-        public string DisplayedAvatar
+        public BitmapImage DisplayedAvatar
         {
             get
             {
-                if (Global.AvatarDic.TryGetValue(userChat.Avatar.ToLower(), out var avatar) && !string.IsNullOrEmpty(avatar))
-                {
-                    return $@"pack://application:,,,/Resources/Avatar/{avatar}.png";
-                }
-                return $@"pack://application:,,,/Resources/Avatar/{userChat.Avatar}.png";
+                return Global.GetImage(userChat.Avatar, ImageEnum.Avatar);
             }
         }
-        public string DisplayedAvatarFrame
+        public BitmapImage DisplayedAvatarFrame
         {
             get
             {
-                if (Global.AvatarFrameDic.TryGetValue(userChat.AvatarFrame.ToLower(), out var frame))
-                {
-                    return $@"pack://application:,,,/Resources/AvatarFrame/{frame}.png";
-                }
-                return $@"pack://application:,,,/Resources/AvatarFrame/{userChat.AvatarFrame}.png";
+                return Global.GetImage(userChat.AvatarFrame, ImageEnum.AvatarFrame);
             }
         }
         public string DisplayedSuppressor => $@"pack://application:,,,/Resources/Suppressor/{userChat.SuppressorLevel}.png";

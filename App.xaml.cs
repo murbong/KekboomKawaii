@@ -11,6 +11,8 @@ namespace KekboomKawaii
         {
             base.OnStartup(e);
 
+            Global.ImageInit();
+
             Global.Initlaize();
         }
     }

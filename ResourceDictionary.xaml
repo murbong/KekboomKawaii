@@ -1,4 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <FontFamily x:Key="ONEMobile">application:,,,/Resources/Fonts/#ONE 모바일POP</FontFamily>
+    <FontFamily x:Key="BAFont">application:,,,/Resources/Fonts/#경기천년제목</FontFamily>
+
 </ResourceDictionary>
